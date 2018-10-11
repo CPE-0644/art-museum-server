@@ -2,7 +2,11 @@ const express = require('express');
 
 const app = express();
 
+const artistsRoute = require('./routes/artists');
+
 const data = require('./database/data.json');
+
+app.use('/artists', artistsRoute);
 
 app.get('/', (req, res) => {
   res.send(data);
