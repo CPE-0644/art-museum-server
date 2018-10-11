@@ -84,7 +84,7 @@
   ],
   "exhibitions": [
     {
-      "exhibiton_id": "1",
+      "exhibition_id": "1",
       "name": "In the Beginning",
       "start_date": "October 13, 2018",
       "finite_date": "January 13, 2019"
