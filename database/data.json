@@ -1,0 +1,125 @@
+{
+  "artists": [
+    {
+      "artist_id": "1",
+      "name": "Akiyama lwao",
+      "dob": "March 21, 1921",
+      "dod": "September 15, 2014",
+      "country": "Japan",
+      "style": "painter"
+    },
+    {
+      "artist_id": "2",
+      "name": "Albion J Anderson",
+      "dob": "January 10, 1927",
+      "dod": "October 7, 2013",
+      "country": "American",
+      "style": ""
+    },
+    {
+      "artist_id": "3",
+      "name": "Alen Earl Glips",
+      "dob": "July 24, 1914",
+      "dod": "December 2, 1996",
+      "country": "American",
+      "style": ""
+    },
+    {
+      "artist_id": "4",
+      "name": " Adams Marz",
+      "dob": "January 24, 1917",
+      "dod": " May 23, 1999",
+      "country": "Canada",
+      "style": ""
+    },
+    {
+      "artist_id": "5",
+      "name": " Abbey Patrick",
+      "dob": "August 17, 1917",
+      "dod": "June 28, 1997",
+      "country": "Australia",
+      "style": ""
+    },
+    {
+      "artist_id": "6",
+      "name": "Adachi Ginkō",
+      "dob": "March 11 ,1874",
+      "dod": "February 18,1902",
+      "country": "Japan",
+      "style": ""
+    },
+    {
+      "artist_id": "7",
+      "name": "Ay-O",
+      "dob": "September 5, 1931",
+      "dod": "December 1, 1999",
+      "country": "Japan",
+      "style": ""
+    },
+
+    {
+      "artist_id": "8",
+      "name": "Alice Asmar",
+      "dob": "May 4, 1929",
+      "dod": "July 17, 1994",
+      "country": "American",
+      "style": ""
+    },
+    {
+      "artist_id": "9",
+      "name": "Andō Jūbei",
+      "dob": "December 29, 1876",
+      "dod": "January 13, 1953",
+      "country": "Japan",
+      "style": ""
+    },
+    {
+      "artist_id": "10",
+      "name": "Amano Kunihiro",
+      "dob": "February 14, 1929",
+      "dod": "November 1, 1975",
+      "country": "Japan",
+      "style": ""
+    }
+  ],
+  "exhibitions": [
+    {
+      "exhibiton_id": "1",
+      "name": "In the Beginning",
+      "start_date": "October 13, 2018",
+      "finite_date": "January 13, 2019"
+    }
+  ],
+
+  "users": [
+    {
+      "contact_id": "1",
+      "name": "patsakorn",
+      "tel": "503 - 226 - 2811",
+      "email": "exc_125@gmail.com"
+    }
+  ],
+
+  "other": [
+    {
+      "artwork_id": "1",
+      "type": "grass"
+    }
+  ],
+
+  "scu": [
+    {
+      "artwork_id": "1",
+      "material": "stoneware with sprayed stain and glaze",
+      "dimension": "6 1/2 in x 10 3/8 in x 8 1/4 in",
+      "weight": "3.5 g"
+    }
+  ],
+  "paints": [
+    {
+      "artwork_id": "1",
+      "paint_type": "oil on canvas",
+      "material": "60 in x 48 in"
+    }
+  ]
+}
