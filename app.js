@@ -9,13 +9,15 @@ const artObjectsRoute = require('./routes/artObjects');
 
 const data = require('./database/data.json');
 
+app.use(express.static(__dirname + '/public'));
+
 app.use('/api/artists', artistsRoute);
 app.use('/api/exhibitions', exhibitionRoute);
 app.use('/api/users', usersRoute);
 app.use('/api/art-objects', artObjectsRoute);
 
 app.get('/api/', (req, res) => {
-  res.send('Art Museum API');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 const PORT = process.env.PORT || 3000;
