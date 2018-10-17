@@ -8,4 +8,10 @@ router.get('/', (req, res) => {
   res.send(artists);
 });
 
+router.get('/:artistId', (req, res) => {
+  const artistId = req.params.artistId;
+  const artist = artistController.findArtistById(artistId);
+  res.send(artist);
+});
+
 module.exports = router;
