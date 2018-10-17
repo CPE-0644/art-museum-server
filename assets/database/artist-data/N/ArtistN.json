@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Nadel Davince",
+            "dob": "่January 21, 1924",
+            "dod": "May 10, 2010",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Nagai Kenji",
+            "dob": "June 16, 1947",
+            "dod": "July 9, 2014",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Nagy Tamas",
+            "dob": "May 12, 1869",
+            "dod": "October 15, 1909",
+            "country": "Hungarian",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Nakayama Tadashi",
+            "dob": "March 24, 1927",
+            "dod": "January 16, 1999",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Nielsen Hjorth",
+            "dob": "June 14, 1901",
+            "dod": "October 7, 1997",
+            "country": "Danish",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Nobuco Niguma",
+            "dob": "April 14,1915",
+            "dod": "December 20,2014",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Norther Pladians",
+            "dob": "May 22, 1850",
+            "dod": "December 28, 1921",
+            "country": "Malta",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Natzler Gertrud",
+            "dob": "April 30, 1908",
+            "dod": "August 19, 1971",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Neale Pederson",
+            "dob": "July 22, 1780",
+            "dod": "November 17, 1847",
+            "country": "English",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Nay Wilhelm",
+            "dob": "March 25, 1902",
+            "dod": "April 11, 1968",
+            "country": "German",
+            "style": ""
+        }
+    ]
+}

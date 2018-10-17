@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Gander Chris",
+            "dob": "่May 22, 1934",
+            "dod": "November 5, 2013",
+            "country": "Norway",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Graham Mccall",
+            "dob": "August 15, 1849",
+            "dod": "June 22, 1928",
+            "country": "France"
+        },
+        {
+            "artist_id": "3",
+            "name": "Galvin Maynard",
+            "dob": "February 21, 1821",
+            "dod": "July 22, 1900",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Gaddi Taddeo",
+            "dob": "April 24, 1857",
+            "dod": " March 2, 1920",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Ged Dugal",
+            "dob": "February 18, 1922",
+            "dod": "January 5, 1996",
+            "country": "Scottish",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Garlianski Albina",
+            "dob": "May 7,1920",
+            "dod": "December 4,2002",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Gault M. Marla",
+            "dob": "November 20, 1898",
+            "dod": "April 19, 1967",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Georges Paul",
+            "dob": "May 6, 1888",
+            "dod": "September 10, 1950",
+            "country": "Norway",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Glaser Karen",
+            "dob": "June 16, 1821",
+            "dod": "April 14, 1905",
+            "country": "Jamaica",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Grasset Eugene",
+            "dob": "November 22, 1841",
+            "dod": "Junes 26, 1917",
+            "country": "French",
+            "style": ""
+        }
+    ]
+}

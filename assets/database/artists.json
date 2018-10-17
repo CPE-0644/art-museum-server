@@ -1,0 +1,804 @@
+{
+  "artists": [
+    {
+      "artist_id": 1,
+      "name": "Prescott Sanford",
+      "dob": "June 2nd, 1876",
+      "dod": "April 20th, 1964",
+      "country": "Micronesia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 2,
+      "name": "Jerry Herman",
+      "dob": "June 5th, 1870",
+      "dod": "March 23rd, 1952",
+      "country": "Saint Kitts and Nevis",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 3,
+      "name": "Theodore Dean",
+      "dob": "January 27th, 1896",
+      "dod": "January 18th, 1954",
+      "country": "Slovenia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 4,
+      "name": "Vincent Reed",
+      "dob": "August 19th, 1920",
+      "dod": "July 28th, 1946",
+      "country": "Côte D'Ivoire (Ivory Coast)",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 5,
+      "name": "Ralph Buckley",
+      "dob": "September 23rd, 1877",
+      "dod": "March 8th, 1951",
+      "country": "Northern Mariana Islands",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 6,
+      "name": "Elvis Drake",
+      "dob": "September 24th, 1889",
+      "dod": "May 29th, 1952",
+      "country": "Cameroon",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 7,
+      "name": "Kirk Boyle",
+      "dob": "November 18th, 1882",
+      "dod": "August 29th, 1960",
+      "country": "Iraq",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 8,
+      "name": "Matthew Terrell",
+      "dob": "May 15th, 1905",
+      "dod": "December 25th, 1977",
+      "country": "Malaysia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 9,
+      "name": "Ralph Trujillo",
+      "dob": "December 28th, 1917",
+      "dod": "October 4th, 1968",
+      "country": "Barbados",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 10,
+      "name": "Elliott Sanford",
+      "dob": "July 18th, 1874",
+      "dod": "August 28th, 1954",
+      "country": "Tuvalu",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 11,
+      "name": "Yasir Huffman",
+      "dob": "May 15th, 1869",
+      "dod": "August 28th, 1947",
+      "country": "Israel",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 12,
+      "name": "Howard Case",
+      "dob": "November 22nd, 1865",
+      "dod": "March 10th, 1941",
+      "country": "Zambia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 13,
+      "name": "Roth Mclean",
+      "dob": "March 18th, 1882",
+      "dod": "June 30th, 1967",
+      "country": "Philippines",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 14,
+      "name": "Eric Mclean",
+      "dob": "November 16th, 1906",
+      "dod": "January 17th, 1972",
+      "country": "Russian Federation",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 15,
+      "name": "Leonard Gross",
+      "dob": "June 23rd, 1891",
+      "dod": "September 30th, 1939",
+      "country": "Falkland Islands",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 16,
+      "name": "Wallace Thomas",
+      "dob": "February 14th, 1918",
+      "dod": "July 2nd, 1952",
+      "country": "Saint Barthélemy",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 17,
+      "name": "Paul Strong",
+      "dob": "February 3rd, 1899",
+      "dod": "December 31st, 1949",
+      "country": "Monaco",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 18,
+      "name": "Mason Jacobs",
+      "dob": "November 29th, 1916",
+      "dod": "July 18th, 1954",
+      "country": "Laos",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 19,
+      "name": "Stephen Berger",
+      "dob": "February 13th, 1894",
+      "dod": "June 20th, 1959",
+      "country": "Ireland",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 20,
+      "name": "Elijah Flynn",
+      "dob": "September 23rd, 1912",
+      "dod": "March 6th, 1981",
+      "country": "French Guiana",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 21,
+      "name": "Jakeem Scott",
+      "dob": "December 17th, 1914",
+      "dod": "May 30th, 1979",
+      "country": "Laos",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 22,
+      "name": "Byron Diaz",
+      "dob": "August 28th, 1876",
+      "dod": "June 23rd, 1960",
+      "country": "Latvia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 23,
+      "name": "Hoyt Baldwin",
+      "dob": "May 9th, 1909",
+      "dod": "December 31st, 1972",
+      "country": "Antigua and Barbuda",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 24,
+      "name": "Prescott Kelley",
+      "dob": "February 1st, 1904",
+      "dod": "June 15th, 1972",
+      "country": "Bosnia and Herzegovina",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 25,
+      "name": "Alvin Andrews",
+      "dob": "December 7th, 1916",
+      "dod": "December 11th, 1946",
+      "country": "Indonesia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 26,
+      "name": "Edward Salinas",
+      "dob": "July 29th, 1871",
+      "dod": "June 5th, 1937",
+      "country": "Hungary",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 27,
+      "name": "Wyatt Hall",
+      "dob": "August 23rd, 1899",
+      "dod": "July 14th, 1979",
+      "country": "Malta",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 28,
+      "name": "Patrick Blackburn",
+      "dob": "February 26th, 1921",
+      "dod": "March 15th, 1967",
+      "country": "Dominica",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 29,
+      "name": "Odysseus Bass",
+      "dob": "March 13th, 1919",
+      "dod": "June 26th, 1943",
+      "country": "Lithuania",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 30,
+      "name": "Gary Chan",
+      "dob": "March 24th, 1878",
+      "dod": "December 6th, 1991",
+      "country": "Australia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 31,
+      "name": "Wayne Espinoza",
+      "dob": "May 8th, 1919",
+      "dod": "April 13th, 1943",
+      "country": "Algeria",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 32,
+      "name": "Aquila Downs",
+      "dob": "September 19th, 1871",
+      "dod": "May 25th, 1969",
+      "country": "Switzerland",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 33,
+      "name": "Odysseus Frank",
+      "dob": "November 30th, 1894",
+      "dod": "March 15th, 1943",
+      "country": "Tuvalu",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 34,
+      "name": "Bernard Pennington",
+      "dob": "June 19th, 1886",
+      "dod": "April 12th, 1947",
+      "country": "Sweden",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 35,
+      "name": "Mohammad Santos",
+      "dob": "November 17th, 1888",
+      "dod": "May 15th, 1937",
+      "country": "Sao Tome and Principe",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 36,
+      "name": "Oren Hernandez",
+      "dob": "August 13th, 1904",
+      "dod": "December 27th, 1949",
+      "country": "Qatar",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 37,
+      "name": "Lucas Henderson",
+      "dob": "June 30th, 1923",
+      "dod": "July 20th, 1954",
+      "country": "Poland",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 38,
+      "name": "Gannon Bowen",
+      "dob": "October 28th, 1890",
+      "dod": "May 27th, 1968",
+      "country": "British Indian Ocean Territory",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 39,
+      "name": "Kato Owen",
+      "dob": "November 3rd, 1903",
+      "dod": "March 6th, 1997",
+      "country": "Spain",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 40,
+      "name": "Colby Harmon",
+      "dob": "October 13th, 1914",
+      "dod": "January 4th, 1964",
+      "country": "Swaziland",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 41,
+      "name": "Jarrod Ward",
+      "dob": "January 25th, 1923",
+      "dod": "May 18th, 1978",
+      "country": "Afghanistan",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 42,
+      "name": "Abraham Pratt",
+      "dob": "September 17th, 1892",
+      "dod": "August 28th, 1983",
+      "country": "Wallis and Futuna",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 43,
+      "name": "Walker Francis",
+      "dob": "November 23rd, 1882",
+      "dod": "July 5th, 1960",
+      "country": "Nepal",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 44,
+      "name": "Jin Fuentes",
+      "dob": "April 6th, 1896",
+      "dod": "September 21st, 1959",
+      "country": "Sierra Leone",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 45,
+      "name": "Chaim Cantu",
+      "dob": "March 15th, 1914",
+      "dod": "January 19th, 1980",
+      "country": "Maldives",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 46,
+      "name": "Paul Burt",
+      "dob": "June 24th, 1872",
+      "dod": "July 13th, 1954",
+      "country": "Kazakhstan",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 47,
+      "name": "Lucius Molina",
+      "dob": "September 30th, 1889",
+      "dod": "May 30th, 1938",
+      "country": "Colombia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 48,
+      "name": "Louis Estrada",
+      "dob": "July 3rd, 1866",
+      "dod": "November 28th, 1964",
+      "country": "Poland",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 49,
+      "name": "Thor Travis",
+      "dob": "July 26th, 1898",
+      "dod": "November 23rd, 1976",
+      "country": "Uganda",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 50,
+      "name": "Curran Glass",
+      "dob": "September 24th, 1877",
+      "dod": "September 2nd, 1938",
+      "country": "Singapore",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 51,
+      "name": "Yasir Good",
+      "dob": "April 1st, 1868",
+      "dod": "January 4th, 1945",
+      "country": "Djibouti",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 52,
+      "name": "Jack Walsh",
+      "dob": "August 16th, 1899",
+      "dod": "April 19th, 1970",
+      "country": "Aruba",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 53,
+      "name": "Alvin Mccarty",
+      "dob": "December 14th, 1889",
+      "dod": "March 9th, 1965",
+      "country": "Comoros",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 54,
+      "name": "Stephen Solomon",
+      "dob": "November 18th, 1912",
+      "dod": "January 28th, 1950",
+      "country": "Korea, South",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 55,
+      "name": "Silas Dillon",
+      "dob": "January 26th, 1922",
+      "dod": "June 19th, 1966",
+      "country": "Maldives",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 56,
+      "name": "Amir Bonner",
+      "dob": "March 5th, 1923",
+      "dod": "December 1st, 1967",
+      "country": "Qatar",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 57,
+      "name": "Amos Osborn",
+      "dob": "July 9th, 1900",
+      "dod": "March 15th, 1970",
+      "country": "Andorra",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 58,
+      "name": "Colby Frazier",
+      "dob": "January 12th, 1913",
+      "dod": "March 21st, 1989",
+      "country": "Armenia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 59,
+      "name": "Quamar Hewitt",
+      "dob": "July 9th, 1903",
+      "dod": "September 16th, 1965",
+      "country": "Taiwan",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 60,
+      "name": "Andrew Griffith",
+      "dob": "August 22nd, 1924",
+      "dod": "March 29th, 1981",
+      "country": "Mexico",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 61,
+      "name": "Upton Holland",
+      "dob": "May 5th, 1918",
+      "dod": "December 14th, 1947",
+      "country": "Indonesia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 62,
+      "name": "Mark Tyler",
+      "dob": "March 12th, 1908",
+      "dod": "September 12th, 1991",
+      "country": "Åland Islands",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 63,
+      "name": "Dustin Joyner",
+      "dob": "March 8th, 1895",
+      "dod": "June 22nd, 1972",
+      "country": "Congo (Brazzaville)",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 64,
+      "name": "Wallace Rocha",
+      "dob": "April 12th, 1868",
+      "dod": "January 30th, 1962",
+      "country": "Australia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 65,
+      "name": "Oren Ratliff",
+      "dob": "November 8th, 1883",
+      "dod": "May 26th, 1957",
+      "country": "Mauritius",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 66,
+      "name": "Xander Marks",
+      "dob": "August 28th, 1874",
+      "dod": "December 12th, 1937",
+      "country": "French Guiana",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 67,
+      "name": "Tanner Marquez",
+      "dob": "February 13th, 1898",
+      "dod": "March 4th, 1988",
+      "country": "Grenada",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 68,
+      "name": "Jermaine Pacheco",
+      "dob": "April 16th, 1901",
+      "dod": "May 1st, 1956",
+      "country": "Pakistan",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 69,
+      "name": "Logan Morton",
+      "dob": "March 12th, 1897",
+      "dod": "April 24th, 1938",
+      "country": "Equatorial Guinea",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 70,
+      "name": "Mark Hewitt",
+      "dob": "June 4th, 1896",
+      "dod": "July 18th, 1985",
+      "country": "Papua New Guinea",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 71,
+      "name": "Emerson Shaffer",
+      "dob": "August 16th, 1906",
+      "dod": "July 17th, 1953",
+      "country": "Niue",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 72,
+      "name": "Micah Delgado",
+      "dob": "March 19th, 1879",
+      "dod": "February 12th, 1948",
+      "country": "Saint Lucia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 73,
+      "name": "Garth Mccoy",
+      "dob": "August 24th, 1872",
+      "dod": "April 10th, 1977",
+      "country": "Argentina",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 74,
+      "name": "August Goodman",
+      "dob": "April 8th, 1885",
+      "dod": "January 24th, 1940",
+      "country": "Viet Nam",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 75,
+      "name": "Todd Garza",
+      "dob": "February 6th, 1914",
+      "dod": "January 13th, 1964",
+      "country": "Honduras",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 76,
+      "name": "Myles Mcfarland",
+      "dob": "October 4th, 1874",
+      "dod": "December 22nd, 1989",
+      "country": "Brunei",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 77,
+      "name": "Barry Ramirez",
+      "dob": "September 3rd, 1878",
+      "dod": "June 18th, 1967",
+      "country": "Gabon",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 78,
+      "name": "Gage Donovan",
+      "dob": "May 28th, 1881",
+      "dod": "November 12th, 1964",
+      "country": "El Salvador",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 79,
+      "name": "Yoshio Guerra",
+      "dob": "July 8th, 1866",
+      "dod": "November 10th, 1987",
+      "country": "Philippines",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 80,
+      "name": "Reed Randolph",
+      "dob": "May 5th, 1908",
+      "dod": "May 10th, 1993",
+      "country": "Romania",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 81,
+      "name": "Phillip Jordan",
+      "dob": "April 27th, 1881",
+      "dod": "August 29th, 1975",
+      "country": "Cayman Islands",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 82,
+      "name": "Joel Gilliam",
+      "dob": "April 27th, 1887",
+      "dod": "October 24th, 1987",
+      "country": "Philippines",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 83,
+      "name": "Derek Langley",
+      "dob": "June 6th, 1874",
+      "dod": "November 21st, 1976",
+      "country": "Cocos (Keeling) Islands",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 84,
+      "name": "Warren Rodgers",
+      "dob": "November 20th, 1883",
+      "dod": "April 16th, 1956",
+      "country": "Maldives",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 85,
+      "name": "Kane Mcdaniel",
+      "dob": "March 18th, 1914",
+      "dod": "December 4th, 1985",
+      "country": "Malawi",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 86,
+      "name": "David Lee",
+      "dob": "August 2nd, 1908",
+      "dod": "April 8th, 1945",
+      "country": "Christmas Island",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 87,
+      "name": "Guy Newman",
+      "dob": "October 6th, 1871",
+      "dod": "November 2nd, 1940",
+      "country": "Uganda",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 88,
+      "name": "Boris Stein",
+      "dob": "May 7th, 1899",
+      "dod": "August 25th, 1992",
+      "country": "Saudi Arabia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 89,
+      "name": "Clinton Cline",
+      "dob": "November 22nd, 1901",
+      "dod": "January 3rd, 1978",
+      "country": "Cyprus",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 90,
+      "name": "Hamish Taylor",
+      "dob": "January 7th, 1889",
+      "dod": "January 30th, 1979",
+      "country": "Saint Kitts and Nevis",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 91,
+      "name": "Kennedy Gallegos",
+      "dob": "January 25th, 1878",
+      "dod": "December 25th, 1967",
+      "country": "Greenland",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 92,
+      "name": "Scott Carney",
+      "dob": "August 18th, 1879",
+      "dod": "October 7th, 1994",
+      "country": "Antigua and Barbuda",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 93,
+      "name": "Brady Kline",
+      "dob": "May 30th, 1913",
+      "dod": "August 14th, 1963",
+      "country": "Estonia",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 94,
+      "name": "Channing Weber",
+      "dob": "August 5th, 1915",
+      "dod": "November 7th, 1967",
+      "country": "Egypt",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 95,
+      "name": "Declan Acosta",
+      "dob": "January 12th, 1905",
+      "dod": "July 20th, 1972",
+      "country": "French Southern Territories",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 96,
+      "name": "Buckminster Shepard",
+      "dob": "January 14th, 1904",
+      "dod": "November 27th, 1963",
+      "country": "United States",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 97,
+      "name": "Branden Stafford",
+      "dob": "April 9th, 1889",
+      "dod": "January 27th, 1940",
+      "country": "Myanmar",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 98,
+      "name": "Neil Chase",
+      "dob": "March 11th, 1875",
+      "dod": "April 29th, 1957",
+      "country": "Chile",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 99,
+      "name": "Brock Hines",
+      "dob": "January 6th, 1909",
+      "dod": "December 26th, 1974",
+      "country": "United States Minor Outlying Islands",
+      "style": "fucker"
+    },
+    {
+      "artist_id": 100,
+      "name": "Holmes Middleton",
+      "dob": "September 30th, 1912",
+      "dod": "October 29th, 1973",
+      "country": "New Zealand",
+      "style": "fucker"
+    }
+  ]
+}

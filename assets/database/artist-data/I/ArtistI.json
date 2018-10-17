@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Ingmire Thomas",
+            "dob": "่July 3, 1866",
+            "dod": "April 21, 1929",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Ishikawa Toraji",
+            "dob": "February 18, 1875",
+            "dod": "October 7, 1964",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Isabey Jialea",
+            "dob": "March 26, 1767",
+            "dod": "May 19, 1967",
+            "country": "Poland",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Ishimaka Doriti",
+            "dob": "November 1, 1875",
+            "dod": " June 14, 1964",
+            "country": "Bulgaria",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Ishia Tojohn",
+            "dob": "August 23, 1770",
+            "dod": "November 29, 1841",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Ishii Hakutei",
+            "dob": "september 25,1882",
+            "dod": "November 16,1958",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Isoda Choshu",
+            "dob": "October 4, 1880",
+            "dod": "July 30, 1947",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Indiana Robert",
+            "dob": "July 21, 1928",
+            "dod": "October 26, 2004",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Interior Salish",
+            "dob": "November 9, 1930",
+            "dod": "December 24, 1997",
+            "country": "Nepal",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Injujarat Kutch",
+            "dob": "December 14, 1857",
+            "dod": "August 22, 1914",
+            "country": "Indian",
+            "style": ""
+        }
+    ]
+}

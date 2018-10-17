@@ -1,0 +1,86 @@
+{
+    "artists": [
+      {
+        "artist_id": "1",
+        "name": "Faccini Pietro",
+        "dob": "่October 14, 1562",
+        "dod": "February 5, 1602",
+        "country": "Italian",
+        "style": ""
+      },
+      {
+        "artist_id": "2",
+        "name": "Fatin Adelaide ",
+        "dob": "May 16, 1897",
+        "dod": "January 25, 1957",
+        "country": "American",
+        "style": ""
+      },
+      {
+        "artist_id": "3",
+        "name": "Falguiere Alexandrea",
+        "dob": "June 13, 1831",
+        "dod": "December 26, 1900",
+        "country": "French",
+        "style": ""
+      },
+      {
+        "artist_id": "4",
+        "name": "Farias-Nardi",
+        "dob": "March 18, 1916",
+        "dod": " November 11, 1999",
+        "country": "Dominican",
+        "style": ""
+      },
+      {
+        "artist_id": "5",
+        "name": "Fary Marnham",
+        "dob": "Noveer 21mb, 1924",
+        "dod": "February 19, 2007",
+        "country": "American",
+        "style": ""
+      },
+      {
+        "artist_id": "6",
+        "name": "Fathleen Young",
+        "dob": "December 12 ,1919",
+        "dod": "May 5,1997",
+        "country": "Chinese",
+        "style": ""
+      },
+      {
+        "artist_id": "7",
+        "name": "Ferastus Salisbury",
+        "dob": "May 19, 1805",
+        "dod": "June 28, 1900",
+        "country": "Italian",
+        "style": ""
+      },
+  
+      {
+        "artist_id": "8",
+        "name": "Feininger Lyonel ",
+        "dob": "October 17, 1871",
+        "dod": "May 12, 1956",
+        "country": "Spain",
+        "style": ""
+      },
+      {
+        "artist_id": "9",
+        "name": "Feves Betty",
+        "dob": "August 27, 1918",
+        "dod": "September 23, 1985",
+        "country": "Germany",
+        "style": ""
+      },
+      {
+        "artist_id": "10",
+        "name": "Fischer Ruth",
+        "dob": "January 9, 1913",
+        "dod": "December 24, 2012",
+        "country": "Dutch",
+        "style": ""
+      }
+    ]
+  }
+  

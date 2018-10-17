@@ -1,0 +1,356 @@
+{
+  "exhibitions": [
+    {
+      "exhibition-id": "1",
+      "name": "Poetic Imagination in Japanese Art",
+      "start-date": "OCTOBER 13, 2018",
+      "end-date": "JANUARY 13, 2019",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "2",
+      "name": "In the Beginning",
+      "start-date": "DECEMBER 9, 2017",
+      "end-date": "OCTOBER 21, 2018",
+      "display": ["", ""],
+      "number-supported-users": "40"
+    },
+    {
+      "exhibition-id": "3",
+      "name": "Su-mei Tse: L’Echo",
+      "start-date": "MAY 5, 2018",
+      "end-date": "OCTOBER 28, 2018",
+      "display": ["", ""],
+      "number-supported-users": "30"
+    },
+    {
+      "exhibition-id": "4",
+      "name": "Robbert Flick: Arena",
+      "start-date": "MAY 19, 2018",
+      "end-date": "OCTOBER 28, 2018",
+      "display": ["", ""],
+      "number-supported-users": "35"
+    },
+    {
+      "exhibition-id": "5",
+      "name": "The Shape of the Land",
+      "start-date": "JULY 28, 2018",
+      "end-date": "JANUARY 20, 2019",
+      "display": ["", ""],
+      "number-supported-users": "40"
+    },
+    {
+      "exhibition-id": "6",
+      "name": "We. Construct. Marvels. Between. Monuments.",
+      "start-date": "NOVEMBER 17, 2017 ",
+      "end-date": "JANUARY 27, 2019",
+      "display": ["", ""],
+      "number-supported-users": "35"
+    },
+    {
+      "exhibition-id": "7",
+      "name": "APEX: Avantika Bawa",
+      "start-date": "AUGUST 18, 2018 ",
+      "end-date": "FEBUARY 10, 2019",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "8",
+      "name": "CCNA: Not Fragile",
+      "start-date": "SEPTEMBER 8, 2018",
+      "end-date": "JUNE 9, 2019",
+      "display": ["", ""],
+      "number-supported-users": "30"
+    },
+    {
+      "exhibition-id": "9",
+      "name": "Picturing Oregon",
+      "start-date": "AUGUST 19, 2017",
+      "end-date": "AUGUST 2, 2019",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "10",
+      "name": "Modern American Realism",
+      "start-date": "OCTOBER 20, 2018",
+      "end-date": "APRIL 28, 2019",
+      "display": ["", ""],
+      "number-supported-users": "30"
+    },
+    {
+      "exhibition-id": "11",
+      "name": "Memory Unearthed",
+      "start-date": "OCTOBER 27, 2018",
+      "end-date": "FEBUARY 24, 2019",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "12",
+      "name": "Three Masters of Abstraction",
+      "start-date": "NOVEMBER 3, 2018",
+      "end-date": "MARCH 24, 2019",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "13",
+      "name": "the map is not the territory",
+      "start-date": "FEBUARY 9, 2019",
+      "end-date": "MAY 5, 2019",
+      "display": ["", ""],
+      "number-supported-users": "30"
+    },
+    {
+      "exhibition-id": "14",
+      "name": "Paris 1900",
+      "start-date": "JUNE 8, 2018",
+      "end-date": "SEPTEMBER 8, 2019",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "15",
+      "name": "Hank Willis Thomas: All Things Being ",
+      "start-date": "OCTOBER 7, 2019",
+      "end-date": "JANUARY 12, 2020",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "16",
+      "name": "Suzuki Harunobu and the Culture of Color",
+      "start-date": "JUNE 23, 2018",
+      "end-date": "SEPTEMBER 16, 2018",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "17",
+      "name": "The Shape of Speed",
+      "start-date": "JUNE 16, 2018",
+      "end-date": "SEPTEMBER 16, 2018",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "18",
+      "name": "Richard Diebenkorn: Beginnings, 1942–1955",
+      "start-date": "JUNE 16, 2018",
+      "end-date": "SEPTEMBER 23, 2018",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "19",
+      "name": "Common Ground",
+      "start-date": "FEBUARY 24, 2018",
+      "end-date": "MAY 20, 2018",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "20",
+      "name": "APEX: Hannah Piper Burns",
+      "start-date": "FEBUARY 24, 2018",
+      "end-date": "AUGUST 12, 2018",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "21",
+      "name": "Kingdom Animalia",
+      "start-date": "DECEMBER 2, 2017",
+      "end-date": "MAY 13, 2018",
+      "display": ["", ""],
+      "number-supported-users": "30"
+    },
+    {
+      "exhibition-id": "22",
+      "name": "CCNA: Interwoven Radiance",
+      "start-date": "NOVEMBER 10, 2017",
+      "end-date": "JUNE 28, 2018",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "23",
+      "name": "Craftsmanship and Wit",
+      "start-date": "NOVEMBER 4, 2017",
+      "end-date": "MAY 20, 2018",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "24",
+      "name": "APEX: Dawn Cerny",
+      "start-date": "OCTOBER 28, 2017",
+      "end-date": "FEBUARY 11, 2018",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "25",
+      "name": "Rodrigo Valenzuela",
+      "start-date": "OCTOBER 21, 2017",
+      "end-date": "APRIL 22, 2018",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "26",
+      "name": "Animating Life",
+      "start-date": "OCTOBER 14, 2017",
+      "end-date": "MAY 20, 2018",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "27",
+      "name": "The Wyeths: Three Generations",
+      "start-date": "OCTOBER 7, 2017",
+      "end-date": "JANUARY 28, 2018",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "28",
+      "name": "Representing",
+      "start-date": "JULY 29, 2017",
+      "end-date": "DECEMBER 3, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "29",
+      "name": "Jennifer Steinkamp",
+      "start-date": "JULY 8,2017",
+      "end-date": "SEPTEMBER 17, 2017",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "30",
+      "name": "Jennifer Steinkamp",
+      "start-date": "JULY 8,2017",
+      "end-date": "SEPTEMBER 17, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "31",
+      "name": "The Etchings of Whistler and His Circle",
+      "start-date": "JUNE 10, 2017",
+      "end-date": "NOVEMBER 26, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "32",
+      "name": "Quest for Beauty",
+      "start-date": "MAY 13, 2017",
+      "end-date": "SEPTEMBER 3, 2017",
+      "display": ["", ""],
+      "number-supported-users": "40"
+    },
+    {
+      "exhibition-id": "33",
+      "name": "Reunited: Francescuccio Ghissi’s St. John Altarpiece",
+      "start-date": "MARCH 25, 2017",
+      "end-date": "JULY 9, 2017",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "34",
+      "name": "APEX: Sam Hamilton",
+      "start-date": "MARCH 25, 2017",
+      "end-date": "OCTOBER 22, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "35",
+      "name": "CCNA: Connecting Lines",
+      "start-date": "MARCH 11, 2017",
+      "end-date": "OCTOBER 29, 2017",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "36",
+      "name": "Recent Photography Acquisitions",
+      "start-date": "MARCH 11, 2017",
+      "end-date": "JULY 23, 2017",
+      "display": ["", ""],
+      "number-supported-users": "40"
+    },
+    {
+      "exhibition-id": "37",
+      "name": "American Photographs",
+      "start-date": "FEBUARY 11, 2017",
+      "end-date": "JUNE 4, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "38",
+      "name": "Constructing Identity",
+      "start-date": "JANUARY 28, 2017",
+      "end-date": "JUNE 18, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "39",
+      "name": "Rodin: The Human Experience",
+      "start-date": "JANUARY 21, 2017",
+      "end-date": "APRIL 16, 2017",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "40",
+      "name": "Cranes, Dragons, and Teddy Bears",
+      "start-date": "OCTOBER 22, 2016",
+      "end-date": "MARCH 13, 2017",
+      "display": ["", ""],
+      "number-supported-users": "25"
+    },
+    {
+      "exhibition-id": "41",
+      "name": "Andy Warhol",
+      "start-date": "OCTOBER 8, 2016 ",
+      "end-date": "JAN 1, 2017",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "42",
+      "name": "Morgan Thorson",
+      "start-date": "SEPTEMBER 9, 2016",
+      "end-date": "14, 2016",
+      "display": ["", ""],
+      "number-supported-users": "100"
+    },
+    {
+      "exhibition-id": "43",
+      "name": "CCNA: Restoring the Breath—Sacred Relationship",
+      "start-date": "SEPTEMBER 3, 2016 ",
+      "end-date": "FEB 26, 2017",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    },
+    {
+      "exhibition-id": "44",
+      "name": "Photography and Contemporary Experience",
+      "start-date": "AUGUST 27, 2016 ",
+      "end-date": "MAR 5, 2017",
+      "display": ["", ""],
+      "number-supported-users": "50"
+    }
+  ]
+}

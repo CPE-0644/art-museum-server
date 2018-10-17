@@ -1,0 +1,86 @@
+{
+    "artists": [
+      {
+        "artist_id": "1",
+        "name": "D'Aubert Magonk",
+        "dob": "January 5, 1900",
+        "dod": "December 17, 1974",
+        "country": "French",
+        "style": ""
+      },
+      {
+        "artist_id": "2",
+        "name": "CaoimhDai Guobao",
+        "dob": "July 21, 1870",
+        "dod": "October 7, 1927",
+        "country": "Chinese",
+        "style": ""
+      },
+      {
+        "artist_id": "3",
+        "name": "Dakota artist",
+        "dob": "August 6, 1903",
+        "dod": "December 22, 1967",
+        "country": "American",
+        "style": ""
+      },
+      {
+        "artist_id": "4",
+        "name": "Dave Darraugh",
+        "dob": "June 7, 1952",
+        "dod": " July 11, 2001",
+        "country": "American",
+        "style": ""
+      },
+      {
+        "artist_id": "5",
+        "name": "Divard H. Kroll",
+        "dob": "December 28, 1946",
+        "dod": "July 6, 2014",
+        "country": "Italian",
+        "style": ""
+      },
+      {
+        "artist_id": "6",
+        "name": "Dayes Edward",
+        "dob": "March 16 ,1763",
+        "dod": "October 12,1804",
+        "country": "French",
+        "style": ""
+      },
+      {
+        "artist_id": "7",
+        "name": "Delano Der Scott",
+        "dob": "July 16, 1904",
+        "dod": "June 1, 1987",
+        "country": "Philippines",
+        "style": ""
+      },
+  
+      {
+        "artist_id": "8",
+        "name": "Dustin Armstrong",
+        "dob": "October 24, 1905",
+        "dod": "August 26, 1964",
+        "country": "Singapore",
+        "style": ""
+      },
+      {
+        "artist_id": "9",
+        "name": "Dorothy Dehn",
+        "dob": "October 19, 1878",
+        "dod": "November 23, 1924",
+        "country": "French",
+        "style": ""
+      },
+      {
+        "artist_id": "10",
+        "name": "Deshaies Arthur",
+        "dob": "March 21, 1939",
+        "dod": "July 1, 2008",
+        "country": "Ukrainian",
+        "style": ""
+      }
+    ]
+  }
+  

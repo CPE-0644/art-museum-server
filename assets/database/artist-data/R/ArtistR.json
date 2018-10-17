@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Richard Blow",
+            "dob": "่February 16, 1904",
+            "dod": "May 9, 1943",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Rabel Kathleen",
+            "dob": "November 11, 1943",
+            "dod": "January 29, 2014",
+            "country": "French"
+        },
+        {
+            "artist_id": "3",
+            "name": "Radovic Ljubia",
+            "dob": "February 5, 1756",
+            "dod": "December 12, 1823",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Ryonyu Raku ",
+            "dob": "May 23, 1756",
+            "dod": "August 14, 1834",
+            "country": "Polish",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Ragle Roy",
+            "dob": "January 5, 1874",
+            "dod": "April 27, 1927",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Ranson Pual",
+            "dob": "May 12,1920",
+            "dod": "December 21,1997",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Ramos Maria",
+            "dob": "October 23, 1924",
+            "dod": "November 12, 1995",
+            "country": "French",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Ranson Henry",
+            "dob": "October 13, 1909",
+            "dod": "August 19, 2000",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Rapp Ebba",
+            "dob": "May 26, 1937",
+            "dod": "December 29, 2012",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Rick Regan",
+            "dob": "March 17, 1863",
+            "dod": "August 12, 1931",
+            "country": "Canadian",
+            "style": ""
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Yitai Li",
+            "dob": "่March 2, 1904",
+            "dod": "November 18, 1997",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Yamaguchi Chikuyosai",
+            "dob": "March 19, 1800",
+            "dod": "October 10, 1873",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Yagi Akira",
+            "dob": "July 15, 1896",
+            "dod": "March 16, 1976",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Yamamoto Masao",
+            "dob": "June 9, 1947",
+            "dod": "October 24, 1992",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Yesha Hulme",
+            "dob": "August 19, 1894",
+            "dod": "October 10, 1954",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Yaksha Ratcliffe",
+            "dob": "December 17,1926",
+            "dod": "November 26,1995",
+            "country": "Flemish",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Yves Kidd",
+            "dob": "October 30, 1876",
+            "dod": "July 16, 1957",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Yuria Vasquez",
+            "dob": "August 15, 1854",
+            "dod": "November 23, 1917",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Yassmine Armitage",
+            "dob": "December 17, 1890",
+            "dod": "July 5, 1968",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Young Richard",
+            "dob": "February 13, 1909",
+            "dod": "November 29, 1994",
+            "country": "Japanese",
+            "style": ""
+        }
+    ]
+}

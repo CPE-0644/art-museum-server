@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Jo Jackson",
+            "dob": "่June 8, 1912",
+            "dod": "February 22, 1999",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Judith Sonalk",
+            "dob": "December 29, 1805",
+            "dod": "October 7, 1884",
+            "country": "Iceland"
+        },
+        {
+            "artist_id": "3",
+            "name": "Jacobs Justin",
+            "dob": "October 11, 1932",
+            "dod": "September 18, 2001",
+            "country": "Hungary",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Jacoulet Paul",
+            "dob": "May 18, 1902",
+            "dod": " August 23, 1970",
+            "country": "Iraq",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Jiang Bibo",
+            "dob": "April 14, 1939",
+            "dod": "September 20, 2003",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Jiang Mi",
+            "dob": "December 25,1912",
+            "dod": "October 16,1989",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Jay Jensen",
+            "dob": "August 4, 1940",
+            "dod": "January 22, 1997",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Joels Lizara ",
+            "dob": "July 21, 1928",
+            "dod": "October 26, 2004",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "James Jensen",
+            "dob": "March 29, 1948",
+            "dod": "August 17, 2001",
+            "country": "Austria",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Jordan Jones",
+            "dob": "November 20, 1914",
+            "dod": "June 10, 2009",
+            "country": "Germany",
+            "style": ""
+        }
+    ]
+}

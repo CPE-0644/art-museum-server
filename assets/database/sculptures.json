@@ -1,0 +1,208 @@
+{
+  "sculptures": [
+    {
+      "artwork-id": 33,
+      "material": "aluminum",
+      "height": 3.96,
+      "weight": 78.91
+    },
+    {
+      "artwork-id": 34,
+      "material": "metal and glass",
+      "height": 3.24,
+      "weight": 85.04
+    },
+    {
+      "artwork-id": 35,
+      "material": "metal and glass",
+      "height": 4.79,
+      "weight": 76.88
+    },
+    {
+      "artwork-id": 36,
+      "material": "bone",
+      "height": 2.25,
+      "weight": 34.25
+    },
+    {
+      "artwork-id": 37,
+      "material": "steel",
+      "height": 5.32,
+      "weight": 56.65
+    },
+    {
+      "artwork-id": 38,
+      "material": "aluminum",
+      "height": 2.81,
+      "weight": 98.52
+    },
+    {
+      "artwork-id": 39,
+      "material": "ceramic",
+      "height": 2.25,
+      "weight": 20.56
+    },
+    {
+      "artwork-id": 40,
+      "material": "bone",
+      "height": 4.22,
+      "weight": 95.45
+    },
+    {
+      "artwork-id": 41,
+      "material": "aluminum",
+      "height": 8.0,
+      "weight": 66.35
+    },
+    {
+      "artwork-id": 42,
+      "material": "metal and glass",
+      "height": 4.19,
+      "weight": 25.24
+    },
+    {
+      "artwork-id": 43,
+      "material": "oil on Masonite",
+      "height": 9.82,
+      "weight": 71.39
+    },
+    {
+      "artwork-id": 44,
+      "material": "mixed media",
+      "height": 2.83,
+      "weight": 9.06
+    },
+    {
+      "artwork-id": 45,
+      "material": "bronze",
+      "height": 6.98,
+      "weight": 46.33
+    },
+    {
+      "artwork-id": 46,
+      "material": "mixed media",
+      "height": 8.6,
+      "weight": 4.47
+    },
+    {
+      "artwork-id": 47,
+      "material": "steel",
+      "height": 7.35,
+      "weight": 66.64
+    },
+    {
+      "artwork-id": 48,
+      "material": "metal and glass",
+      "height": 5.42,
+      "weight": 63.59
+    },
+    {
+      "artwork-id": 49,
+      "material": "metal and glass",
+      "height": 8.07,
+      "weight": 12.27
+    },
+    {
+      "artwork-id": 50,
+      "material": "mixed media",
+      "height": 1.71,
+      "weight": 51.56
+    },
+    {
+      "artwork-id": 51,
+      "material": "aluminum",
+      "height": 4.59,
+      "weight": 97.21
+    },
+    {
+      "artwork-id": 52,
+      "material": "mixed media",
+      "height": 6.94,
+      "weight": 38.48
+    },
+    {
+      "artwork-id": 53,
+      "material": "aluminum",
+      "height": 6.58,
+      "weight": 12.62
+    },
+    {
+      "artwork-id": 54,
+      "material": "aluminum",
+      "height": 8.61,
+      "weight": 64.75
+    },
+    {
+      "artwork-id": 55,
+      "material": "oil on Masonite",
+      "height": 9.19,
+      "weight": 30.41
+    },
+    {
+      "artwork-id": 56,
+      "material": "bone",
+      "height": 8.95,
+      "weight": 13.34
+    },
+    {
+      "artwork-id": 57,
+      "material": "bronze",
+      "height": 8.98,
+      "weight": 17.91
+    },
+    {
+      "artwork-id": 58,
+      "material": "metal and glass",
+      "height": 5.86,
+      "weight": 42.62
+    },
+    {
+      "artwork-id": 59,
+      "material": "oil on Masonite",
+      "height": 1.69,
+      "weight": 9.58
+    },
+    {
+      "artwork-id": 60,
+      "material": "ceramic",
+      "height": 4.4,
+      "weight": 76.38
+    },
+    {
+      "artwork-id": 61,
+      "material": "steel",
+      "height": 8.2,
+      "weight": 40.27
+    },
+    {
+      "artwork-id": 62,
+      "material": "aluminum",
+      "height": 6.94,
+      "weight": 84.28
+    },
+    {
+      "artwork-id": 63,
+      "material": "metal and glass",
+      "height": 6.13,
+      "weight": 41.93
+    },
+    {
+      "artwork-id": 64,
+      "material": "polystyrene",
+      "height": 2.15,
+      "weight": 60.33
+    },
+    {
+      "artwork-id": 65,
+      "material": "aluminum",
+      "height": 8.99,
+      "weight": 15.51
+    },
+    {
+      "artwork-id": 66,
+      "material": "polystyrene",
+      "height": 1.69,
+      "weight": 75.29
+    }
+  ]
+}

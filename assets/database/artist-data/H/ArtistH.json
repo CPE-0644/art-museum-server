@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Habib Allah",
+            "dob": "่June 2, 1876",
+            "dod": "April 20, 1964",
+            "country": "Jamaica",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Hans Haacke",
+            "dob": "March 18, 1865",
+            "dod": "June 7, 1941",
+            "country": "German"
+        },
+        {
+            "artist_id": "3",
+            "name": "Hansen Bahia",
+            "dob": "March 18, 1882",
+            "dod": "July 30, 1967",
+            "country": "Brazil",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Henry Heerup",
+            "dob": "April 24, 1857",
+            "dod": " March 2, 1920",
+            "country": "Danish",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Helm Robert",
+            "dob": "June 23, 1911",
+            "dod": "July 29, 1994",
+            "country": "Scottish",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Hieyn Omaha",
+            "dob": "September 8,1879",
+            "dod": "August 14,1943",
+            "country": "Switzerland",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Hiratsuka Un'ichi",
+            "dob": "January 14, 1895",
+            "dod": "May 23, 1997",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Hiratsuka Yuji",
+            "dob": "July 21, 1876",
+            "dod": "October 26, 1957",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Henry Horenstein",
+            "dob": "May 10, 1900",
+            "dod": "December 30, 1968",
+            "country": "Poland",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Hosoda J Eisho",
+            "dob": "October 26, 1925",
+            "dod": "Junes 12, 2014",
+            "country": "Brunei",
+            "style": ""
+        }
+    ]
+}

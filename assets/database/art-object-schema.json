@@ -1,0 +1,104 @@
+{
+  "artists": [
+    {
+      "artist-id": "",
+      "name": "",
+      "dob": "",
+      "dod": "",
+      "country": "",
+      "epoch": "",
+      "main-style": "",
+      "description": ""
+    }
+  ],
+  "exhibitions": [
+    {
+      "exhibition-id": "",
+      "name": "",
+      "start-date": "",
+      "end-date": "",
+      "display": ["", ""],
+      "number-supported-users": ""
+    }
+  ],
+  "art-objects": [
+    {
+      "artwork-id": "",
+      "artist-id": "",
+      "style": "",
+      "year": "",
+      "title": "",
+      "description": "",
+      "origin": "",
+      "epoch": ""
+    }
+  ],
+  "paintings": [
+    {
+      "artwork-id": "",
+      "paint-type": "",
+      "material": ""
+    }
+  ],
+  "sculptures": [
+    {
+      "artwork-id": "",
+      "material": "",
+      "height": "",
+      "weight": ""
+    }
+  ],
+  "statues": [
+    {
+      "artwork-id": "",
+      "material": "",
+      "height": "",
+      "weight": ""
+    }
+  ],
+  "other-art-objects": [
+    {
+      "artwork-id": "",
+      "type": ""
+    }
+  ],
+  "users": [
+    {
+      "user-id": "",
+      "to-go-exhibition": ["", ""],
+      "interested-artwork-types": ["", ""]
+    }
+  ],
+
+  "//": "collection ยังไม่แน่ใจ ยังไม่ต้องทำ",
+
+  "collections": [
+    {
+      "collection-id": "",
+      "name": "",
+      "type": "",
+      "description": "",
+      "address": "",
+      "phone": "",
+      "contact-person": ""
+    }
+  ],
+  "permanent-collections": [
+    {
+      "collection-id": "",
+      "artwork-id": "",
+      "date-acquired": "",
+      "status": "",
+      "cost": ""
+    }
+  ],
+  "borrowed-collections": [
+    {
+      "artwork-id": "",
+      "collection-id": "",
+      "borrowed-from": "",
+      "date-borrowed": "",
+      "date-returned": ""
+    }
+  ]
+}

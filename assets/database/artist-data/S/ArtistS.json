@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Siena Da Barna",
+            "dob": "่June 25, 1330",
+            "dod": "May 9, 1370",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Suryeon Kusan",
+            "dob": "February 7, 1909",
+            "dod": "January 29, 1983",
+            "country": "Korean"
+        },
+        {
+            "artist_id": "3",
+            "name": "Shogo Okamoto",
+            "dob": "March 5, 1807",
+            "dod": "December 23, 1899",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Shuki Hanes",
+            "dob": "June 23, 1920",
+            "dod": "December 28, 2001",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Saito Kaoru",
+            "dob": "April 17, 1945",
+            "dod": "July 13, 2002",
+            "country": "Swedish",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Sanby Pual",
+            "dob": "October 5,1731",
+            "dod": "September 27,1809",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Sandborg Eduardo",
+            "dob": "May 16, 1842",
+            "dod": "July 22, 1920",
+            "country": "Czech",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Sato Nobou",
+            "dob": "December 5, 1902",
+            "dod": "August 19, 1986",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Selan Kazuyo",
+            "dob": "August 6, 1914",
+            "dod": "November 19, 1988",
+            "country": "Canadian",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Shull James",
+            "dob": "March 16, 1915",
+            "dod": "September 7, 1993",
+            "country": "Canadian",
+            "style": ""
+        }
+    ]
+}

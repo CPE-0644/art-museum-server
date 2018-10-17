@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Zhaobin Shen",
+            "dob": "่May 17, 1901",
+            "dod": "October 9, 1977",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Zach Janz",
+            "dob": "December 5, 1919",
+            "dod": "October 12, 1976",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Zaloudek Duane",
+            "dob": "September 15, 1896",
+            "dod": "November 16, 1976",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Zayas Daniael",
+            "dob": "January 28, 1880",
+            "dod": "May 12, 1961",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Zeitlin Opitcart",
+            "dob": "January 19, 1906",
+            "dod": "December 10, 1984",
+            "country": "Russian",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Zelman Bill",
+            "dob": "October 7,1974",
+            "dod": "August 27,2017",
+            "country": "England",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Zha Sai",
+            "dob": "November 23, 1904",
+            "dod": "June 7, 1979",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Zongzao Zhao",
+            "dob": "August 15, 1860",
+            "dod": "November 23, 1934",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Zimon Fliex",
+            "dob": "March 12, 1887",
+            "dod": "June 20, 1946",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Zimiles Murray",
+            "dob": "March 27, 1937",
+            "dod": "October 19, 2006",
+            "country": "Russian",
+            "style": ""
+        }
+    ]
+}s

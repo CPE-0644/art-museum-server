@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Marrigje de Maar",
+            "dob": "่October 29, 1934",
+            "dod": "November 23, 2007",
+            "country": "Dutch",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Morihiro Hosokawa",
+            "dob": "December 7, 1938",
+            "dod": "April 28, 1997",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Ma Shaoxuan",
+            "dob": "May 12, 1869",
+            "dod": "October 15, 1939",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Mackenzie Catherine",
+            "dob": "May 13, 1869",
+            "dod": "July 28, 1960",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Matisha Mann",
+            "dob": "March 29, 1945",
+            "dod": "November 26, 2001",
+            "country": "German",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Manomie Tukiki",
+            "dob": "May 3,1952",
+            "dod": "August 19,2016",
+            "country": "Inuit",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Mansfeld Heinrich",
+            "dob": "December 22, 1816",
+            "dod": "July 28, 1901",
+            "country": "Austrian",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Marchand Sandre",
+            "dob": "March 20, 1877",
+            "dod": "April 24, 1951",
+            "country": "French",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Marino Marini",
+            "dob": "July 22, 1901",
+            "dod": "November 17, 1980",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Marina Martinez",
+            "dob": "January 15, 1877",
+            "dod": "July 21, 1950",
+            "country": "England",
+            "style": ""
+        }
+    ]
+}

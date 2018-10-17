@@ -1,0 +1,164 @@
+{
+  "paintings": [
+    {
+      "artwork-id": 1,
+      "paint-type": "acrylic paint",
+      "material": "acrylic on Arches paper"
+    },
+    {
+      "artwork-id": 2,
+      "paint-type": "acrylic paint",
+      "material": "acrylic on board"
+    },
+    {
+      "artwork-id": 3,
+      "paint-type": "acrylic paint",
+      "material": "acrylic on canvas"
+    },
+    {
+      "artwork-id": 4,
+      "paint-type": "acrylic paint",
+      "material": "acrylic on canvas"
+    },
+    {
+      "artwork-id": 5,
+      "paint-type": "acrylic paint",
+      "material": "acrylic and graphite on paper"
+    },
+    {
+      "artwork-id": 6,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 7,
+      "paint-type": "water color",
+      "material": "watercolor on paper"
+    },
+    {
+      "artwork-id": 8,
+      "paint-type": "oil paint",
+      "material": "oil on wood panel"
+    },
+    {
+      "artwork-id": 9,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 10,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 11,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 12,
+      "paint-type": "oil paint",
+      "material": "oil on cardboard"
+    },
+    {
+      "artwork-id": 13,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 14,
+      "paint-type": "water color",
+      "material": "watercolor on paper"
+    },
+    {
+      "artwork-id": 15,
+      "paint-type": "oil paint",
+      "material": "oil on panel"
+    },
+    {
+      "artwork-id": 16,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 17,
+      "paint-type": "water color",
+      "material": "watercolor on paper"
+    },
+    {
+      "artwork-id": 18,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 19,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 20,
+      "paint-type": "water color",
+      "material": "ink and opaque watercolor on paper"
+    },
+    {
+      "artwork-id": 21,
+      "paint-type": "water color",
+      "material": "ink, opaque watercolor, and gold on paper"
+    },
+    {
+      "artwork-id": 22,
+      "paint-type": "oil paint",
+      "material": "oil on parchment mounted on wood"
+    },
+    {
+      "artwork-id": 23,
+      "paint-type": "oil paint",
+      "material": "oil on canvas mounted on panel"
+    },
+    {
+      "artwork-id": 24,
+      "paint-type": "oil paint",
+      "material": "oil on canvas"
+    },
+    {
+      "artwork-id": 25,
+      "paint-type": "hanging scroll",
+      "material": "hanging scroll; ink and colors on cloth"
+    },
+    {
+      "artwork-id": 26,
+      "paint-type": "folding screen",
+      "material": "pair of six-panel screens; ink, mineral colors, and gold and silver leaf on paper"
+    },
+    {
+      "artwork-id": 27,
+      "paint-type": "hanging scroll",
+      "material": "set of 3 hanging scrolls; ink and oil on silk"
+    },
+    {
+      "artwork-id": 28,
+      "paint-type": "hanging scroll",
+      "material": "ink on paper"
+    },
+    {
+      "artwork-id": 29,
+      "paint-type": "hanging scroll",
+      "material": "hanging scroll; ink and color on silk"
+    },
+    {
+      "artwork-id": 30,
+      "paint-type": "hanging scroll",
+      "material": "hanging scroll; monochrome woodblock print with hand coloring on reverse side of paper"
+    },
+    {
+      "artwork-id": 31,
+      "paint-type": "water color",
+      "material": "ink and color on paper"
+    },
+    {
+      "artwork-id": 32,
+      "paint-type": "color water",
+      "material": "ink and colors on paper"
+    }
+  ]
+}

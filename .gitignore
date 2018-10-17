@@ -71,3 +71,8 @@ typings/
 
 # Serverless directories
 .serverless
+
+assets/img/
+*.jpg
+*.gif
+*.png

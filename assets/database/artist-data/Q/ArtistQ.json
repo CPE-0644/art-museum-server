@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Qayuaryuk Mary",
+            "dob": "่March 10, 1908",
+            "dod": "June 4, 1982",
+            "country": "Canadian",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Quinz Merderga",
+            "dob": "November 11, 1905",
+            "dod": "June 23, 1994",
+            "country": "Germany"
+        },
+        {
+            "artist_id": "3",
+            "name": "Qiu Zhu",
+            "dob": "February 5, 1901",
+            "dod": "December 12, 1960",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Quice De Gerad",
+            "dob": "May 20, 1895",
+            "dod": "June 26, 1978",
+            "country": "Spanish",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Quintina Kemp",
+            "dob": "June 5, 1874",
+            "dod": "April 27, 1927",
+            "country": "Portugal",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Quinci Roman",
+            "dob": "January 12,1920",
+            "dod": "December 21,1997",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Querida Correa",
+            "dob": "September 3, 1901",
+            "dod": "October 24, 1982",
+            "country": "Romania",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Qaylah Griffin",
+            "dob": "August 23, 1928",
+            "dod": "November 19, 2001",
+            "country": "France",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Qomatcaa Xgiaga",
+            "dob": "January 6, 1857",
+            "dod": "November 30, 1912",
+            "country": "France",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Quileult Luis",
+            "dob": "May 27, 1672",
+            "dod": "August 12, 1721",
+            "country": "Italian",
+            "style": ""
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Paker Dave",
+            "dob": "่May 2, 1951",
+            "dod": "July 20, 2014",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Phil Palmer",
+            "dob": "December 11, 1911",
+            "dod": "June 19, 1992",
+            "country": "Germany"
+        },
+        {
+            "artist_id": "3",
+            "name": "Parkin Davince ",
+            "dob": "October 16, 1901",
+            "dod": "September 21, 1960",
+            "country": "English",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Parker Johan",
+            "dob": "March 16, 1734",
+            "dod": "July 21, 1796",
+            "country": "English",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Parrish Raymond",
+            "dob": "January 10, 1846",
+            "dod": "August 22, 1915",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Patwin Van Margar",
+            "dob": "June 12,1947",
+            "dod": "December 24,2009",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Payne Stealy",
+            "dob": "August 18, 1862",
+            "dod": "November 4, 1933",
+            "country": "Canadian",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Persia Incana",
+            "dob": "August 30, 1928",
+            "dod": "November 15, 2001",
+            "country": "Greek",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Palsh M Vicus",
+            "dob": "October 20, 1917",
+            "dod": "December 19, 2009",
+            "country": "France",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Papago Der Matona",
+            "dob": "March 12, 1672",
+            "dod": "May 1, 1721",
+            "country": "Italian",
+            "style": ""
+        }
+    ]
+}

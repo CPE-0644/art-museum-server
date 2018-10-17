@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Vachon John",
+            "dob": "่October 7, 1868",
+            "dod": "July 2, 1940",
+            "country": "French",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Vuillard Edouard",
+            "dob": "February 19, 1914",
+            "dod": "August 6, 1975",
+            "country": "Germany"
+        },
+        {
+            "artist_id": "3",
+            "name": "Vahtangon Michael",
+            "dob": "March 27, 1865",
+            "dod": "May 20, 1938",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Van Parys Michell",
+            "dob": "July 14, 1778",
+            "dod": "February 15, 1852",
+            "country": "Flemish",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Vagus Sant",
+            "dob": "June 21, 1952",
+            "dod": "December 18, 2017",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Vanderlyn John",
+            "dob": "September 19,1775",
+            "dod": "December 6,1843",
+            "country": "Maxican",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Vibert James",
+            "dob": "January 8, 1876",
+            "dod": "July 13, 1958",
+            "country": "Anerican",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Vernet Horace",
+            "dob": "April 6, 1789",
+            "dod": "October 23, 1863",
+            "country": "British",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Vlamick de Joseph",
+            "dob": "March 10, 1870",
+            "dod": "July 15, 1942",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Judy Vogland",
+            "dob": "June 8, 1876",
+            "dod": "August 23, 1954",
+            "country": "Swiss",
+            "style": ""
+        }
+    ]
+}

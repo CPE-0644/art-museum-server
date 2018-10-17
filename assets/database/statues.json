@@ -1,0 +1,208 @@
+{
+  "statues": [
+    {
+      "artwork-id": 67,
+      "material": "bronze",
+      "height": "71 in",
+      "weight": "25 1/2 in"
+    },
+    {
+      "artwork-id": 68,
+      "material": "aquatint on paper",
+      "height": "8 in",
+      "weight": "6 in"
+    },
+    {
+      "artwork-id": 69,
+      "material": "terracotta",
+      "height": "19 in",
+      "weight": "14 in"
+    },
+    {
+      "artwork-id": 70,
+      "material": "bronze",
+      "height": "15 1/2 in",
+      "weight": "15 in"
+    },
+    {
+      "artwork-id": 71,
+      "material": "cast bronze",
+      "height": "7 1/4 in",
+      "weight": "11 1/4 in"
+    },
+    {
+      "artwork-id": 72,
+      "material": "bronze",
+      "height": "12 1/4 in",
+      "weight": "11 1/4 in"
+    },
+    {
+      "artwork-id": 73,
+      "material": "tempera on wood",
+      "height": "45 3/4 in",
+      "weight": "45 3/4 in"
+    },
+    {
+      "artwork-id": 74,
+      "material": "bronze",
+      "height": "44 in",
+      "weight": "23 in"
+    },
+    {
+      "artwork-id": 75,
+      "material": "ceramic",
+      "height": "11 1/2 in",
+      "weight": "15 in"
+    },
+    {
+      "artwork-id": 76,
+      "material": "argillite and mother of pearl",
+      "height": "5 in",
+      "weight": "15 in"
+    },
+    {
+      "artwork-id": 77,
+      "material": "painted clay",
+      "height": "7 in",
+      "weight": "3 1/2 in"
+    },
+    {
+      "artwork-id": 78,
+      "material": "wood",
+      "height": "4 1/4 in",
+      "weight": "34 1/2 in"
+    },
+    {
+      "artwork-id": 79,
+      "material": "ivory",
+      "height": "1/2 in",
+      "weight": "1/2 in"
+    },
+    {
+      "artwork-id": 80,
+      "material": "earthenware with pigments",
+      "height": "19 1/4 in",
+      "weight": "5 3/4 in"
+    },
+    {
+      "artwork-id": 81,
+      "material": "gray earthenware",
+      "height": "22 3/4 in",
+      "weight": "13 1/4 in"
+    },
+    {
+      "artwork-id": 82,
+      "material": "molded earthenware with sancai (three color) glaze",
+      "height": "32 1/4 in",
+      "weight": "33 1/2 in"
+    },
+    {
+      "artwork-id": 83,
+      "material": "molded earthenware with sancai (three color) glaze",
+      "height": "35 in",
+      "weight": "9 1/4 in"
+    },
+    {
+      "artwork-id": 84,
+      "material": "bronze",
+      "height": "4 1/2 in",
+      "weight": "2 3/4 in"
+    },
+    {
+      "artwork-id": 85,
+      "material": "wood",
+      "height": "27 3/4 in",
+      "weight": "22 3/4 in"
+    },
+    {
+      "artwork-id": 86,
+      "material": "bronze and marble",
+      "height": "23 3/8 in",
+      "weight": "11 in"
+    },
+    {
+      "artwork-id": 87,
+      "material": "cast bronze",
+      "height": "7 1/4 in ",
+      "weight": "11 1/4 in "
+    },
+    {
+      "artwork-id": 88,
+      "material": "bronze",
+      "height": "9 in",
+      "weight": "4 3/4 in"
+    },
+    {
+      "artwork-id": 89,
+      "material": "bronze",
+      "height": "16 in",
+      "weight": "21 in"
+    },
+    {
+      "artwork-id": 90,
+      "material": "cast bronze",
+      "height": "20 3/4 in",
+      "weight": "8 in"
+    },
+    {
+      "artwork-id": 91,
+      "material": "cast bronze with red, green, and turquoise patinas",
+      "height": "12 in",
+      "weight": "40 in"
+    },
+    {
+      "artwork-id": 92,
+      "material": "bronze",
+      "height": "21 in",
+      "weight": "15 in"
+    },
+    {
+      "artwork-id": 93,
+      "material": "bronze",
+      "height": "8 1/4 in",
+      "weight": "3 1/4 in"
+    },
+    {
+      "artwork-id": 94,
+      "material": "bronze and watercolor intarsia",
+      "height": "23 3/4 in",
+      "weight": "7 3/4 in"
+    },
+    {
+      "artwork-id": 95,
+      "material": "bronze",
+      "height": "23 in",
+      "weight": "15 1/2 in"
+    },
+    {
+      "artwork-id": 96,
+      "material": "bronze",
+      "height": "2 in",
+      "weight": "1 in"
+    },
+    {
+      "artwork-id": 97,
+      "material": "bronze",
+      "height": "29 3/4 in",
+      "weight": "43 in"
+    },
+    {
+      "artwork-id": 98,
+      "material": "bronze",
+      "height": "12 1/4 in",
+      "weight": "11 1/4 in"
+    },
+    {
+      "artwork-id": 99,
+      "material": "bronze",
+      "height": "12 5/8 in",
+      "weight": "13 5/8 in"
+    },
+    {
+      "artwork-id": 100,
+      "material": "bronze",
+      "height": "8 5/8 in",
+      "weight": "11 in"
+    }
+  ]
+}

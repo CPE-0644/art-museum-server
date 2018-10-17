@@ -1,0 +1,64 @@
+{
+  "other_types": [
+    {
+      "artwork-id": 1,
+      "type": "Junk Art"
+    },
+    {
+      "artwork-id": 2,
+      "type": "Metalwork Art"
+    },
+    {
+      "artwork-id": 3,
+      "type": "Junk Art"
+    },
+    {
+      "artwork-id": 4,
+      "type": "basket"
+    },
+    {
+      "artwork-id": 5,
+      "type": "Christian Art"
+    },
+    {
+      "artwork-id": 6,
+      "type": "intilago paint"
+    },
+    {
+      "artwork-id": 7,
+      "type": "Christian Art"
+    },
+    {
+      "artwork-id": 8,
+      "type": "Conceptual Art"
+    },
+    {
+      "artwork-id": 9,
+      "type": "Junk Art"
+    },
+    {
+      "artwork-id": 10,
+      "type": "basket"
+    },
+    {
+      "artwork-id": 11,
+      "type": "Junk Art"
+    },
+    {
+      "artwork-id": 12,
+      "type": "Junk Art"
+    },
+    {
+      "artwork-id": 13,
+      "type": "intilago paint"
+    },
+    {
+      "artwork-id": 14,
+      "type": "Body Art"
+    },
+    {
+      "artwork-id": 15,
+      "type": "Outsider Art"
+    }
+  ]
+}

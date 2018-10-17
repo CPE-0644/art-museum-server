@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Taizan Hirose",
+            "dob": "่August 1, 1751",
+            "dod": "May 9, 1824",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Tako Takuji",
+            "dob": "February 7, 1793",
+            "dod": "January 29, 1864",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Tamechika Reizei",
+            "dob": "March 5, 1807",
+            "dod": "December 23, 1899",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Tahltan Sheine",
+            "dob": "July 19, 1866",
+            "dod": "November 15, 1950",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Tamura Saiten",
+            "dob": "March 10, 1899",
+            "dod": "April 18, 1991",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Tawaraya Sosetsu",
+            "dob": "November 13,1881",
+            "dod": "September 27,1949",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Teaberry Ellen",
+            "dob": "July 17, 1873",
+            "dod": "February 25, 1950",
+            "country": "Maxican",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Thompson Millee",
+            "dob": "December 4, 1857",
+            "dod": "August 23, 1929",
+            "country": "Danish",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Tiffany Battista",
+            "dob": "April 16, 1914",
+            "dod": "June 17, 1988",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Tibet Thiel",
+            "dob": "May 8, 1827",
+            "dod": "October 19, 1901",
+            "country": "France",
+            "style": ""
+        }
+    ]
+}

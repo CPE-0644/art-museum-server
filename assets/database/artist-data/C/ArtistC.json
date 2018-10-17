@@ -1,0 +1,85 @@
+{
+  "artists": [
+    {
+      "artist_id": "1",
+      "name": "Charles Marsh",
+      "dob": "February 8, 1880",
+      "dod": "November 15, 1950",
+      "country": "American",
+      "style": ""
+    },
+    {
+      "artist_id": "2",
+      "name": "Caoimhe Eastwood",
+      "dob": "July 21, 1892",
+      "dod": "October 7, 1957",
+      "country": "Peru",
+      "style": ""
+    },
+    {
+      "artist_id": "3",
+      "name": "Carlo Cesio",
+      "dob": "July 24, 1862",
+      "dod": "December 2, 1945",
+      "country": "Italian",
+      "style": ""
+    },
+    {
+      "artist_id": "4",
+      "name": "Choi Sang-Ah",
+      "dob": "August 13, 1921",
+      "dod": " May 23, 1997",
+      "country": "Korean",
+      "style": ""
+    },
+    {
+      "artist_id": "5",
+      "name": "Charles Cohen",
+      "dob": "December 28, 1948",
+      "dod": "July 6, 2000",
+      "country": "American",
+      "style": ""
+    },
+    {
+      "artist_id": "6",
+      "name": "Cogniet Leon",
+      "dob": "April 16 ,1794",
+      "dod": "September 12,1880",
+      "country": "French",
+      "style": ""
+    },
+    {
+      "artist_id": "7",
+      "name": "Clary Jo Cookie",
+      "dob": "January 11, 1941",
+      "dod": "December 1, 2015",
+      "country": "Italian",
+      "style": ""
+    },
+
+    {
+      "artist_id": "8",
+      "name": "Corbino John ",
+      "dob": "October 24, 1905",
+      "dod": "August 26, 1964",
+      "country": "American",
+      "style": ""
+    },
+    {
+      "artist_id": "9",
+      "name": "Cimille Carot",
+      "dob": "December 29, 1796",
+      "dod": "November 13, 1875",
+      "country": "French",
+      "style": ""
+    },
+    {
+      "artist_id": "10",
+      "name": "Chaining j. Koel ",
+      "dob": "March 21, 1943",
+      "dod": "July 1, 2009",
+      "country": "Bulgaria",
+      "style": ""
+    }
+  ]
+}

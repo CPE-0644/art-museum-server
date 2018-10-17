@@ -1,0 +1,79 @@
+{   artist_id :"1",
+    name :"Balthus",
+    dob: "December 21, 1908",
+    dod : "May 15, 2001",
+    country : "French",
+    style : "printmaker"
+}
+
+{   artist_id :"2",
+    name :"Barnabus Arnasungaaq",
+    dob: "July 21, 1924",
+    dod : "August 15, 2000",
+    country : "American",
+    style : ""
+}
+
+{   artist_id :"3",
+    name :"Bruce Barnett",
+    dob: "November 7, 1904",
+    dod : "January 5, 1985",
+    country : "American",
+    style : ""
+}
+
+{   artist_id :"4",
+    name :" Bert Beaver",
+    dob: "February 9, 1921",
+    dod : " July 23, 2012",
+    country : "Australia",
+    style : ""
+}
+
+{   artist_id :"5",
+    name :"Ben-Zion",
+    dob: "May 10, 1897",
+    dod : "October 28, 1987",
+    country : "Ukraine",
+    style : ""
+}
+
+{   artist_id :"6",
+    name :"Blythe Bohnen",
+    dob: "January 23 ,1940",
+    dod : "March 18,2010",
+    country : "Canada",
+    style : ""
+}
+
+{   artist_id :"7",
+    name :"Brian Borrello",
+    dob: "May 30, 1951",
+    dod : "August 11, 2007",
+    country : "American",
+    style : ""
+}
+
+{   artist_id :"8",
+    name :"Bob Kolbrener",
+    dob: "July 14, 1942",
+    dod : "December 31, 2009",
+    country : "Brazil",
+    style : ""
+}
+
+{   artist_id :"9",
+    name :"Bourdette Christine ",
+    dob: "August 14, 1952",
+    dod : "January 13, 2003",
+    country : "Porland",
+    style : ""
+}
+
+{   artist_id :"10",
+    name :"Brassaï Côté",
+    dob: "January 6, 1899",
+    dod : "March 5, 1984",
+    country : "French",
+    style : ""
+}

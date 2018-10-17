@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Wakefield Edward",
+            "dob": "่November 7, 1903",
+            "dod": "August 2, 1983",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Walker Wong",
+            "dob": "March 5, 1823",
+            "dod": "November 6, 1914",
+            "country": "English"
+        },
+        {
+            "artist_id": "3",
+            "name": "Waehner Trudi",
+            "dob": "March 27, 1823",
+            "dod": "July 20, 1914",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "waldron N Taylor",
+            "dob": "June 9, 1730",
+            "dod": "November 23, 1766",
+            "country": "Austrian",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Wakler Todd",
+            "dob": "July 25, 1855",
+            "dod": "October 10, 1924",
+            "country": "British",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Walsh Alfred",
+            "dob": "October 7,1855",
+            "dod": "September 19,1942",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Vibert James",
+            "dob": "January 8, 1876",
+            "dod": "July 13, 1958",
+            "country": "Anerican",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Waltemath Susan",
+            "dob": "May 28, 1883",
+            "dod": "July 23, 1955",
+            "country": "British",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Watanabe Seitei",
+            "dob": "November 10, 1890",
+            "dod": "June 11, 1969",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Webster Donald",
+            "dob": "July 13, 1929",
+            "dod": "August 9, 2004",
+            "country": "Canadian",
+            "style": ""
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "users": [
+        {
+          "user-id": "1",
+          "to-go-exhibition": ["", ""],
+          "interested-artwork-types": ["", ""]
+        },        {
+            "user-id": "2",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "3",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "4",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "5",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "6",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "7",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "8",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "9",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "10",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "11",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "12",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "13",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          },        {
+            "user-id": "14",
+            "to-go-exhibition": ["", ""],
+            "interested-artwork-types": ["", ""]
+          }
+      ]
+}

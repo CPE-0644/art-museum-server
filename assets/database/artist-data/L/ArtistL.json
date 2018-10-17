@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Laurie Lambrecht",
+            "dob": "่September 9, 1805",
+            "dod": "December 3, 1899",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Lan Ying",
+            "dob": "August 7, 1585",
+            "dod": "January 28, 1666",
+            "country": "Chinese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Lois Lancer",
+            "dob": "July 20, 1948",
+            "dod": "December 30, 2015",
+            "country": "Colombia",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Landweber Victor",
+            "dob": "February 21, 1943",
+            "dod": " November 11, 2017",
+            "country": "Philippines",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Landrew Darkin",
+            "dob": "March 19, 1875",
+            "dod": "October 6, 1950",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Lanphier Jennifer",
+            "dob": "August 13,1908",
+            "dod": "March 29,1978",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Lynda DerLanker",
+            "dob": "January 12, 1932",
+            "dod": "June 8, 2003",
+            "country": "Indian",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Lautensack Hans",
+            "dob": "October 15, 1804",
+            "dod": "December 4, 1910",
+            "country": "French",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Laptuta Christine",
+            "dob": "June 16, 1951",
+            "dod": "August 27, 2014",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Levine Jill",
+            "dob": "January 15, 1960",
+            "dod": "July 21, 2017",
+            "country": "Cuba",
+            "style": ""
+        }
+    ]
+}

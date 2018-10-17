@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Kaiseki Jokata",
+            "dob": "่MArch 1, 1882",
+            "dod": "April 24, 1966",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Kamisaka Yukichi",
+            "dob": "October 24, 1886",
+            "dod": "July 17, 1938",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Kantor Dien",
+            "dob": "September 15, 1977",
+            "dod": "April 16, 2014",
+            "country": "Yemen",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Kavan Jane",
+            "dob": "April 8, 1902",
+            "dod": " December 25, 1997",
+            "country": "Europe",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Kawamura Kiho",
+            "dob": "May 9, 1875",
+            "dod": "December 26, 1946",
+            "country": "Chinese",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Kent Corita",
+            "dob": "November 20,1918",
+            "dod": "August 19,1998",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Kimbrell Buell",
+            "dob": "July 24, 1922",
+            "dod": "December 17, 2013",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Kokyo Smith",
+            "dob": "June 21, 1904",
+            "dod": "December 26, 1998",
+            "country": "Korea",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Kobayashi Hideo",
+            "dob": "May 16, 1951",
+            "dod": "July 27, 2014",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Kostabi Mark",
+            "dob": "January 15, 1960",
+            "dod": "July 21, 2017",
+            "country": "American",
+            "style": ""
+        }
+    ]
+}

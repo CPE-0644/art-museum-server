@@ -1,0 +1,83 @@
+{
+    "artists": [
+        {
+            "artist_id": "1",
+            "name": "Uelsmann Jerry",
+            "dob": "่November 15, 1753",
+            "dod": "March 4, 1806",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "2",
+            "name": "Ullman Christina",
+            "dob": "February 7, 1969",
+            "dod": "January 29, 2015",
+            "country": "Japanese"
+        },
+        {
+            "artist_id": "3",
+            "name": "Umatilla Angor",
+            "dob": "May 5, 1882",
+            "dod": "October 23, 1934",
+            "country": "Germany",
+            "style": ""
+        },
+        {
+            "artist_id": "4",
+            "name": "Umbrico Podono",
+            "dob": "July 19, 1857",
+            "dod": "November 15, 1928",
+            "country": "Japanese",
+            "style": ""
+        },
+        {
+            "artist_id": "5",
+            "name": "Uzoamaka Winters",
+            "dob": "June 21, 1900",
+            "dod": "September 18, 1985",
+            "country": "French",
+            "style": ""
+        },
+        {
+            "artist_id": "6",
+            "name": "Umera Maldonado",
+            "dob": "October 28,1872",
+            "dod": "September 21,1927",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "7",
+            "name": "Urvasi Joseph",
+            "dob": "November 19, 1882",
+            "dod": "December 24, 1954",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "8",
+            "name": "Umah Gamble",
+            "dob": "Apirl 6, 1924",
+            "dod": "March 23, 2013",
+            "country": "Italian",
+            "style": ""
+        },
+        {
+            "artist_id": "9",
+            "name": "Uxia Ratcliffe",
+            "dob": "May 10, 1919",
+            "dod": "June 15, 2016",
+            "country": "American",
+            "style": ""
+        },
+        {
+            "artist_id": "10",
+            "name": "Urika Philip",
+            "dob": "June 8, 1897",
+            "dod": "February 19, 1958",
+            "country": "Heiltsuk",
+            "style": ""
+        }
+    ]
+}
