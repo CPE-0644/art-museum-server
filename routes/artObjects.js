@@ -1,16 +1,30 @@
 const express = require('express');
 const router = express.Router();
 
-const data = require('../database/data.json');
-const artObjects = data.scu;
+const artObjectController = require('../controllers/artObjectController');
+const artistController = require('../controllers/artistController');
+
+// todo: /
+// todo: /:artId/artist
+// todo: /:artId/img
 
 router.get('/', (req, res) => {
+  const artObjects = artObjectController.findAll();
   res.send(artObjects);
 });
 
-router.get('/:id', (req, res) => {
-  artObject = artObjects.find(x => x.artwork_id == req.params.id);
+router.get('/:artId', (req, res) => {
+  const id = req.params.artId;
+  const artObject = artObjectController.findArtObjectById(id);
   res.send(artObject);
+});
+
+router.get('/:artId/artist', (req, res) => {
+  const artId = req.params.artId;
+  const artObject = artObjectController.findArtObjectById(artId);
+  const artistId = artObject['artist-id'];
+  const artist = artistController.findArtistById(artistId);
+  res.send(artist);
 });
 
 module.exports = router;
