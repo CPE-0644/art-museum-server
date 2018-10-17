@@ -1,16 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const data = require('../database/data.json');
-const artists = data.artists;
+const artistController = require('../controllers/artist');
 
 router.get('/', (req, res) => {
+  const artists = artistController.findAll();
   res.send(artists);
-});
-
-router.get('/:id', (req, res) => {
-  artist = artists.find(x => x.artist_id == req.params.id);
-  res.send(artist);
 });
 
 module.exports = router;
