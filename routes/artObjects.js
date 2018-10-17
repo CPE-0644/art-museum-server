@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const artObjectController = require('../controllers/artObjectController');
-const artistController = require('../controllers/artistController');
+const artObjectController = require('../controllers/artObject');
+const artistController = require('../controllers/artist');
 
 // todo: /
 // todo: /:artId/artist
