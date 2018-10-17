@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const artObjectController = require('../controllers/artObject');
+const artworkController = require('../controllers/artwork');
 const artistController = require('../controllers/artist');
 
 // todo: /
@@ -9,20 +9,20 @@ const artistController = require('../controllers/artist');
 // todo: /:artId/img
 
 router.get('/', (req, res) => {
-  const artObjects = artObjectController.findAll();
-  res.send(artObjects);
+  const artworks = artworkController.findAll();
+  res.send(artworks);
 });
 
 router.get('/:artId', (req, res) => {
   const id = req.params.artId;
-  const artObject = artObjectController.findArtObjectById(id);
-  res.send(artObject);
+  const artwork = artworkController.findArtworkById(id);
+  res.send(artwork);
 });
 
 router.get('/:artId/artist', (req, res) => {
   const artId = req.params.artId;
-  const artObject = artObjectController.findArtObjectById(artId);
-  const artistId = artObject['artist-id'];
+  const artwork = artworkController.findArtworkById(artId);
+  const artistId = artwork.artist_id;
   const artist = artistController.findArtistById(artistId);
   res.send(artist);
 });
