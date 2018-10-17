@@ -11,7 +11,16 @@ function findArtObjectById(id) {
   return _.find(artObjects, item => item['artwork-id'] == id);
 }
 
+function findArtObjectsById(ids) {
+  const arts = [];
+  _.forEach(artObjects, item => {
+    if (_.includes(ids, item['artwork-id'])) arts.push(item);
+  });
+  return arts;
+}
+
 module.exports = {
   findAll,
-  findArtObjectById
+  findArtObjectById,
+  findArtObjectsById
 };
