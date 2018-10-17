@@ -6,7 +6,8 @@
       "dob": "June 2nd, 1876",
       "dod": "April 20th, 1964",
       "country": "Micronesia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 2,
@@ -14,7 +15,8 @@
       "dob": "June 5th, 1870",
       "dod": "March 23rd, 1952",
       "country": "Saint Kitts and Nevis",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 3,
@@ -22,7 +24,8 @@
       "dob": "January 27th, 1896",
       "dod": "January 18th, 1954",
       "country": "Slovenia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 4,
@@ -30,7 +33,8 @@
       "dob": "August 19th, 1920",
       "dod": "July 28th, 1946",
       "country": "Côte D'Ivoire (Ivory Coast)",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 5,
@@ -38,7 +42,8 @@
       "dob": "September 23rd, 1877",
       "dod": "March 8th, 1951",
       "country": "Northern Mariana Islands",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 6,
@@ -46,7 +51,8 @@
       "dob": "September 24th, 1889",
       "dod": "May 29th, 1952",
       "country": "Cameroon",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 7,
@@ -54,7 +60,8 @@
       "dob": "November 18th, 1882",
       "dod": "August 29th, 1960",
       "country": "Iraq",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 8,
@@ -62,7 +69,8 @@
       "dob": "May 15th, 1905",
       "dod": "December 25th, 1977",
       "country": "Malaysia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 9,
@@ -70,7 +78,8 @@
       "dob": "December 28th, 1917",
       "dod": "October 4th, 1968",
       "country": "Barbados",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 10,
@@ -78,7 +87,8 @@
       "dob": "July 18th, 1874",
       "dod": "August 28th, 1954",
       "country": "Tuvalu",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 11,
@@ -86,7 +96,8 @@
       "dob": "May 15th, 1869",
       "dod": "August 28th, 1947",
       "country": "Israel",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 12,
@@ -94,7 +105,8 @@
       "dob": "November 22nd, 1865",
       "dod": "March 10th, 1941",
       "country": "Zambia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 13,
@@ -102,7 +114,8 @@
       "dob": "March 18th, 1882",
       "dod": "June 30th, 1967",
       "country": "Philippines",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 14,
@@ -110,7 +123,8 @@
       "dob": "November 16th, 1906",
       "dod": "January 17th, 1972",
       "country": "Russian Federation",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 15,
@@ -118,7 +132,8 @@
       "dob": "June 23rd, 1891",
       "dod": "September 30th, 1939",
       "country": "Falkland Islands",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 16,
@@ -126,7 +141,8 @@
       "dob": "February 14th, 1918",
       "dod": "July 2nd, 1952",
       "country": "Saint Barthélemy",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 17,
@@ -134,7 +150,8 @@
       "dob": "February 3rd, 1899",
       "dod": "December 31st, 1949",
       "country": "Monaco",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 18,
@@ -142,7 +159,8 @@
       "dob": "November 29th, 1916",
       "dod": "July 18th, 1954",
       "country": "Laos",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 19,
@@ -150,7 +168,8 @@
       "dob": "February 13th, 1894",
       "dod": "June 20th, 1959",
       "country": "Ireland",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 20,
@@ -158,7 +177,8 @@
       "dob": "September 23rd, 1912",
       "dod": "March 6th, 1981",
       "country": "French Guiana",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 21,
@@ -166,7 +186,8 @@
       "dob": "December 17th, 1914",
       "dod": "May 30th, 1979",
       "country": "Laos",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 22,
@@ -174,7 +195,8 @@
       "dob": "August 28th, 1876",
       "dod": "June 23rd, 1960",
       "country": "Latvia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 23,
@@ -182,7 +204,8 @@
       "dob": "May 9th, 1909",
       "dod": "December 31st, 1972",
       "country": "Antigua and Barbuda",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 24,
@@ -190,7 +213,8 @@
       "dob": "February 1st, 1904",
       "dod": "June 15th, 1972",
       "country": "Bosnia and Herzegovina",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 25,
@@ -198,7 +222,8 @@
       "dob": "December 7th, 1916",
       "dod": "December 11th, 1946",
       "country": "Indonesia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 26,
@@ -206,7 +231,8 @@
       "dob": "July 29th, 1871",
       "dod": "June 5th, 1937",
       "country": "Hungary",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 27,
@@ -214,7 +240,8 @@
       "dob": "August 23rd, 1899",
       "dod": "July 14th, 1979",
       "country": "Malta",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 28,
@@ -222,7 +249,8 @@
       "dob": "February 26th, 1921",
       "dod": "March 15th, 1967",
       "country": "Dominica",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 29,
@@ -230,7 +258,8 @@
       "dob": "March 13th, 1919",
       "dod": "June 26th, 1943",
       "country": "Lithuania",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 30,
@@ -238,7 +267,8 @@
       "dob": "March 24th, 1878",
       "dod": "December 6th, 1991",
       "country": "Australia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 31,
@@ -246,7 +276,8 @@
       "dob": "May 8th, 1919",
       "dod": "April 13th, 1943",
       "country": "Algeria",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 32,
@@ -254,7 +285,8 @@
       "dob": "September 19th, 1871",
       "dod": "May 25th, 1969",
       "country": "Switzerland",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 33,
@@ -262,7 +294,8 @@
       "dob": "November 30th, 1894",
       "dod": "March 15th, 1943",
       "country": "Tuvalu",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 34,
@@ -270,7 +303,8 @@
       "dob": "June 19th, 1886",
       "dod": "April 12th, 1947",
       "country": "Sweden",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 35,
@@ -278,7 +312,8 @@
       "dob": "November 17th, 1888",
       "dod": "May 15th, 1937",
       "country": "Sao Tome and Principe",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 36,
@@ -286,7 +321,8 @@
       "dob": "August 13th, 1904",
       "dod": "December 27th, 1949",
       "country": "Qatar",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 37,
@@ -294,7 +330,8 @@
       "dob": "June 30th, 1923",
       "dod": "July 20th, 1954",
       "country": "Poland",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 38,
@@ -302,7 +339,8 @@
       "dob": "October 28th, 1890",
       "dod": "May 27th, 1968",
       "country": "British Indian Ocean Territory",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 39,
@@ -310,7 +348,8 @@
       "dob": "November 3rd, 1903",
       "dod": "March 6th, 1997",
       "country": "Spain",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 40,
@@ -318,7 +357,8 @@
       "dob": "October 13th, 1914",
       "dod": "January 4th, 1964",
       "country": "Swaziland",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 41,
@@ -326,7 +366,8 @@
       "dob": "January 25th, 1923",
       "dod": "May 18th, 1978",
       "country": "Afghanistan",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 42,
@@ -334,7 +375,8 @@
       "dob": "September 17th, 1892",
       "dod": "August 28th, 1983",
       "country": "Wallis and Futuna",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 43,
@@ -342,7 +384,8 @@
       "dob": "November 23rd, 1882",
       "dod": "July 5th, 1960",
       "country": "Nepal",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 44,
@@ -350,7 +393,8 @@
       "dob": "April 6th, 1896",
       "dod": "September 21st, 1959",
       "country": "Sierra Leone",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 45,
@@ -358,7 +402,8 @@
       "dob": "March 15th, 1914",
       "dod": "January 19th, 1980",
       "country": "Maldives",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 46,
@@ -366,7 +411,8 @@
       "dob": "June 24th, 1872",
       "dod": "July 13th, 1954",
       "country": "Kazakhstan",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 47,
@@ -374,7 +420,8 @@
       "dob": "September 30th, 1889",
       "dod": "May 30th, 1938",
       "country": "Colombia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 48,
@@ -382,7 +429,8 @@
       "dob": "July 3rd, 1866",
       "dod": "November 28th, 1964",
       "country": "Poland",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 49,
@@ -390,7 +438,8 @@
       "dob": "July 26th, 1898",
       "dod": "November 23rd, 1976",
       "country": "Uganda",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 50,
@@ -398,7 +447,8 @@
       "dob": "September 24th, 1877",
       "dod": "September 2nd, 1938",
       "country": "Singapore",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 51,
@@ -406,7 +456,8 @@
       "dob": "April 1st, 1868",
       "dod": "January 4th, 1945",
       "country": "Djibouti",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 52,
@@ -414,7 +465,8 @@
       "dob": "August 16th, 1899",
       "dod": "April 19th, 1970",
       "country": "Aruba",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 53,
@@ -422,7 +474,8 @@
       "dob": "December 14th, 1889",
       "dod": "March 9th, 1965",
       "country": "Comoros",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 54,
@@ -430,7 +483,8 @@
       "dob": "November 18th, 1912",
       "dod": "January 28th, 1950",
       "country": "Korea, South",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 55,
@@ -438,7 +492,8 @@
       "dob": "January 26th, 1922",
       "dod": "June 19th, 1966",
       "country": "Maldives",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 56,
@@ -446,7 +501,8 @@
       "dob": "March 5th, 1923",
       "dod": "December 1st, 1967",
       "country": "Qatar",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 57,
@@ -454,7 +510,8 @@
       "dob": "July 9th, 1900",
       "dod": "March 15th, 1970",
       "country": "Andorra",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 58,
@@ -462,7 +519,8 @@
       "dob": "January 12th, 1913",
       "dod": "March 21st, 1989",
       "country": "Armenia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 59,
@@ -470,7 +528,8 @@
       "dob": "July 9th, 1903",
       "dod": "September 16th, 1965",
       "country": "Taiwan",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 60,
@@ -478,7 +537,8 @@
       "dob": "August 22nd, 1924",
       "dod": "March 29th, 1981",
       "country": "Mexico",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 61,
@@ -486,7 +546,8 @@
       "dob": "May 5th, 1918",
       "dod": "December 14th, 1947",
       "country": "Indonesia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 62,
@@ -494,7 +555,8 @@
       "dob": "March 12th, 1908",
       "dod": "September 12th, 1991",
       "country": "Åland Islands",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 63,
@@ -502,7 +564,8 @@
       "dob": "March 8th, 1895",
       "dod": "June 22nd, 1972",
       "country": "Congo (Brazzaville)",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 64,
@@ -510,7 +573,8 @@
       "dob": "April 12th, 1868",
       "dod": "January 30th, 1962",
       "country": "Australia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 65,
@@ -518,7 +582,8 @@
       "dob": "November 8th, 1883",
       "dod": "May 26th, 1957",
       "country": "Mauritius",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 66,
@@ -526,7 +591,8 @@
       "dob": "August 28th, 1874",
       "dod": "December 12th, 1937",
       "country": "French Guiana",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 67,
@@ -534,7 +600,8 @@
       "dob": "February 13th, 1898",
       "dod": "March 4th, 1988",
       "country": "Grenada",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 68,
@@ -542,7 +609,8 @@
       "dob": "April 16th, 1901",
       "dod": "May 1st, 1956",
       "country": "Pakistan",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 69,
@@ -550,7 +618,8 @@
       "dob": "March 12th, 1897",
       "dod": "April 24th, 1938",
       "country": "Equatorial Guinea",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 70,
@@ -558,7 +627,8 @@
       "dob": "June 4th, 1896",
       "dod": "July 18th, 1985",
       "country": "Papua New Guinea",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 71,
@@ -566,7 +636,8 @@
       "dob": "August 16th, 1906",
       "dod": "July 17th, 1953",
       "country": "Niue",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 72,
@@ -574,7 +645,8 @@
       "dob": "March 19th, 1879",
       "dod": "February 12th, 1948",
       "country": "Saint Lucia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 73,
@@ -582,7 +654,8 @@
       "dob": "August 24th, 1872",
       "dod": "April 10th, 1977",
       "country": "Argentina",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 74,
@@ -590,7 +663,8 @@
       "dob": "April 8th, 1885",
       "dod": "January 24th, 1940",
       "country": "Viet Nam",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 75,
@@ -598,7 +672,8 @@
       "dob": "February 6th, 1914",
       "dod": "January 13th, 1964",
       "country": "Honduras",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 76,
@@ -606,7 +681,8 @@
       "dob": "October 4th, 1874",
       "dod": "December 22nd, 1989",
       "country": "Brunei",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 77,
@@ -614,7 +690,8 @@
       "dob": "September 3rd, 1878",
       "dod": "June 18th, 1967",
       "country": "Gabon",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 78,
@@ -622,7 +699,8 @@
       "dob": "May 28th, 1881",
       "dod": "November 12th, 1964",
       "country": "El Salvador",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 79,
@@ -630,7 +708,8 @@
       "dob": "July 8th, 1866",
       "dod": "November 10th, 1987",
       "country": "Philippines",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 80,
@@ -638,7 +717,8 @@
       "dob": "May 5th, 1908",
       "dod": "May 10th, 1993",
       "country": "Romania",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 81,
@@ -646,7 +726,8 @@
       "dob": "April 27th, 1881",
       "dod": "August 29th, 1975",
       "country": "Cayman Islands",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 82,
@@ -654,7 +735,8 @@
       "dob": "April 27th, 1887",
       "dod": "October 24th, 1987",
       "country": "Philippines",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 83,
@@ -662,7 +744,8 @@
       "dob": "June 6th, 1874",
       "dod": "November 21st, 1976",
       "country": "Cocos (Keeling) Islands",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 84,
@@ -670,7 +753,8 @@
       "dob": "November 20th, 1883",
       "dod": "April 16th, 1956",
       "country": "Maldives",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 85,
@@ -678,7 +762,8 @@
       "dob": "March 18th, 1914",
       "dod": "December 4th, 1985",
       "country": "Malawi",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 86,
@@ -686,7 +771,8 @@
       "dob": "August 2nd, 1908",
       "dod": "April 8th, 1945",
       "country": "Christmas Island",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 87,
@@ -694,7 +780,8 @@
       "dob": "October 6th, 1871",
       "dod": "November 2nd, 1940",
       "country": "Uganda",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 88,
@@ -702,7 +789,8 @@
       "dob": "May 7th, 1899",
       "dod": "August 25th, 1992",
       "country": "Saudi Arabia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 89,
@@ -710,7 +798,8 @@
       "dob": "November 22nd, 1901",
       "dod": "January 3rd, 1978",
       "country": "Cyprus",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 90,
@@ -718,7 +807,8 @@
       "dob": "January 7th, 1889",
       "dod": "January 30th, 1979",
       "country": "Saint Kitts and Nevis",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 91,
@@ -726,7 +816,8 @@
       "dob": "January 25th, 1878",
       "dod": "December 25th, 1967",
       "country": "Greenland",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 92,
@@ -734,7 +825,8 @@
       "dob": "August 18th, 1879",
       "dod": "October 7th, 1994",
       "country": "Antigua and Barbuda",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 93,
@@ -742,7 +834,8 @@
       "dob": "May 30th, 1913",
       "dod": "August 14th, 1963",
       "country": "Estonia",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 94,
@@ -750,7 +843,8 @@
       "dob": "August 5th, 1915",
       "dod": "November 7th, 1967",
       "country": "Egypt",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 95,
@@ -758,7 +852,8 @@
       "dob": "January 12th, 1905",
       "dod": "July 20th, 1972",
       "country": "French Southern Territories",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 96,
@@ -766,7 +861,8 @@
       "dob": "January 14th, 1904",
       "dod": "November 27th, 1963",
       "country": "United States",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 97,
@@ -774,7 +870,8 @@
       "dob": "April 9th, 1889",
       "dod": "January 27th, 1940",
       "country": "Myanmar",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 98,
@@ -782,7 +879,8 @@
       "dob": "March 11th, 1875",
       "dod": "April 29th, 1957",
       "country": "Chile",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 99,
@@ -790,7 +888,8 @@
       "dob": "January 6th, 1909",
       "dod": "December 26th, 1974",
       "country": "United States Minor Outlying Islands",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     },
     {
       "artist-id": 100,
@@ -798,7 +897,9 @@
       "dob": "September 30th, 1912",
       "dod": "October 29th, 1973",
       "country": "New Zealand",
-      "style": "fucker"
+      "style": "fucker",
+      "artwork-id": [1, 2, 3]
     }
-  ]
+  ],
+  "artwork-id": [1, 2, 3]
 }
