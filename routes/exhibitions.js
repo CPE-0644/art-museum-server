@@ -17,10 +17,10 @@ router.get('/:exhibitionId', (req, res) => {
 
 router.get('/:exhibitionId/shows', (req, res) => {
   const exhibitionId = req.params.exhibitionId;
-  const showedList = exhibitionController.findExhibitionById(exhibitionId)[
-    'display'
-  ];
-  const showedArtObject = artObjectController.findArtObjectsById(showedList);
+  const showedList = exhibitionController.findExhibitionById(exhibitionId)
+    .display;
+
+  const showedArtObject = artObjectController.findArtworksById(showedList);
   res.send(showedArtObject);
 });
 
