@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const artObjectController = require('../controllers/artObject');
+const artObjectController = require('../controllers/artwork');
 const exhibitionController = require('../controllers/exhibition');
 
 router.get('/', (req, res) => {

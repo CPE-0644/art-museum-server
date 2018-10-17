@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const artistController = require('../controllers/artist');
-const artObjectController = require('../controllers/artObject');
+const artObjectController = require('../controllers/artwork');
 
 router.get('/', (req, res) => {
   const artists = artistController.findAll();
