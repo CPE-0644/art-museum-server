@@ -8,4 +8,10 @@ router.get('/', (req, res) => {
   res.send(exhibitions);
 });
 
+router.get('/:exhibitionId', (req, res) => {
+  const exhibitionId = req.params.exhibitionId;
+  const exhibition = exhibitionController.findExhibitionById(exhibitionId);
+  res.send(exhibition);
+});
+
 module.exports = router;
