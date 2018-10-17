@@ -18,7 +18,7 @@ router.get('/:artistId', (req, res) => {
 router.get('/:artistId/arts', (req, res) => {
   const artistId = req.params.artistId;
   const artist = artistController.findArtistById(artistId);
-  const arts = artObjectController.findArtObjectsById(artist['artwork-id']);
+  const arts = artObjectController.findArtObjectsById(artist.artworks_id);
   res.send(arts);
 });
 
