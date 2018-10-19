@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+const cors = require('cors');
 const artistController = require('../controllers/artist');
 const artObjectController = require('../controllers/artwork');
 
