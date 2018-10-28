@@ -1,7 +1,20 @@
 const express = require('express');
 const cors = require('cors');
 
+const Sequelize = require('sequelize');
+
 const app = express();
+
+const sequelize = new Sequelize('hr', 'root', '1234', {
+  host: 'localhost',
+  dialect: 'mysql',
+
+  pool: {
+    max: 10,
+    min: 0,
+    idle: 10000
+  }
+});
 
 const artistsRoute = require('./routes/artists');
 const exhibitionRoute = require('./routes/exhibitions');
