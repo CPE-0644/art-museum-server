@@ -4,8 +4,8 @@ const router = express.Router();
 const artistController = require('../controllers/artist');
 const artObjectController = require('../controllers/artwork');
 
-router.get('/', (req, res) => {
-  const artists = artistController.findAll();
+router.get('/', async (req, res) => {
+  const artists = await artistController.findAll();
   res.send(artists);
 });
 

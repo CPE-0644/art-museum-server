@@ -1,22 +1,27 @@
-const _ = require('lodash');
+const Sequelize = require('sequelize');
 
-const data = require('../assets/database/artists.json').artists;
+const sequelize = require('../database/connection');
 
-class Artist {
-  constructor(json) {
-    this.id = json['artist-id'];
-    this.name = json['name'];
-    this.date_of_birth = json['dob'];
-    this.date_of_died = json['dod'];
-    this.country = json['country'];
-    this.style = json['style'];
-    this.artworks_id = json['artwork-id'];
-  }
+function createArtistModel() {
+  return sequelize.define(
+    'artist',
+    {
+      artist_id: {
+        type: Sequelize.STRING,
+        primaryKey: true
+      },
+      name: Sequelize.STRING,
+      date_born: Sequelize.DATE,
+      date_died: Sequelize.DATE,
+      country_of_origin: Sequelize.STRING,
+      epoch: Sequelize.STRING,
+      main_style: Sequelize.STRING,
+      description: Sequelize.STRING
+    },
+    {
+      freezeTableName: true
+    }
+  );
 }
 
-let artists = [];
-_.forEach(data, json => artists.push(new Artist(json)));
-
-module.exports = {
-  artists
-};
+module.exports = createArtistModel;
