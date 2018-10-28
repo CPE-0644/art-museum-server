@@ -9,9 +9,9 @@ router.get('/', async (req, res) => {
   res.send(artists);
 });
 
-router.get('/:artistId', (req, res) => {
+router.get('/:artistId', async (req, res) => {
   const artistId = req.params.artistId;
-  const artist = artistController.findArtistById(artistId);
+  const artist = await artistController.findArtistById(artistId);
   res.send(artist);
 });
 

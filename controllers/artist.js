@@ -23,9 +23,17 @@ async function findAll() {
   });
 }
 
-function findArtistById(id) {
-  const artist = _.find(artists, artist => artist.id == id);
-  return artist;
+async function findArtistById(id) {
+  const artist = await Artist.findAll({
+    attributes: artistAttributes,
+    where: {
+      artist_id: id
+    }
+  });
+
+  return _.map(artist, artist => {
+    return artistPresenter(artist);
+  });
 }
 
 function artistPresenter(artist) {
