@@ -1,9 +1,25 @@
 const _ = require('lodash');
 
-const { artworks } = require('../models/artwork');
+const Artwork = require('../models/artwork')();
 
-function findAll() {
-  return artworks;
+const artworkAttributes = [
+  'Id_no',
+  'Years',
+  'Title',
+  'Description',
+  'Origin',
+  'Epoch',
+  'artist_id'
+];
+
+async function findAll() {
+  const artworks = await Artwork.findAll({
+    attributes: artworkAttributes
+  });
+
+  return _.map(artworks, artwork => {
+    return artworkPresenter(artwork);
+  });
 }
 
 function findArtworkById(id) {
@@ -16,6 +32,18 @@ function findArtworksById(ids) {
     if (_.includes(ids, item.id)) arts.push(item);
   });
   return arts;
+}
+
+function artworkPresenter(artwork) {
+  return {
+    id: artwork.Id_no,
+    year: artwork.Years,
+    title: artwork.Title,
+    description: artwork.Description,
+    origin: artwork.Origin,
+    epoch: artwork.Epoch,
+    artist_id: artwork.artist_id
+  };
 }
 
 module.exports = {

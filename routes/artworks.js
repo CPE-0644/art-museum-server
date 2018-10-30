@@ -8,8 +8,8 @@ const artistController = require('../controllers/artist');
 // todo: /:artId/artist
 // todo: /:artId/img
 
-router.get('/', (req, res) => {
-  const artworks = artworkController.findAll();
+router.get('/', async (req, res) => {
+  const artworks = await artworkController.findAll();
   res.send(artworks);
 });
 
