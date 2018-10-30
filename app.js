@@ -6,12 +6,14 @@ const app = express();
 const artistsRoute = require('./routes/artists');
 const exhibitionRoute = require('./routes/exhibitions');
 const artworkRoute = require('./routes/artworks');
+const collectionRoute = require('./routes/collections');
 
 app.use(express.static(__dirname + '/public'));
 app.use(cors());
 
 app.use('/api/artists', artistsRoute);
 app.use('/api/exhibitions', exhibitionRoute);
+app.use('/api/collections', collectionRoute);
 app.use('/api/artworks', artworkRoute);
 
 app.get('/api/', (req, res) => {

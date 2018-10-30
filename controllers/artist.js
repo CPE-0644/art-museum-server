@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-const Artist = require('../models/Artist')();
+const Artist = require('../models/artist')();
 
 const artistAttributes = [
   'artist_id',
