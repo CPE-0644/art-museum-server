@@ -7,16 +7,16 @@ function createArtistModel() {
     'artist',
     {
       artist_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(45),
         primaryKey: true
       },
-      name: Sequelize.STRING,
+      name: Sequelize.STRING(45),
       date_born: Sequelize.DATE,
       date_died: Sequelize.DATE,
-      country_of_origin: Sequelize.STRING,
-      epoch: Sequelize.STRING,
-      main_style: Sequelize.STRING,
-      description: Sequelize.STRING
+      country_of_origin: Sequelize.STRING(45),
+      epoch: Sequelize.STRING(45),
+      main_style: Sequelize.STRING(45),
+      description: Sequelize.TEXT
     },
     {
       freezeTableName: true

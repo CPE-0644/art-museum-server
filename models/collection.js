@@ -2,20 +2,19 @@ const Sequelize = require('sequelize');
 
 const sequelize = require('../database/connection');
 
-function createArtObjectModel() {
+function createCollectionModel() {
   return sequelize.define(
-    'art_object',
+    'collection',
     {
-      Id_no: {
+      Collection_id: {
         type: Sequelize.STRING(45),
         primaryKey: true
       },
-      Years: Sequelize.DATE,
-      Title: Sequelize.STRING(45),
+      Name: Sequelize.STRING(45),
+      Type: Sequelize.STRING(45),
       Description: Sequelize.TEXT,
-      Origin: Sequelize.STRING(45),
-      Epoch: Sequelize.STRING(45),
-      artist_id: Sequelize.STRING(45)
+      Address: Sequelize.STRING(255),
+      contact_id: Sequelize.STRING(45)
     },
     {
       freezeTableName: true
@@ -23,4 +22,4 @@ function createArtObjectModel() {
   );
 }
 
-module.exports = createArtObjectModel;
+module.exports = createCollectionModel;

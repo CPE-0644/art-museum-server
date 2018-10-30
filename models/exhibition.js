@@ -7,12 +7,12 @@ function createExhibitionModel() {
     'exhibition',
     {
       exhibition_id: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(45),
         primaryKey: true
       },
-      name: Sequelize.STRING,
-      start_date: Sequelize.DATE,
-      end_date: Sequelize.DATE
+      Name: Sequelize.STRING(45),
+      Start_date: Sequelize.DATE,
+      End_date: Sequelize.DATE
     },
     {
       freezeTableName: true
