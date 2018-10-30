@@ -15,6 +15,8 @@ router.get('/:artistId', async (req, res) => {
   res.send(artist);
 });
 
+// FIXME: fix this stuff
+
 router.get('/:artistId/arts', (req, res) => {
   const artistId = req.params.artistId;
   const artist = artistController.findArtistById(artistId);

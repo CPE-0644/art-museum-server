@@ -4,23 +4,28 @@ const router = express.Router();
 const artObjectController = require('../controllers/artwork');
 const exhibitionController = require('../controllers/exhibition');
 
-router.get('/', (req, res) => {
-  const exhibitions = exhibitionController.findAll();
+router.get('/', async (req, res) => {
+  const exhibitions = await exhibitionController.findAll();
   res.send(exhibitions);
 });
 
-router.get('/:exhibitionId', (req, res) => {
+router.get('/:exhibitionId', async (req, res) => {
   const exhibitionId = req.params.exhibitionId;
-  const exhibition = exhibitionController.findExhibitionById(exhibitionId);
+  const exhibition = await exhibitionController.findExhibitionById(
+    exhibitionId
+  );
   res.send(exhibition);
 });
 
-router.get('/:exhibitionId/shows', (req, res) => {
+// FIXME: fix this stuff
+router.get('/:exhibitionId/shows', async (req, res) => {
   const exhibitionId = req.params.exhibitionId;
-  const showedList = exhibitionController.findExhibitionById(exhibitionId)
+  const showedList = await exhibitionController.findExhibitionById(exhibitionId)
     .display;
 
-  const showedArtObject = artObjectController.findArtworksById(showedList);
+  const showedArtObject = await artObjectController.findArtworksById(
+    showedList
+  );
   res.send(showedArtObject);
 });
 

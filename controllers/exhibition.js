@@ -1,16 +1,45 @@
 const _ = require('lodash');
 
-const { exhibitions } = require('../models/exhibition');
+const Exhibition = require('../models/Exhibition')();
 
-function findAll() {
-  return exhibitions;
+const exhibitionAttributes = [
+  'exhibition_id',
+  'name',
+  'start_date',
+  'end_date'
+];
+
+async function findAll() {
+  const exhibitions = await Exhibition.findAll({
+    attributes: exhibitionAttributes
+  });
+
+  return _.map(exhibitions, exhibition => {
+    return exhibitionPresenter(exhibition);
+  });
 }
 
-function findExhibitionById(id) {
-  const exhibition = _.find(exhibitions, exhibition => exhibition.id == id);
-  return exhibition;
+async function findExhibitionById(id) {
+  const exhibition = await Exhibition.findAll({
+    attributes: exhibitionAttributes,
+    where: {
+      exhibition_id: id
+    }
+  });
+
+  return _.map(exhibition, exhibition => {
+    return exhibitionPresenter(exhibition);
+  });
 }
 
+function exhibitionPresenter(exhibition) {
+  return {
+    id: exhibition.exhibition_id,
+    name: exhibition.name,
+    start_date: exhibition.start_date,
+    end_date: exhibition.end_date
+  };
+}
 module.exports = {
   findAll,
   findExhibitionById
