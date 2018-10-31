@@ -1,6 +1,7 @@
 const express = require('express');
 
 const ExhibitionController = require('../controllers/exhibition');
+
 class ExhibitionRoute {
   constructor(Exhibition) {
     this.exhibitionController = new ExhibitionController(Exhibition);
@@ -25,21 +26,20 @@ class ExhibitionRoute {
       const exhibition = await this.exhibitionController.findExhibitionById(
         exhibitionId
       );
+
       res.send(exhibition);
+    });
+
+    this.router.get('/:exhibitionId/artworks', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+
+      const artworks = await this.exhibitionController.findArtworkByExhibitionId(
+        exhibitionId
+      );
+
+      res.send(artworks);
     });
   }
 }
-
-// FIXME: fix this stuff
-// router.get('/:exhibitionId/shows', async (req, res) => {
-//   const exhibitionId = req.params.exhibitionId;
-//   const showedList = await exhibitionController.findExhibitionById(exhibitionId)
-//     .display;
-
-//   const showedArtObject = await artObjectController.findArtworksById(
-//     showedList
-//   );
-//   res.send(showedArtObject);
-// });
 
 module.exports = ExhibitionRoute;

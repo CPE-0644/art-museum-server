@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
+
 const Sequelize = require('sequelize');
+const sequelize = require('./database/connection');
 
 const app = express();
 
@@ -10,8 +12,31 @@ const Exhibition = require('./models/exhibition')();
 const Collection = require('./models/collection')();
 const User = require('./models/user')();
 
+const Display = sequelize.define(
+  'display',
+  {
+    exhibition_id: Sequelize.STRING(45),
+    art_object_id: Sequelize.STRING(45)
+  },
+  {
+    timestamps: false,
+    freezeTableName: true
+  }
+);
+
 Artist.hasMany(Artwork, { foreignKey: 'artist_id' });
 Artwork.belongsTo(Artist, { foreignKey: 'artist_id' });
+
+Exhibition.belongsToMany(Artwork, {
+  through: Display,
+  foreignKey: 'exhibition_id',
+  otherKey: 'art_object_id'
+});
+Artwork.belongsToMany(Exhibition, {
+  through: Display,
+  foreignKey: 'art_object_id',
+  otherKey: 'exhibition_id'
+});
 
 const ArtistRoute = require('./routes/artists');
 const ArtworkRoute = require('./routes/artworks');
