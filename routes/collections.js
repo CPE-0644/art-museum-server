@@ -1,19 +1,29 @@
 const express = require('express');
-const router = express.Router();
 
 const collectionController = require('../controllers/collection');
 
-router.get('/', async (req, res) => {
-  const collections = await collectionController.findAll();
-  res.send(collections);
-});
+class CollectionRoute {
+  constructor(Collection) {
+    this.collectionController = new collectionController(Collection);
+    this.router = express.Router();
 
-router.get('/:collectionId', (req, res) => {
-  res.send(req.params.collectionId);
-});
+    this.initRoute();
+  }
 
-router.get('/:collectionId/artworks', (req, res) => {
-  res.send('collection artwork');
-});
+  initRoute() {
+    this.router.get('/', async (req, res) => {
+      try {
+        const collections = await this.collectionController.findAll();
+        res.send(collections);
+      } catch (err) {
+        res.send(err);
+      }
+    });
 
-module.exports = router;
+    this.router.get('/:collectionId', (req, res) => {
+      res.send(req.params.collectionId);
+    });
+  }
+}
+
+module.exports = CollectionRoute;

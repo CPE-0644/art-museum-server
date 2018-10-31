@@ -1,37 +1,28 @@
 const _ = require('lodash');
 
-const Artwork = require('../models/artwork')();
+class ArtworkController {
+  constructor(artwork) {
+    this.artwork = artwork;
+    this.artworkAttributes = [
+      'Id_no',
+      'Years',
+      'Title',
+      'Description',
+      'Origin',
+      'Epoch',
+      'artist_id'
+    ];
+  }
 
-const artworkAttributes = [
-  'Id_no',
-  'Years',
-  'Title',
-  'Description',
-  'Origin',
-  'Epoch',
-  'artist_id'
-];
-
-async function findAll() {
-  const artworks = await Artwork.findAll({
-    attributes: artworkAttributes
-  });
-
-  return _.map(artworks, artwork => {
-    return artworkPresenter(artwork);
-  });
-}
-
-function findArtworkById(id) {
-  return _.find(artworks, item => item.id == id);
-}
-
-function findArtworksById(ids) {
-  const arts = [];
-  _.forEach(artworks, item => {
-    if (_.includes(ids, item.id)) arts.push(item);
-  });
-  return arts;
+  async findAll() {
+    const artworks = await this.artwork.findAll({
+      attributes: this.artworkAttributes
+    });
+    console.log(artworks);
+    return _.map(artworks, artwork => {
+      return artworkPresenter(artwork);
+    });
+  }
 }
 
 function artworkPresenter(artwork) {
@@ -46,8 +37,4 @@ function artworkPresenter(artwork) {
   };
 }
 
-module.exports = {
-  findAll,
-  findArtworkById,
-  findArtworksById
-};
+module.exports = ArtworkController;

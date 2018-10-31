@@ -3,20 +3,26 @@ const cors = require('cors');
 
 const app = express();
 
-const artistsRoute = require('./routes/artists');
-const exhibitionRoute = require('./routes/exhibitions');
-const artworkRoute = require('./routes/artworks');
-const collectionRoute = require('./routes/collections');
-const userRoute = require('./routes/users');
+const Artist = require('./models/artist')();
+const Artwork = require('./models/artwork')();
+const Exhibition = require('./models/exhibition')();
+const Collection = require('./models/collection')();
+const User = require('./models/user')();
+
+const ArtistRoute = require('./routes/artists');
+const ArtworkRoute = require('./routes/artworks');
+const ExhibitionRoute = require('./routes/exhibitions');
+const CollectionRoute = require('./routes/collections');
+const UserRoute = require('./routes/users');
 
 app.use(express.static(__dirname + '/public'));
 app.use(cors());
 
-app.use('/api/artists', artistsRoute);
-app.use('/api/exhibitions', exhibitionRoute);
-app.use('/api/collections', collectionRoute);
-app.use('/api/artworks', artworkRoute);
-app.use('/api/users', userRoute);
+app.use('/api/artists', new ArtistRoute(Artist).router);
+app.use('/api/artworks', new ArtworkRoute(Artwork).router);
+app.use('/api/exhibitions', new ExhibitionRoute(Exhibition).router);
+app.use('/api/collections', new CollectionRoute(Collection).router);
+app.use('/api/users', new UserRoute(User).router);
 
 app.get('/api/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');

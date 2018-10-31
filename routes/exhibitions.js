@@ -1,32 +1,45 @@
 const express = require('express');
-const router = express.Router();
 
-const artObjectController = require('../controllers/artwork');
-const exhibitionController = require('../controllers/exhibition');
+const ExhibitionController = require('../controllers/exhibition');
+class ExhibitionRoute {
+  constructor(Exhibition) {
+    this.exhibitionController = new ExhibitionController(Exhibition);
+    this.router = express.Router();
 
-router.get('/', async (req, res) => {
-  const exhibitions = await exhibitionController.findAll();
-  res.send(exhibitions);
-});
+    this.initRoute();
+  }
 
-router.get('/:exhibitionId', async (req, res) => {
-  const exhibitionId = req.params.exhibitionId;
-  const exhibition = await exhibitionController.findExhibitionById(
-    exhibitionId
-  );
-  res.send(exhibition);
-});
+  initRoute() {
+    this.router.get('/', async (req, res) => {
+      try {
+        const exhibitions = await this.exhibitionController.findAll();
+        res.send(exhibitions);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
+    this.router.get('/:exhibitionId', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+      const exhibition = await this.exhibitionController.findExhibitionById(
+        exhibitionId
+      );
+      res.send(exhibition);
+    });
+  }
+}
 
 // FIXME: fix this stuff
-router.get('/:exhibitionId/shows', async (req, res) => {
-  const exhibitionId = req.params.exhibitionId;
-  const showedList = await exhibitionController.findExhibitionById(exhibitionId)
-    .display;
+// router.get('/:exhibitionId/shows', async (req, res) => {
+//   const exhibitionId = req.params.exhibitionId;
+//   const showedList = await exhibitionController.findExhibitionById(exhibitionId)
+//     .display;
 
-  const showedArtObject = await artObjectController.findArtworksById(
-    showedList
-  );
-  res.send(showedArtObject);
-});
+//   const showedArtObject = await artObjectController.findArtworksById(
+//     showedList
+//   );
+//   res.send(showedArtObject);
+// });
 
-module.exports = router;
+module.exports = ExhibitionRoute;

@@ -1,37 +1,40 @@
 const _ = require('lodash');
 
-const Collection = require('../models/collection')();
+class CollectionController {
+  constructor(collection) {
+    this.collection = collection;
+    this.collectionAttributes = [
+      'Collection_id',
+      'Name',
+      'Type',
+      'Description',
+      'Address',
+      'contact_id'
+    ];
+  }
 
-const collectionAttributes = [
-  'Collection_id',
-  'Name',
-  'Type',
-  'Description',
-  'Address',
-  'contact_id'
-];
+  async findAll() {
+    const collections = await this.collection.findAll({
+      attributes: this.collectionAttributes
+    });
 
-async function findAll() {
-  const collections = await Collection.findAll({
-    attributes: collectionAttributes
-  });
+    return _.map(collections, collection => {
+      return collectionPresenter(collection);
+    });
+  }
 
-  return _.map(collections, collection => {
-    return collectionPresenter(collection);
-  });
-}
+  async findArtistById(id) {
+    const collection = await this.collection.findAll({
+      attributes: this.collectionAttributes,
+      where: {
+        collection_id: id
+      }
+    });
 
-async function findArtistById(id) {
-  const collection = await Collection.findAll({
-    attributes: collectionAttributes,
-    where: {
-      collection_id: id
-    }
-  });
-
-  return _.map(collection, collection => {
-    return collectionPresenter(collection);
-  });
+    return _.map(collection, collection => {
+      return collectionPresenter(collection);
+    });
+  }
 }
 
 function collectionPresenter(collection) {
@@ -45,7 +48,4 @@ function collectionPresenter(collection) {
   };
 }
 
-module.exports = {
-  findAll,
-  findArtistById
-};
+module.exports = CollectionController;

@@ -1,15 +1,25 @@
 const express = require('express');
-const router = express.Router();
 
-const userController = require('../controllers/user');
+const UserController = require('../controllers/user');
 
-router.get('/', async (req, res) => {
-  const users = await userController.findAll();
-  res.send(users);
-});
+class UserRoute {
+  constructor(User) {
+    this.userController = new UserController(User);
+    this.router = express.Router();
 
-router.get('/:userId', (req, res) => {
-  res.send(req.params.userId);
-});
+    this.initRoute();
+  }
 
-module.exports = router;
+  initRoute() {
+    this.router.get('/', async (req, res) => {
+      const users = await this.userController.findAll();
+      res.send(users);
+    });
+
+    this.router.get('/:userId', (req, res) => {
+      res.send(req.params.userId);
+    });
+  }
+}
+
+module.exports = UserRoute;

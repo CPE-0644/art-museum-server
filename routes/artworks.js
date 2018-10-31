@@ -1,30 +1,39 @@
 const express = require('express');
-const router = express.Router();
 
-const artworkController = require('../controllers/artwork');
-const artistController = require('../controllers/artist');
+const ArtworkController = require('../controllers/artwork');
 
 // todo: /
 // todo: /:artId/artist
 // todo: /:artId/img
 
-router.get('/', async (req, res) => {
-  const artworks = await artworkController.findAll();
-  res.send(artworks);
-});
+class ArtworkRoute {
+  constructor(Artwork) {
+    this.artworkController = new ArtworkController(Artwork);
+    this.router = express.Router();
 
-router.get('/:artId', (req, res) => {
-  const id = req.params.artId;
-  const artwork = artworkController.findArtworkById(id);
-  res.send(artwork);
-});
+    this.initRoute();
+  }
 
-router.get('/:artId/artist', (req, res) => {
-  const artId = req.params.artId;
-  const artwork = artworkController.findArtworkById(artId);
-  const artistId = artwork.artist_id;
-  const artist = artistController.findArtistById(artistId);
-  res.send(artist);
-});
+  initRoute() {
+    this.router.get('/', async (req, res) => {
+      try {
+        const artworks = await this.artworkController.findAll();
+        res.send(artworks);
+      } catch (err) {
+        res.send(err);
+      }
+    });
 
-module.exports = router;
+    // this.router.get('/:artId', (req, res) => {
+    //   const id = req.params.artId;
+    //   try {
+    //     const artwork = this.artworkController.findArtworkById(id);
+    //     res.send(artwork);
+    //   } catch (err) {
+    //     res.send(err);
+    //   }
+    // });
+  }
+}
+
+module.exports = ArtworkRoute;

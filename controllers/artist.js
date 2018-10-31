@@ -1,39 +1,42 @@
 const _ = require('lodash');
 
-const Artist = require('../models/artist')();
+class ArtistController {
+  constructor(artist) {
+    this.artist = artist;
+    this.artistAttributes = [
+      'artist_id',
+      'name',
+      'date_born',
+      'date_died',
+      'country_of_origin',
+      'epoch',
+      'main_style',
+      'description'
+    ];
+  }
 
-const artistAttributes = [
-  'artist_id',
-  'name',
-  'date_born',
-  'date_died',
-  'country_of_origin',
-  'epoch',
-  'main_style',
-  'description'
-];
+  async findAll() {
+    const artists = await this.artist.findAll({
+      attributes: this.artistAttributes
+    });
 
-async function findAll() {
-  const artists = await Artist.findAll({
-    attributes: artistAttributes
-  });
+    return _.map(artists, artist => {
+      return artistPresenter(artist);
+    });
+  }
 
-  return _.map(artists, artist => {
-    return artistPresenter(artist);
-  });
-}
+  async findArtistById(id) {
+    const artist = await this.artist.findAll({
+      attributes: this.artistAttributes,
+      where: {
+        artist_id: id
+      }
+    });
 
-async function findArtistById(id) {
-  const artist = await Artist.findAll({
-    attributes: artistAttributes,
-    where: {
-      artist_id: id
-    }
-  });
-
-  return _.map(artist, artist => {
-    return artistPresenter(artist);
-  });
+    return _.map(artist, artist => {
+      return artistPresenter(artist);
+    });
+  }
 }
 
 function artistPresenter(artist) {
@@ -49,7 +52,4 @@ function artistPresenter(artist) {
   };
 }
 
-module.exports = {
-  findAll,
-  findArtistById
-};
+module.exports = ArtistController;

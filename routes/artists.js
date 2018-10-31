@@ -1,27 +1,34 @@
 const express = require('express');
-const router = express.Router();
 
-const artistController = require('../controllers/artist');
-const artObjectController = require('../controllers/artwork');
+const ArtistController = require('../controllers/artist');
+class ArtistRoute {
+  constructor(Artist) {
+    this.artistController = new ArtistController(Artist);
+    this.router = express.Router();
 
-router.get('/', async (req, res) => {
-  const artists = await artistController.findAll();
-  res.send(artists);
-});
+    this.initRoute();
+  }
 
-router.get('/:artistId', async (req, res) => {
-  const artistId = req.params.artistId;
-  const artist = await artistController.findArtistById(artistId);
-  res.send(artist);
-});
+  initRoute() {
+    this.router.get('/', async (req, res) => {
+      try {
+        const artists = await this.artistController.findAll();
+        res.send(artists);
+      } catch (err) {
+        res.send(err);
+      }
+    });
 
-// FIXME: fix this stuff
+    this.router.get('/:artistId', async (req, res) => {
+      const artistId = req.params.artistId;
+      try {
+        const artist = await this.artistController.findArtistById(artistId);
+        res.send(artist);
+      } catch (err) {
+        res.send(err);
+      }
+    });
+  }
+}
 
-router.get('/:artistId/arts', (req, res) => {
-  const artistId = req.params.artistId;
-  const artist = artistController.findArtistById(artistId);
-  const arts = artObjectController.findArtworksById(artist.artworks_id);
-  res.send(arts);
-});
-
-module.exports = router;
+module.exports = ArtistRoute;

@@ -1,39 +1,42 @@
 const _ = require('lodash');
 
-const User = require('../models/user')();
+class UserController {
+  constructor(user) {
+    this.user = user;
+    this.userAttributes = [
+      'museum_goer_id',
+      'Name',
+      'username',
+      'password',
+      'address',
+      'email',
+      'phone',
+      'age'
+    ];
+  }
 
-const userAttributes = [
-  'museum_goer_id',
-  'Name',
-  'username',
-  'password',
-  'address',
-  'email',
-  'phone',
-  'age'
-];
+  async findAll() {
+    const users = await this.user.findAll({
+      attributes: this.userAttributes
+    });
 
-async function findAll() {
-  const users = await User.findAll({
-    attributes: userAttributes
-  });
+    return _.map(users, user => {
+      return userPresenter(user);
+    });
+  }
 
-  return _.map(users, user => {
-    return userPresenter(user);
-  });
-}
+  async findUserById(id) {
+    const user = await this.user.findAll({
+      attributes: this.userAttributes,
+      where: {
+        user_id: id
+      }
+    });
 
-async function findUserById(id) {
-  const user = await User.findAll({
-    attributes: userAttributes,
-    where: {
-      user_id: id
-    }
-  });
-
-  return _.map(user, user => {
-    return userPresenter(user);
-  });
+    return _.map(user, user => {
+      return userPresenter(user);
+    });
+  }
 }
 
 function userPresenter(user) {
@@ -49,7 +52,4 @@ function userPresenter(user) {
   };
 }
 
-module.exports = {
-  findAll,
-  findUserById
-};
+module.exports = UserController;
