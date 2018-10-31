@@ -36,14 +36,4 @@ class ExhibitionController {
   }
 }
 
-function exhibitionPresenter(exhibition) {
-  return {
-    id: exhibition.exhibition_id,
-    name: exhibition.Name,
-    start_date: exhibition.Start_date,
-    end_date: exhibition.End_date,
-    supported_visitor: exhibition.number_limit_visitor
-  };
-}
-
 module.exports = ExhibitionController;

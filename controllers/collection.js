@@ -37,15 +37,4 @@ class CollectionController {
   }
 }
 
-function collectionPresenter(collection) {
-  return {
-    id: collection.Collection_id,
-    name: collection.Name,
-    type: collection.Type,
-    description: collection.Description,
-    address: collection.Address,
-    contact_id: collection.contact_id
-  };
-}
-
 module.exports = CollectionController;

@@ -25,16 +25,4 @@ class ArtworkController {
   }
 }
 
-function artworkPresenter(artwork) {
-  return {
-    id: artwork.Id_no,
-    year: artwork.Years,
-    title: artwork.Title,
-    description: artwork.Description,
-    origin: artwork.Origin,
-    epoch: artwork.Epoch,
-    artist_id: artwork.artist_id
-  };
-}
-
 module.exports = ArtworkController;

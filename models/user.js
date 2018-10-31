@@ -19,6 +19,7 @@ function createUserModel() {
       age: Sequelize.INTEGER(11)
     },
     {
+      timestamps: false,
       freezeTableName: true
     }
   );

@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const Sequelize = require('sequelize');
 
 const app = express();
 
@@ -8,6 +9,9 @@ const Artwork = require('./models/artwork')();
 const Exhibition = require('./models/exhibition')();
 const Collection = require('./models/collection')();
 const User = require('./models/user')();
+
+Artist.hasMany(Artwork, { foreignKey: 'artist_id' });
+Artwork.belongsTo(Artist, { foreignKey: 'artist_id' });
 
 const ArtistRoute = require('./routes/artists');
 const ArtworkRoute = require('./routes/artworks');

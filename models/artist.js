@@ -19,9 +19,12 @@ function createArtistModel() {
       description: Sequelize.TEXT
     },
     {
+      timestamps: false,
       freezeTableName: true
     }
   );
 }
+
+console.log(createArtistModel());
 
 module.exports = createArtistModel;

@@ -28,6 +28,19 @@ class ArtistRoute {
         res.send(err);
       }
     });
+
+    this.router.get('/:artistId/artworks', async (req, res) => {
+      const artistId = req.params.artistId;
+      try {
+        const artworks = await this.artistController.findArtworksByArtistId(
+          artistId
+        );
+        res.send(artworks);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
   }
 }
 

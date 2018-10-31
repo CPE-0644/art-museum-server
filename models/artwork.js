@@ -18,6 +18,7 @@ function createArtObjectModel() {
       artist_id: Sequelize.STRING(45)
     },
     {
+      timestamps: false,
       freezeTableName: true
     }
   );

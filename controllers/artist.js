@@ -1,5 +1,7 @@
 const _ = require('lodash');
 
+const Artwork = require('../models/artwork')();
+const { artistPresenter, artworkPresenter } = require('./presenter');
 class ArtistController {
   constructor(artist) {
     this.artist = artist;
@@ -37,19 +39,20 @@ class ArtistController {
       return artistPresenter(artist);
     });
   }
-}
 
-function artistPresenter(artist) {
-  return {
-    id: artist.artist_id,
-    name: artist.name,
-    date_of_birth: artist.date_born,
-    date_of_died: artist.date_died,
-    country: artist.country_of_origin,
-    epoch: artist.epoch,
-    style: artist.main_style,
-    description: artist.description
-  };
+  async findArtworksByArtistId(id) {
+    const artist = await this.artist.findOne({
+      where: {
+        artist_id: id
+      },
+      include: [Artwork]
+    });
+    const artworks = artist['art_objects'];
+
+    return _.map(artworks, artwork => {
+      return artworkPresenter(artwork);
+    });
+  }
 }
 
 module.exports = ArtistController;

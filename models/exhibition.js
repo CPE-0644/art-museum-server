@@ -16,6 +16,7 @@ function createExhibitionModel() {
       number_limit_visitor: Sequelize.INTEGER
     },
     {
+      timestamps: false,
       freezeTableName: true
     }
   );
