@@ -4,9 +4,10 @@ const Exhibition = require('../models/Exhibition')();
 
 const exhibitionAttributes = [
   'exhibition_id',
-  'name',
-  'start_date',
-  'end_date'
+  'Name',
+  'Start_date',
+  'End_date',
+  'number_limit_visitor'
 ];
 
 async function findAll() {
@@ -35,9 +36,10 @@ async function findExhibitionById(id) {
 function exhibitionPresenter(exhibition) {
   return {
     id: exhibition.exhibition_id,
-    name: exhibition.name,
-    start_date: exhibition.start_date,
-    end_date: exhibition.end_date
+    name: exhibition.Name,
+    start_date: exhibition.Start_date,
+    end_date: exhibition.End_date,
+    supported_visitor: exhibition.number_limit_visitor
   };
 }
 module.exports = {

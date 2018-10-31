@@ -12,7 +12,8 @@ function createExhibitionModel() {
       },
       Name: Sequelize.STRING(45),
       Start_date: Sequelize.DATE,
-      End_date: Sequelize.DATE
+      End_date: Sequelize.DATE,
+      number_limit_visitor: Sequelize.INTEGER
     },
     {
       freezeTableName: true
