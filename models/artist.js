@@ -25,6 +25,4 @@ function createArtistModel() {
   );
 }
 
-console.log(createArtistModel());
-
 module.exports = createArtistModel;
