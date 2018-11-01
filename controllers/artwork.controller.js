@@ -1,11 +1,12 @@
 const _ = require('lodash');
 
+const { Artwork, Artist } = require('../config/db.config');
+
 const { artworkPresenter, artistPresenter } = require('./presenter');
-const Artist = require('../models/artist');
 
 class ArtworkController {
   constructor(artwork) {
-    this.artwork = artwork;
+    this.artwork = Artwork;
     this.artworkAttributes = [
       'Id_no',
       'Years',

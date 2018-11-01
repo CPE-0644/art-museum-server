@@ -1,9 +1,10 @@
 const express = require('express');
 
-const ArtistController = require('../controllers/artist');
+const ArtistController = require('../controllers/artist.controller');
+
 class ArtistRoute {
-  constructor(Artist) {
-    this.artistController = new ArtistController(Artist);
+  constructor() {
+    this.artistController = new ArtistController();
     this.router = express.Router();
 
     this.initRoute();

@@ -1,10 +1,10 @@
 const express = require('express');
 
-const ExhibitionController = require('../controllers/exhibition');
+const ExhibitionController = require('../controllers/exhibition.controller');
 
 class ExhibitionRoute {
   constructor(Exhibition) {
-    this.exhibitionController = new ExhibitionController(Exhibition);
+    this.exhibitionController = new ExhibitionController();
     this.router = express.Router();
 
     this.initRoute();

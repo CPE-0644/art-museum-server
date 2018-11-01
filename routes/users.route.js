@@ -1,10 +1,10 @@
 const express = require('express');
 
-const UserController = require('../controllers/user');
+const UserController = require('../controllers/user.controller');
 
 class UserRoute {
   constructor(User) {
-    this.userController = new UserController(User);
+    this.userController = new UserController();
     this.router = express.Router();
 
     this.initRoute();

@@ -1,10 +1,10 @@
 const express = require('express');
 
-const collectionController = require('../controllers/collection');
+const collectionController = require('../controllers/collection.controller');
 
 class CollectionRoute {
   constructor(Collection) {
-    this.collectionController = new collectionController(Collection);
+    this.collectionController = new collectionController();
     this.router = express.Router();
 
     this.initRoute();

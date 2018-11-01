@@ -1,5 +1,7 @@
 const _ = require('lodash');
 
+const { Collection } = require('../config/db.config');
+
 class CollectionController {
   constructor(collection) {
     this.collection = collection;

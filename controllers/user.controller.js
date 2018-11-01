@@ -1,11 +1,12 @@
 const _ = require('lodash');
 
+const { User, UserInterested } = require('../config/db.config');
+
 const { userPresenter, userInterestedPresenter } = require('./presenter');
 
-const UserInterested = require('../models/userInterested');
 class UserController {
   constructor(user) {
-    this.user = user;
+    this.user = User;
     this.userAttributes = [
       'museum_goer_id',
       'Name',
