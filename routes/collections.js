@@ -1,6 +1,6 @@
 const express = require('express');
 
-const collectionController = require('../controllers/collection.controller');
+const collectionController = require('../controllers/collection');
 
 class CollectionRoute {
   constructor(Collection) {

@@ -1,8 +1,8 @@
-const ArtistRoute = require('./artists.route');
-const ArtworkRoute = require('./artworks.route');
-const ExhibitionRoute = require('./exhibitions.route');
-const CollectionRoute = require('./collections.route');
-const UserRoute = require('./users.route');
+const ArtistRoute = require('./artists');
+const ArtworkRoute = require('./artworks');
+const ExhibitionRoute = require('./exhibitions');
+const CollectionRoute = require('./collections');
+const UserRoute = require('./users');
 
 module.exports = route = {
   artistRoute: new ArtistRoute().router,

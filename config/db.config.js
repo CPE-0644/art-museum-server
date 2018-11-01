@@ -12,13 +12,13 @@ const sequelize = new Sequelize('art_museum', 'root', '1234', {
 });
 
 // models
-const Artist = require('../models/artist.model')(sequelize, Sequelize);
-const Artwork = require('../models/artwork.model')(sequelize, Sequelize);
-const Exhibition = require('../models/exhibition.model')(sequelize, Sequelize);
-const Collection = require('../models/collection.model')(sequelize, Sequelize);
-const User = require('../models/user.model')(sequelize, Sequelize);
-const Display = require('../models/display.model')(sequelize, Sequelize);
-const UserInterested = require('../models/userInterested.model')(
+const Artist = require('../models/artist')(sequelize, Sequelize);
+const Artwork = require('../models/artwork')(sequelize, Sequelize);
+const Exhibition = require('../models/exhibition')(sequelize, Sequelize);
+const Collection = require('../models/collection')(sequelize, Sequelize);
+const User = require('../models/user')(sequelize, Sequelize);
+const Display = require('../models/display')(sequelize, Sequelize);
+const UserInterested = require('../models/userInterested')(
   sequelize,
   Sequelize
 );

@@ -1,6 +1,6 @@
 const express = require('express');
 
-const ArtistController = require('../controllers/artist.controller');
+const ArtistController = require('../controllers/artist');
 
 class ArtistRoute {
   constructor() {
