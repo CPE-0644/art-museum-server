@@ -16,8 +16,10 @@ class UserRoute {
       res.send(users);
     });
 
-    this.router.get('/:userId', (req, res) => {
-      res.send(req.params.userId);
+    this.router.get('/:userId', async (req, res) => {
+      const id = req.params.userId;
+      const user = await this.userController.findUserById(id);
+      res.send(user);
     });
   }
 }

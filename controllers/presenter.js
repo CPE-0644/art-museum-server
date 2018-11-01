@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 function artistPresenter(artist) {
   return {
     id: artist.artist_id,
@@ -57,10 +59,27 @@ function userPresenter(user) {
   };
 }
 
+function userInterestedPresenter(user) {
+  return {
+    id: user.museum_goer_id,
+    name: user.Name,
+    username: user.username,
+    password: user.password,
+    address: user.address,
+    email: user.email,
+    phone: user.phone,
+    age: user.age,
+    interested: _.map(user.museum_goer_interested_types, interest => {
+      return interest.Interested_type;
+    })
+  };
+}
+
 module.exports = {
   artistPresenter,
   artworkPresenter,
   collectionPresenter,
   exhibitionPresenter,
-  userPresenter
+  userPresenter,
+  userInterestedPresenter
 };

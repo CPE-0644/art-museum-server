@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-const Artwork = require('../models/artwork')();
+const Artwork = require('../models/artwork');
 const { artistPresenter, artworkPresenter } = require('./presenter');
 class ArtistController {
   constructor(artist) {

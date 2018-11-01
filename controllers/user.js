@@ -1,5 +1,8 @@
 const _ = require('lodash');
 
+const { userPresenter, userInterestedPresenter } = require('./presenter');
+
+const UserInterested = require('../models/userInterested');
 class UserController {
   constructor(user) {
     this.user = user;
@@ -26,16 +29,14 @@ class UserController {
   }
 
   async findUserById(id) {
-    const user = await this.user.findAll({
-      attributes: this.userAttributes,
+    const user = await this.user.findOne({
       where: {
-        user_id: id
-      }
+        museum_goer_id: id
+      },
+      include: [UserInterested]
     });
 
-    return _.map(user, user => {
-      return userPresenter(user);
-    });
+    return [userInterestedPresenter(user)];
   }
 }
 

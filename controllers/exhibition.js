@@ -1,7 +1,7 @@
 const _ = require('lodash');
 
-const { exhibitionPresenter } = require('./presenter');
-const Artwork = require('../models/artwork')();
+const { exhibitionPresenter, artworkPresenter } = require('./presenter');
+const Artwork = require('../models/artwork');
 class ExhibitionController {
   constructor(exhibition) {
     this.exhibition = exhibition;
@@ -50,7 +50,9 @@ class ExhibitionController {
     });
     const artworks = exhibition['art_objects'];
 
-    return artworks;
+    return _.map(artworks, artwork => {
+      return artworkPresenter(artwork);
+    });
   }
 }
 
