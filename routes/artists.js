@@ -13,7 +13,7 @@ class ArtistRoute {
   initRoute() {
     this.router.post('/', async (req, res) => {
       try {
-        const artist = await this.artistController.createArtist(req);
+        const artist = await this.artistController.createArtist(req.body);
         res.send(artist);
       } catch (err) {
         res.send(err);

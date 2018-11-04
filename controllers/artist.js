@@ -19,7 +19,7 @@ class ArtistController {
     ];
   }
 
-  async createArtist(req) {
+  async createArtist(params) {
     const {
       name,
       date_of_birth,
@@ -28,7 +28,7 @@ class ArtistController {
       epoch,
       style,
       description
-    } = req.body;
+    } = params;
 
     const artist = await this.artist.create({
       name: name,
