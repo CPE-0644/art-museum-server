@@ -11,7 +11,7 @@ module.exports = (sequelize, Sequelize) => {
       Type: Sequelize.STRING(45),
       Description: Sequelize.TEXT,
       Address: Sequelize.STRING(255),
-      contact_id: INTEGER
+      contact_id: Sequelize.INTEGER
     },
     {
       timestamps: false,

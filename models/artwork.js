@@ -12,7 +12,7 @@ module.exports = (sequelize, Sequelize) => {
       Description: Sequelize.TEXT,
       Origin: Sequelize.STRING(45),
       Epoch: Sequelize.STRING(45),
-      artist_id: INTEGER
+      artist_id: Sequelize.INTEGER
     },
     {
       timestamps: false,

@@ -18,6 +18,21 @@ class ArtworkController {
     ];
   }
 
+  async createArtwork(params) {
+    const { year, title, description, origin, epoch, artist_id } = params;
+
+    const artwork = await this.artwork.create({
+      Years: year,
+      Title: title,
+      Description: description,
+      Origin: origin,
+      Epoch: epoch,
+      artist_id: artist_id
+    });
+
+    return [artworkPresenter(artwork)];
+  }
+
   async findAll() {
     const artworks = await this.artwork.findAll();
 

@@ -11,6 +11,16 @@ class ArtworkRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const artwork = await this.artworkController.createArtwork(req.body);
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const artworks = await this.artworkController.findAll();
