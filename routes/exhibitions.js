@@ -11,6 +11,18 @@ class ExhibitionRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const exhibition = await this.exhibitionController.createExhibition(
+          req.body
+        );
+        res.send(exhibition);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const exhibitions = await this.exhibitionController.findAll();

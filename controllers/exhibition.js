@@ -16,6 +16,20 @@ class ExhibitionController {
     ];
   }
 
+  async createExhibition(params) {
+    const { id, name, start_date, end_date, supported_visitor } = params;
+
+    const exhibition = await this.exhibition.create({
+      exhibition_id: id,
+      Name: name,
+      Start_date: start_date,
+      End_date: end_date,
+      number_limit_visitor: supported_visitor
+    });
+
+    return [exhibitionPresenter(exhibition)];
+  }
+
   async findAll() {
     const exhibitions = await this.exhibition.findAll();
     console.log(exhibitions);
