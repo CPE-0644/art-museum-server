@@ -3,8 +3,9 @@ module.exports = (sequelize, Sequelize) => {
     'museum_goer',
     {
       museum_goer_id: {
-        type: Sequelize.STRING(45),
-        primaryKey: true
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
       },
       Name: Sequelize.STRING(45),
       username: Sequelize.STRING(45),

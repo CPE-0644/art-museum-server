@@ -3,15 +3,16 @@ module.exports = (sequelize, Sequelize) => {
     'art_object',
     {
       Id_no: {
-        type: Sequelize.STRING(45),
-        primaryKey: true
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
       },
       Years: Sequelize.DATE,
       Title: Sequelize.STRING(45),
       Description: Sequelize.TEXT,
       Origin: Sequelize.STRING(45),
       Epoch: Sequelize.STRING(45),
-      artist_id: Sequelize.STRING(45)
+      artist_id: INTEGER
     },
     {
       timestamps: false,

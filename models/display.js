@@ -2,8 +2,8 @@ module.exports = (sequelize, Sequelize) => {
   const Display = sequelize.define(
     'display',
     {
-      exhibition_id: Sequelize.STRING(45),
-      art_object_id: Sequelize.STRING(45)
+      exhibition_id: Sequelize.INTEGER,
+      art_object_id: Sequelize.INTEGER
     },
     {
       timestamps: false,

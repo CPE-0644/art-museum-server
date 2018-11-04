@@ -3,14 +3,15 @@ module.exports = (sequelize, Sequelize) => {
     'collection',
     {
       Collection_id: {
-        type: Sequelize.STRING(45),
-        primaryKey: true
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
       },
       Name: Sequelize.STRING(45),
       Type: Sequelize.STRING(45),
       Description: Sequelize.TEXT,
       Address: Sequelize.STRING(255),
-      contact_id: Sequelize.STRING(45)
+      contact_id: INTEGER
     },
     {
       timestamps: false,
