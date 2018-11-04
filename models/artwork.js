@@ -7,7 +7,7 @@ module.exports = (sequelize, Sequelize) => {
         primaryKey: true,
         autoIncrement: true
       },
-      Years: Sequelize.DATE,
+      Years: Sequelize.STRING(4),
       Title: Sequelize.STRING(45),
       Description: Sequelize.TEXT,
       Origin: Sequelize.STRING(45),
