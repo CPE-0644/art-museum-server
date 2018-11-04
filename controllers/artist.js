@@ -55,7 +55,6 @@ class ArtistController {
 
   async findArtistById(id) {
     const artist = await this.artist.findAll({
-      attributes: this.artistAttributes,
       where: {
         artist_id: id
       }
@@ -78,6 +77,18 @@ class ArtistController {
     return _.map(artworks, artwork => {
       return artworkPresenter(artwork);
     });
+  }
+
+  async deleteArtist(id) {
+    const artist = await this.artist.findOne({
+      where: {
+        artist_id: id
+      }
+    });
+
+    artist.destroy();
+
+    return null;
   }
 }
 

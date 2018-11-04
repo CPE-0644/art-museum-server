@@ -42,6 +42,16 @@ class ArtworkRoute {
       }
     });
 
+    this.router.delete('/:artId', async (req, res) => {
+      const artworkId = req.params.artId;
+      try {
+        await this.artworkController.deleteArtwork(artworkId);
+        res.send(`{ "success": true }`);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
     this.router.get('/:artId/artist', async (req, res) => {
       const id = req.params.artId;
       try {

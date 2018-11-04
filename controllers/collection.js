@@ -51,6 +51,18 @@ class CollectionController {
       return collectionPresenter(collection);
     });
   }
+
+  async deleteCollection(id) {
+    const collection = await this.collection.findOne({
+      where: {
+        Collection_id: id
+      }
+    });
+
+    collection.destroy();
+
+    return null;
+  }
 }
 
 module.exports = CollectionController;

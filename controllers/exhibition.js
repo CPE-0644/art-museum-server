@@ -70,6 +70,18 @@ class ExhibitionController {
       return artworkPresenter(artwork);
     });
   }
+
+  async deleteExhibition(id) {
+    const exhibition = await this.exhibition.findOne({
+      where: {
+        exhibition_id: id
+      }
+    });
+
+    exhibition.destroy();
+
+    return null;
+  }
 }
 
 module.exports = ExhibitionController;

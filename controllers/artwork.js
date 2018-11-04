@@ -65,6 +65,18 @@ class ArtworkController {
 
     return [artistPresenter(artist)];
   }
+
+  async deleteArtwork(id) {
+    const artwork = await this.artwork.findOne({
+      where: {
+        Id_no: id
+      }
+    });
+
+    artwork.destroy();
+
+    return null;
+  }
 }
 
 module.exports = ArtworkController;

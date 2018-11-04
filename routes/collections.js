@@ -35,6 +35,16 @@ class CollectionRoute {
     this.router.get('/:collectionId', (req, res) => {
       res.send(req.params.collectionId);
     });
+
+    this.router.delete('/:collectionId', async (req, res) => {
+      const collectionId = req.params.artId;
+      try {
+        await this.collectionController.deleteCollection(collectionId);
+        res.send(`{ "success": true }`);
+      } catch (err) {
+        console.log(err);
+      }
+    });
   }
 }
 
