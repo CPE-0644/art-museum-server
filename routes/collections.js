@@ -11,6 +11,18 @@ class CollectionRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const collection = await this.collectionController.createCollection(
+          req.body
+        );
+        res.send(collection);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const collections = await this.collectionController.findAll();

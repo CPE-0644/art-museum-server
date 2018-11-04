@@ -15,6 +15,20 @@ class CollectionController {
     ];
   }
 
+  async createCollection(params) {
+    const { name, type, description, address, contact_id } = params;
+
+    const collection = await this.collection.create({
+      Name: name,
+      Type: type,
+      Description: description,
+      Address: address,
+      Contact_id: contact_id
+    });
+
+    return [collectionPresenter(collection)];
+  }
+
   async findAll() {
     const collections = await this.collection.findAll({
       attributes: this.collectionAttributes
