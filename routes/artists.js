@@ -11,6 +11,15 @@ class ArtistRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const artist = await this.artistController.createArtist(req);
+        res.send(artist);
+      } catch (err) {
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const artists = await this.artistController.findAll();

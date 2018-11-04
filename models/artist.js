@@ -4,7 +4,8 @@ module.exports = (sequelize, Sequelize) => {
     {
       artist_id: {
         type: Sequelize.STRING(45),
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement: true
       },
       name: Sequelize.STRING(45),
       date_born: Sequelize.DATE,

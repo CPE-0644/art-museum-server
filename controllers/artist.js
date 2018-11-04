@@ -19,6 +19,30 @@ class ArtistController {
     ];
   }
 
+  async createArtist(req) {
+    const {
+      name,
+      date_of_birth,
+      date_of_died,
+      country,
+      epoch,
+      style,
+      description
+    } = req.body;
+
+    const artist = await this.artist.create({
+      name: name,
+      date_born: date_of_birth,
+      date_died: date_of_died,
+      country_of_origin: country,
+      epoch: epoch,
+      main_style: style,
+      description: description
+    });
+
+    return [artistPresenter(artist)];
+  }
+
   async findAll() {
     const artists = await this.artist.findAll({
       attributes: this.artistAttributes
