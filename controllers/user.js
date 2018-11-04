@@ -19,6 +19,22 @@ class UserController {
     ];
   }
 
+  async createUser(params) {
+    const { name, title, password, address, email, phone, age } = params;
+
+    const user = await this.user.create({
+      Name: name,
+      username: title,
+      password: password,
+      address: address,
+      email: email,
+      phone: phone,
+      age: age
+    });
+
+    return [userPresenter(user)];
+  }
+
   async findAll() {
     const users = await this.user.findAll({
       attributes: this.userAttributes

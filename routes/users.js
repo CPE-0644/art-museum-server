@@ -11,6 +11,16 @@ class UserRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const user = await this.userController.createUser(req.body);
+        res.send(user);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       const users = await this.userController.findAll();
       res.send(users);
