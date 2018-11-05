@@ -11,6 +11,16 @@ class ArtworkRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const artwork = await this.artworkController.createArtwork(req.body);
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const artworks = await this.artworkController.findAll();
@@ -29,6 +39,30 @@ class ArtworkRoute {
       } catch (err) {
         console.log(err);
         res.send(err);
+      }
+    });
+
+    this.router.put('/:artworkId', async (req, res) => {
+      const artworkId = req.params.artworkId;
+      try {
+        const artwork = await this.artworkController.updateArtwork(
+          req.body,
+          artworkId
+        );
+
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
+    this.router.delete('/:artId', async (req, res) => {
+      const artworkId = req.params.artId;
+      try {
+        await this.artworkController.deleteArtwork(artworkId);
+        res.send(`{ "success": true }`);
+      } catch (err) {
+        console.log(err);
       }
     });
 

@@ -11,6 +11,16 @@ class UserRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const user = await this.userController.createUser(req.body);
+        res.send(user);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       const users = await this.userController.findAll();
       res.send(users);
@@ -20,6 +30,17 @@ class UserRoute {
       const id = req.params.userId;
       const user = await this.userController.findUserById(id);
       res.send(user);
+    });
+
+    this.router.put('/:userId', async (req, res) => {
+      const userId = req.params.userId;
+      try {
+        const user = await this.userController.updateUser(req.body, userId);
+
+        res.send(user);
+      } catch (err) {
+        console.log(err);
+      }
     });
   }
 }

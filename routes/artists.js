@@ -11,6 +11,15 @@ class ArtistRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const artist = await this.artistController.createArtist(req.body);
+        res.send(artist);
+      } catch (err) {
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const artists = await this.artistController.findAll();
@@ -27,6 +36,30 @@ class ArtistRoute {
         res.send(artist);
       } catch (err) {
         res.send(err);
+      }
+    });
+
+    this.router.put('/:artistId', async (req, res) => {
+      const artistId = req.params.artistId;
+      try {
+        const artist = await this.artistController.updateArtist(
+          req.body,
+          artistId
+        );
+
+        res.send(artist);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
+    this.router.delete('/:artistId', async (req, res) => {
+      const artistId = req.params.artistId;
+      try {
+        await this.artistController.deleteArtist(artistId);
+        res.send(`{ "success": true }`);
+      } catch (err) {
+        console.log(err);
       }
     });
 

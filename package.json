@@ -1,24 +1,24 @@
 {
-  "name": "art-museum-server",
+  "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "> using nodejs",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CPE-0644/art-museum-server.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/CPE-0644/art-museum-server/issues"
   },
   "homepage": "https://github.com/CPE-0644/art-museum-server#readme",
-  "description": "",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
     "lodash": "^4.17.11",

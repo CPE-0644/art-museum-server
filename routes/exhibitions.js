@@ -11,6 +11,18 @@ class ExhibitionRoute {
   }
 
   initRoute() {
+    this.router.post('/', async (req, res) => {
+      try {
+        const exhibition = await this.exhibitionController.createExhibition(
+          req.body
+        );
+        res.send(exhibition);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const exhibitions = await this.exhibitionController.findAll();
@@ -28,6 +40,30 @@ class ExhibitionRoute {
       );
 
       res.send(exhibition);
+    });
+
+    this.router.put('/:exhibitionId', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+      try {
+        const exhibition = await this.exhibitionController.updateExhibition(
+          req.body,
+          exhibitionId
+        );
+
+        res.send(exhibition);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
+    this.router.delete('/:exhibitionId', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+      try {
+        await this.exhibitionController.deleteExhibition(exhibitionId);
+        res.send(`{ "success": true }`);
+      } catch (err) {
+        console.log(err);
+      }
     });
 
     this.router.get('/:exhibitionId/artworks', async (req, res) => {

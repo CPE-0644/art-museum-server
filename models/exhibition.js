@@ -3,8 +3,9 @@ module.exports = (sequelize, Sequelize) => {
     'exhibition',
     {
       exhibition_id: {
-        type: Sequelize.STRING(45),
-        primaryKey: true
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
       },
       Name: Sequelize.STRING(45),
       Start_date: Sequelize.DATE,

@@ -18,6 +18,46 @@ class ArtworkController {
     ];
   }
 
+  async createArtwork(params) {
+    const { year, title, description, origin, epoch, artist_id } = params;
+
+    const artwork = await this.artwork.create({
+      Years: year,
+      Title: title,
+      Description: description,
+      Origin: origin,
+      Epoch: epoch,
+      artist_id: artist_id
+    });
+
+    return [artworkPresenter(artwork)];
+  }
+
+  async updateArtwork(newParams, id) {
+    const { year, title, description, origin, epoch, artist_id } = newParams;
+    const artwork = await this.artwork.findOne({
+      where: {
+        Id_no: id
+      }
+    });
+
+    artwork.update(
+      {
+        Years: year,
+        Title: title,
+        Description: description,
+        Origin: origin,
+        Epoch: epoch,
+        artist_id: artist_id
+      },
+      {
+        fields: this.artworkAttributes
+      }
+    );
+
+    return [artworkPresenter(artwork)];
+  }
+
   async findAll() {
     const artworks = await this.artwork.findAll();
 
@@ -49,6 +89,18 @@ class ArtworkController {
     const artist = artwork['artist'];
 
     return [artistPresenter(artist)];
+  }
+
+  async deleteArtwork(id) {
+    const artwork = await this.artwork.findOne({
+      where: {
+        Id_no: id
+      }
+    });
+
+    artwork.destroy();
+
+    return null;
   }
 }
 

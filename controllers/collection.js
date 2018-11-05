@@ -6,13 +6,50 @@ class CollectionController {
   constructor(collection) {
     this.collection = collection;
     this.collectionAttributes = [
-      'Collection_id',
       'Name',
       'Type',
       'Description',
       'Address',
       'contact_id'
     ];
+  }
+
+  async createCollection(params) {
+    const { name, type, description, address, contact_id } = params;
+
+    const collection = await this.collection.create({
+      Name: name,
+      Type: type,
+      Description: description,
+      Address: address,
+      Contact_id: contact_id
+    });
+
+    return [collectionPresenter(collection)];
+  }
+
+  async updateCollection(newParams, id) {
+    const { name, type, description, address, contact_id } = newParams;
+    const collection = await this.collection.findOne({
+      where: {
+        Collection_id: id
+      }
+    });
+
+    collection.update(
+      {
+        Name: name,
+        Type: type,
+        Description: description,
+        Address: address,
+        Contact_id: contact_id
+      },
+      {
+        fields: this.collectionAttributes
+      }
+    );
+
+    return [collectionPresenter(collection)];
   }
 
   async findAll() {
@@ -36,6 +73,18 @@ class CollectionController {
     return _.map(collection, collection => {
       return collectionPresenter(collection);
     });
+  }
+
+  async deleteCollection(id) {
+    const collection = await this.collection.findOne({
+      where: {
+        Collection_id: id
+      }
+    });
+
+    collection.destroy();
+
+    return null;
   }
 }
 
