@@ -19,9 +19,19 @@ class UserController {
   }
 
   async createUser(params) {
-    const { name, username, password, address, email, phone, age } = params;
+    const {
+      name,
+      username,
+      password,
+      address,
+      email,
+      phone,
+      age,
+      interested
+    } = params;
 
     const user = await this.user.create({
+      isAdmin: false,
       Name: name,
       username: username,
       password: password,
@@ -29,6 +39,13 @@ class UserController {
       email: email,
       phone: phone,
       age: age
+    });
+
+    _.forEach(interested, interested_type => {
+      UserInterested.create({
+        museum_goer_id: user.museum_goer_id,
+        Interested_type: interested_type
+      });
     });
 
     return [userPresenter(user)];
