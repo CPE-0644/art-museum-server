@@ -33,6 +33,31 @@ class ArtworkController {
     return [artworkPresenter(artwork)];
   }
 
+  async updateArtwork(newParams, id) {
+    const { year, title, description, origin, epoch, artist_id } = newParams;
+    const artwork = await this.artwork.findOne({
+      where: {
+        Id_no: id
+      }
+    });
+
+    artwork.update(
+      {
+        Years: year,
+        Title: title,
+        Description: description,
+        Origin: origin,
+        Epoch: epoch,
+        artist_id: artist_id
+      },
+      {
+        fields: this.artworkAttributes
+      }
+    );
+
+    return [artworkPresenter(artwork)];
+  }
+
   async findAll() {
     const artworks = await this.artwork.findAll();
 

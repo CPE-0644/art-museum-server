@@ -6,7 +6,6 @@ class CollectionController {
   constructor(collection) {
     this.collection = collection;
     this.collectionAttributes = [
-      'Collection_id',
       'Name',
       'Type',
       'Description',
@@ -25,6 +24,30 @@ class CollectionController {
       Address: address,
       Contact_id: contact_id
     });
+
+    return [collectionPresenter(collection)];
+  }
+
+  async updateCollection(newParams, id) {
+    const { name, type, description, address, contact_id } = newParams;
+    const collection = await this.collection.findOne({
+      where: {
+        Collection_id: id
+      }
+    });
+
+    collection.update(
+      {
+        Name: name,
+        Type: type,
+        Description: description,
+        Address: address,
+        Contact_id: contact_id
+      },
+      {
+        fields: this.collectionAttributes
+      }
+    );
 
     return [collectionPresenter(collection)];
   }

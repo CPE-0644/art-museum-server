@@ -42,6 +42,20 @@ class ExhibitionRoute {
       res.send(exhibition);
     });
 
+    this.router.put('/:exhibitionId', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+      try {
+        const exhibition = await this.exhibitionController.updateExhibition(
+          req.body,
+          exhibitionId
+        );
+
+        res.send(exhibition);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
     this.router.delete('/:exhibitionId', async (req, res) => {
       const exhibitionId = req.params.exhibitionId;
       try {

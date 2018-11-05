@@ -42,6 +42,20 @@ class ArtworkRoute {
       }
     });
 
+    this.router.put('/:artworkId', async (req, res) => {
+      const artworkId = req.params.artworkId;
+      try {
+        const artwork = await this.artworkController.updateArtwork(
+          req.body,
+          artworkId
+        );
+
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
     this.router.delete('/:artId', async (req, res) => {
       const artworkId = req.params.artId;
       try {

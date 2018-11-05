@@ -36,6 +36,20 @@ class CollectionRoute {
       res.send(req.params.collectionId);
     });
 
+    this.router.put('/:collectionId', async (req, res) => {
+      const collectionId = req.params.collectionId;
+      try {
+        const collection = await this.collectionController.updateCollection(
+          req.body,
+          collectionId
+        );
+
+        res.send(collection);
+      } catch (err) {
+        console.log(err);
+      }
+    });
+
     this.router.delete('/:collectionId', async (req, res) => {
       const collectionId = req.params.artId;
       try {

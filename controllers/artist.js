@@ -8,7 +8,6 @@ class ArtistController {
   constructor() {
     this.artist = Artist;
     this.artistAttributes = [
-      'artist_id',
       'name',
       'date_born',
       'date_died',
@@ -39,6 +38,41 @@ class ArtistController {
       main_style: style,
       description: description
     });
+
+    return [artistPresenter(artist)];
+  }
+
+  async updateArtist(newParams, id) {
+    const {
+      name,
+      date_of_birth,
+      date_of_died,
+      country,
+      epoch,
+      style,
+      description
+    } = newParams;
+
+    const artist = await this.artist.findOne({
+      where: {
+        artist_id: id
+      }
+    });
+
+    artist.update(
+      {
+        name: name,
+        date_born: date_of_birth,
+        date_died: date_of_died,
+        country_of_origin: country,
+        epoch: epoch,
+        main_style: style,
+        description: description
+      },
+      {
+        fields: this.artistAttributes
+      }
+    );
 
     return [artistPresenter(artist)];
   }

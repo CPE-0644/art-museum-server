@@ -8,7 +8,6 @@ class ExhibitionController {
   constructor(exhibition) {
     this.exhibition = Exhibition;
     this.exhibitionAttributes = [
-      'exhibition_id',
       'Name',
       'Start_date',
       'End_date',
@@ -26,6 +25,29 @@ class ExhibitionController {
       End_date: end_date,
       number_limit_visitor: supported_visitor
     });
+
+    return [exhibitionPresenter(exhibition)];
+  }
+
+  async updateExhibition(newParams, id) {
+    const { name, start_date, end_date, supported_visitor } = newParams;
+    const exhibition = await this.exhibition.findOne({
+      where: {
+        exhibition_id: id
+      }
+    });
+
+    exhibition.update(
+      {
+        Name: name,
+        Start_date: start_date,
+        End_date: end_date,
+        number_limit_visitor: supported_visitor
+      },
+      {
+        fields: this.exhibitionAttributes
+      }
+    );
 
     return [exhibitionPresenter(exhibition)];
   }

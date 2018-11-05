@@ -31,6 +31,17 @@ class UserRoute {
       const user = await this.userController.findUserById(id);
       res.send(user);
     });
+
+    this.router.put('/:userId', async (req, res) => {
+      const userId = req.params.userId;
+      try {
+        const user = await this.userController.updateUser(req.body, userId);
+
+        res.send(user);
+      } catch (err) {
+        console.log(err);
+      }
+    });
   }
 }
 
