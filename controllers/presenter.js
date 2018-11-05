@@ -63,6 +63,7 @@ function userInterestedPresenter(user) {
   return {
     id: user.museum_goer_id,
     name: user.Name,
+    isAdmin: user.isAdmin,
     username: user.username,
     password: user.password,
     address: user.address,
