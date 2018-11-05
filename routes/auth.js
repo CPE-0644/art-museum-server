@@ -10,6 +10,7 @@ class AuthRoute {
 
   initRoute() {
     this.router.post('/auth', passport.authenticate('local'), (req, res) => {
+      console.log(req.user);
       res.send(JSON.stringify(req.user));
     });
 

@@ -2,6 +2,8 @@ const express = require('express');
 
 const collectionController = require('../controllers/collection');
 
+const { isAdmin } = require('../middlewares/middleware');
+
 class CollectionRoute {
   constructor(Collection) {
     this.collectionController = new collectionController();
@@ -11,7 +13,7 @@ class CollectionRoute {
   }
 
   initRoute() {
-    this.router.post('/', async (req, res) => {
+    this.router.post('/', isAdmin, async (req, res) => {
       try {
         const collection = await this.collectionController.createCollection(
           req.body
@@ -36,7 +38,7 @@ class CollectionRoute {
       res.send(req.params.collectionId);
     });
 
-    this.router.put('/:collectionId', async (req, res) => {
+    this.router.put('/:collectionId', isAdmin, async (req, res) => {
       const collectionId = req.params.collectionId;
       try {
         const collection = await this.collectionController.updateCollection(
@@ -50,7 +52,7 @@ class CollectionRoute {
       }
     });
 
-    this.router.delete('/:collectionId', async (req, res) => {
+    this.router.delete('/:collectionId', isAdmin, async (req, res) => {
       const collectionId = req.params.artId;
       try {
         await this.collectionController.deleteCollection(collectionId);
