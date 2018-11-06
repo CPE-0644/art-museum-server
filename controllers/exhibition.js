@@ -54,7 +54,6 @@ class ExhibitionController {
 
   async findAll() {
     const exhibitions = await this.exhibition.findAll();
-    console.log(exhibitions);
     return _.map(exhibitions, exhibition => {
       return exhibitionPresenter(exhibition);
     });

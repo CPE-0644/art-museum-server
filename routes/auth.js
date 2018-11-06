@@ -10,8 +10,14 @@ class AuthRoute {
 
   initRoute() {
     this.router.post('/auth', passport.authenticate('local'), (req, res) => {
-      console.log(req.user);
-      res.send(JSON.stringify(req.user));
+      res.send(
+        JSON.stringify({
+          username: req.user.username,
+          name: req.user.Name,
+          id: req.user.museum_goer_id,
+          role: req.user.isAdmin == 1 ? 'admin' : 'user'
+        })
+      );
     });
 
     this.router.get('/logout', function(req, res) {
