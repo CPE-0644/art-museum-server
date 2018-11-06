@@ -13,7 +13,7 @@ class ArtistRoute {
   }
 
   initRoute() {
-    this.router.post('/', isAdmin, async (req, res) => {
+    this.router.post('/', async (req, res) => {
       try {
         const artist = await this.artistController.createArtist(req.body);
         res.send(artist);
@@ -41,7 +41,7 @@ class ArtistRoute {
       }
     });
 
-    this.router.put('/:artistId', isAdmin, async (req, res) => {
+    this.router.put('/:artistId', async (req, res) => {
       const artistId = req.params.artistId;
       try {
         const artist = await this.artistController.updateArtist(
@@ -55,7 +55,7 @@ class ArtistRoute {
       }
     });
 
-    this.router.delete('/:artistId', isAdmin, async (req, res) => {
+    this.router.delete('/:artistId', async (req, res) => {
       const artistId = req.params.artistId;
       try {
         await this.artistController.deleteArtist(artistId);

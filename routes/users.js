@@ -23,18 +23,18 @@ class UserRoute {
       }
     });
 
-    this.router.get('/', isAdmin, async (req, res) => {
+    this.router.get('/', async (req, res) => {
       const users = await this.userController.findAll();
       res.send(users);
     });
 
-    this.router.get('/:userId', isLoggedIn, async (req, res) => {
+    this.router.get('/:userId', async (req, res) => {
       const id = req.params.userId;
       const user = await this.userController.findUserById(id);
       res.send(user);
     });
 
-    this.router.put('/:userId', isAdmin, async (req, res) => {
+    this.router.put('/:userId', async (req, res) => {
       const userId = req.params.userId;
       try {
         const user = await this.userController.updateUser(req.body, userId);

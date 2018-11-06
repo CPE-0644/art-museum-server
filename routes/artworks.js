@@ -13,7 +13,7 @@ class ArtworkRoute {
   }
 
   initRoute() {
-    this.router.post('/', isAdmin, async (req, res) => {
+    this.router.post('/', async (req, res) => {
       try {
         const artwork = await this.artworkController.createArtwork(req.body);
         res.send(artwork);
@@ -44,7 +44,7 @@ class ArtworkRoute {
       }
     });
 
-    this.router.put('/:artworkId', isAdmin, async (req, res) => {
+    this.router.put('/:artworkId', async (req, res) => {
       const artworkId = req.params.artworkId;
       try {
         const artwork = await this.artworkController.updateArtwork(
@@ -58,7 +58,7 @@ class ArtworkRoute {
       }
     });
 
-    this.router.delete('/:artId', isAdmin, async (req, res) => {
+    this.router.delete('/:artId', async (req, res) => {
       const artworkId = req.params.artId;
       try {
         await this.artworkController.deleteArtwork(artworkId);

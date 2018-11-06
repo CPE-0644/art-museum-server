@@ -13,7 +13,7 @@ class ExhibitionRoute {
   }
 
   initRoute() {
-    this.router.post('/', isAdmin, async (req, res) => {
+    this.router.post('/', async (req, res) => {
       try {
         const exhibition = await this.exhibitionController.createExhibition(
           req.body
@@ -44,7 +44,7 @@ class ExhibitionRoute {
       res.send(exhibition);
     });
 
-    this.router.put('/:exhibitionId', isAdmin, async (req, res) => {
+    this.router.put('/:exhibitionId', async (req, res) => {
       const exhibitionId = req.params.exhibitionId;
       try {
         const exhibition = await this.exhibitionController.updateExhibition(
@@ -58,7 +58,7 @@ class ExhibitionRoute {
       }
     });
 
-    this.router.delete('/:exhibitionId', isAdmin, async (req, res) => {
+    this.router.delete('/:exhibitionId', async (req, res) => {
       const exhibitionId = req.params.exhibitionId;
       try {
         await this.exhibitionController.deleteExhibition(exhibitionId);
