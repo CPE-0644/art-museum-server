@@ -73,12 +73,12 @@ class ArtworkController {
   }
 
   async findAll() {
-    const sculptures = await this.findSculptures();
     const paintings = await this.findPaintings();
+    const sculptures = await this.findSculptures();
     const statues = await this.findStatues();
     const others = await this.findOthers();
 
-    const artworks = [...sculptures, ...paintings, ...statues, ...others];
+    const artworks = [...paintings, ...sculptures, ...statues, ...others];
 
     return _.map(artworks, artwork => {
       return artworkTypePresenter(artwork);
