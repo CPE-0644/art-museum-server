@@ -25,6 +25,23 @@ function artworkPresenter(artwork) {
   };
 }
 
+function sculpturePresenter(artwork) {
+  return {
+    id: artwork.Id_no,
+    year: artwork.Years,
+    title: artwork.Title,
+    artwork_type: 'sculpture',
+    description: artwork.Description,
+    origin: artwork.Origin,
+    epoch: artwork.Epoch,
+    material: artwork['sculpture.material'],
+    height: artwork['sculpture.height'],
+    weight: artwork['sculpture.weight'],
+    style: artwork['sculpture.style'],
+    artist_id: artwork.artist_id
+  };
+}
+
 function collectionPresenter(collection) {
   return {
     id: collection.Collection_id,
@@ -83,5 +100,6 @@ module.exports = {
   collectionPresenter,
   exhibitionPresenter,
   userPresenter,
-  userInterestedPresenter
+  userInterestedPresenter,
+  sculpturePresenter
 };

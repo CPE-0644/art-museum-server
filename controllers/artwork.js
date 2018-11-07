@@ -1,8 +1,18 @@
 const _ = require('lodash');
 
 const { Artwork, Artist } = require('../config/db.config');
+const {
+  PaintingArtwork,
+  StatueArtwork,
+  SculptureArtwork,
+  OtherArtwork
+} = require('../config/db.config');
 
-const { artworkPresenter, artistPresenter } = require('./presenter');
+const {
+  artworkPresenter,
+  artistPresenter,
+  sculpturePresenter
+} = require('./presenter');
 
 class ArtworkController {
   constructor(artwork) {
@@ -63,6 +73,21 @@ class ArtworkController {
 
     return _.map(artworks, artwork => {
       return artworkPresenter(artwork);
+    });
+  }
+
+  async findSculptures() {
+    const artworks = await this.artwork.findAll({
+      raw: true,
+      include: [SculptureArtwork]
+    });
+
+    const sculptures = _.filter(artworks, artwork => {
+      if (artwork['sculpture.art_object_type_id']) return true;
+    });
+
+    return _.map(sculptures, sculpture => {
+      return sculpturePresenter(sculpture);
     });
   }
 

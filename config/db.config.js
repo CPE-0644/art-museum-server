@@ -26,6 +26,16 @@ const CollectionContact = require('../models/CollectionContact')(
   sequelize,
   Sequelize
 );
+const SculptureArtwork = require('../models/sculptureArtwork')(
+  sequelize,
+  Sequelize
+);
+const StatueArtwork = require('../models/statueArtwork')(sequelize, Sequelize);
+const PaintingArtwork = require('../models/paintingArtwork')(
+  sequelize,
+  Sequelize
+);
+const OtherArtwork = require('../models/otherArtwork')(sequelize, Sequelize);
 
 Artist.hasMany(Artwork, { foreignKey: 'artist_id' });
 Artwork.belongsTo(Artist, { foreignKey: 'artist_id' });
@@ -45,7 +55,40 @@ User.hasMany(UserInterested, { foreignKey: 'museum_goer_id' });
 UserInterested.belongsTo(User, { foreignKey: 'museum_goer_id' });
 
 Collection.hasOne(CollectionContact, { foreignKey: 'contact_id' });
-CollectionContact.hasOne(Collection, { foreignKey: 'contact_id' });
+CollectionContact.belongsTo(Collection, { foreignKey: 'contact_id' });
+
+SculptureArtwork.hasOne(Artwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+Artwork.belongsTo(SculptureArtwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+PaintingArtwork.hasOne(Artwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+Artwork.belongsTo(PaintingArtwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+StatueArtwork.hasOne(Artwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+Artwork.belongsTo(StatueArtwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+OtherArtwork.hasOne(Artwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
+Artwork.belongsTo(OtherArtwork, {
+  foreignKey: 'Id_no',
+  targetKey: 'art_object_type_id'
+});
 
 const db = {
   sequelize,
@@ -57,7 +100,11 @@ const db = {
   CollectionContact,
   User,
   Display,
-  UserInterested
+  UserInterested,
+  SculptureArtwork,
+  StatueArtwork,
+  PaintingArtwork,
+  OtherArtwork
 };
 
 module.exports = db;
