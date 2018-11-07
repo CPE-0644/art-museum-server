@@ -77,6 +77,16 @@ class ExhibitionRoute {
 
       res.send(artworks);
     });
+
+    this.router.get('/:exhibitionId/users', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+
+      const users = await this.exhibitionController.findVisitingUsersByExhibitionId(
+        exhibitionId
+      );
+
+      res.send(users);
+    });
   }
 }
 

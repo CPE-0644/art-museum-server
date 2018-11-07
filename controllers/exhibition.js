@@ -1,8 +1,12 @@
 const _ = require('lodash');
 
-const { Artwork, Exhibition } = require('../config/db.config');
+const { Artwork, Exhibition, User } = require('../config/db.config');
 
-const { exhibitionPresenter, artworkPresenter } = require('./presenter');
+const {
+  exhibitionPresenter,
+  artworkPresenter,
+  exhibitionUsersPresenter
+} = require('./presenter');
 
 class ExhibitionController {
   constructor(exhibition) {
@@ -102,6 +106,17 @@ class ExhibitionController {
     exhibition.destroy();
 
     return null;
+  }
+
+  async findVisitingUsersByExhibitionId(id) {
+    const exhibition = await this.exhibition.findOne({
+      where: {
+        exhibition_id: id
+      },
+      include: [User]
+    });
+
+    return exhibitionUsersPresenter(exhibition);
   }
 }
 

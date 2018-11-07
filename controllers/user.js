@@ -1,8 +1,8 @@
 const _ = require('lodash');
 
-const { User, UserInterested } = require('../config/db.config');
+const { User, UserInterested, Exhibition } = require('../config/db.config');
 
-const { userPresenter, userInterestedPresenter } = require('./presenter');
+const { userPresenter, userInfoPresenter } = require('./presenter');
 
 class UserController {
   constructor(user) {
@@ -93,10 +93,10 @@ class UserController {
       where: {
         museum_goer_id: id
       },
-      include: [UserInterested]
+      include: [UserInterested, Exhibition]
     });
-
-    return [userInterestedPresenter(user)];
+    console.log(user);
+    return [userInfoPresenter(user)];
   }
 }
 

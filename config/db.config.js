@@ -18,6 +18,7 @@ const Exhibition = require('../models/exhibition')(sequelize, Sequelize);
 const Collection = require('../models/collection')(sequelize, Sequelize);
 const User = require('../models/user')(sequelize, Sequelize);
 const Display = require('../models/display')(sequelize, Sequelize);
+const Visit = require('../models/visit')(sequelize, Sequelize);
 const UserInterested = require('../models/userInterested')(
   sequelize,
   Sequelize
@@ -48,6 +49,19 @@ Exhibition.belongsToMany(Artwork, {
 Artwork.belongsToMany(Exhibition, {
   through: Display,
   foreignKey: 'art_object_id',
+  otherKey: 'exhibition_id'
+});
+
+Exhibition.belongsToMany(User, {
+  through: Visit,
+  foreignKey: 'exhibition_id',
+  // targetKey: 'exhibition_id',
+  otherKey: 'museum_goer_id'
+});
+User.belongsToMany(Exhibition, {
+  through: Visit,
+  foreignKey: 'museum_goer_id',
+  // targetKey: 'museum_goer_id',
   otherKey: 'exhibition_id'
 });
 
@@ -100,6 +114,7 @@ const db = {
   CollectionContact,
   User,
   Display,
+  Visit,
   UserInterested,
   SculptureArtwork,
   StatueArtwork,

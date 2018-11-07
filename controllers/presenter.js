@@ -136,7 +136,7 @@ function userPresenter(user) {
   };
 }
 
-function userInterestedPresenter(user) {
+function userInfoPresenter(user) {
   return {
     id: user.museum_goer_id,
     name: user.Name,
@@ -149,6 +149,22 @@ function userInterestedPresenter(user) {
     age: user.age,
     interested: _.map(user.museum_goer_interested_types, interest => {
       return interest.Interested_type;
+    }),
+    going_exhibitions: _.map(user.exhibitions, exhibition => {
+      return exhibitionPresenter(exhibition);
+    })
+  };
+}
+
+function exhibitionUsersPresenter(exhibition) {
+  return {
+    id: exhibition.exhibition_id,
+    name: exhibition.Name,
+    start_date: exhibition.Start_date,
+    end_date: exhibition.End_date,
+    supported_visitor: exhibition.number_limit_visitor,
+    users_id: _.map(exhibition.museum_goers, museum_goer => {
+      return userPresenter(museum_goer);
     })
   };
 }
@@ -159,8 +175,9 @@ module.exports = {
   artworkTypePresenter,
   collectionPresenter,
   exhibitionPresenter,
+  exhibitionUsersPresenter,
   userPresenter,
-  userInterestedPresenter,
+  userInfoPresenter,
   sculpturePresenter,
   statuePresenter,
   paintingPresenter,
