@@ -10,8 +10,12 @@ const {
 
 const {
   artworkPresenter,
+  artworkTypePresenter,
   artistPresenter,
-  sculpturePresenter
+  sculpturePresenter,
+  statuePresenter,
+  paintingPresenter,
+  otherPresenter
 } = require('./presenter');
 
 class ArtworkController {
@@ -69,10 +73,15 @@ class ArtworkController {
   }
 
   async findAll() {
-    const artworks = await this.artwork.findAll();
+    const sculptures = await this.findSculptures();
+    const paintings = await this.findPaintings();
+    const statues = await this.findStatues();
+    const others = await this.findOthers();
+
+    const artworks = [...sculptures, ...paintings, ...statues, ...others];
 
     return _.map(artworks, artwork => {
-      return artworkPresenter(artwork);
+      return artworkTypePresenter(artwork);
     });
   }
 
@@ -83,24 +92,87 @@ class ArtworkController {
     });
 
     const sculptures = _.filter(artworks, artwork => {
-      if (artwork['sculpture.art_object_type_id']) return true;
+      return artwork['sculpture.art_object_type_id'];
     });
 
     return _.map(sculptures, sculpture => {
       return sculpturePresenter(sculpture);
     });
   }
+  async findStatues() {
+    const artworks = await this.artwork.findAll({
+      raw: true,
+      include: [StatueArtwork]
+    });
+
+    const statues = _.filter(artworks, artwork => {
+      return artwork['statue.art_object_type_id'];
+    });
+
+    return _.map(statues, statue => {
+      return statuePresenter(statue);
+    });
+  }
+
+  async findPaintings() {
+    const artworks = await this.artwork.findAll({
+      raw: true,
+      include: [PaintingArtwork]
+    });
+
+    const paintings = _.filter(artworks, artwork => {
+      return artwork['painting.art_object_type_id'];
+    });
+
+    return _.map(paintings, painting => {
+      return paintingPresenter(painting);
+    });
+  }
+
+  async findOthers() {
+    const artworks = await this.artwork.findAll({
+      raw: true,
+      include: [OtherArtwork]
+    });
+
+    const others = _.filter(artworks, artwork => {
+      return artwork['other.art_object_type_id'];
+    });
+
+    return _.map(others, other => {
+      return otherPresenter(other);
+    });
+  }
 
   async findArtworkById(id) {
-    const artwork = await this.artwork.findAll({
-      where: {
-        Id_no: id
-      }
+    const sculpture = await this.artwork.findOne({
+      raw: true,
+      where: { Id_no: id },
+      include: [SculptureArtwork]
+    });
+    const statue = await this.artwork.findOne({
+      raw: true,
+      where: { Id_no: id },
+      include: [StatueArtwork]
+    });
+    const painting = await this.artwork.findOne({
+      raw: true,
+      where: { Id_no: id },
+      include: [PaintingArtwork]
+    });
+    const other = await this.artwork.findOne({
+      raw: true,
+      where: { Id_no: id },
+      include: [OtherArtwork]
     });
 
-    return _.map(artwork, artwork => {
-      return artworkPresenter(artwork);
-    });
+    if (sculpture['sculpture.art_object_type_id'])
+      return sculpturePresenter(sculpture);
+    else if (statue['statue.art_object_type_id'])
+      return statuePresenter(statue);
+    else if (painting['painting.art_object_type_id'])
+      return paintingPresenter(painting);
+    else if (other['other.art_object_type_id']) return otherPresenter(other);
   }
 
   async findArtistByArtworkId(id) {

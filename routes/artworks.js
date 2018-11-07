@@ -25,7 +25,7 @@ class ArtworkRoute {
 
     this.router.get('/', async (req, res) => {
       try {
-        const artworks = await this.artworkController.findSculptures();
+        const artworks = await this.artworkController.findAll();
         res.send(artworks);
       } catch (err) {
         console.log(err);

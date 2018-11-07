@@ -17,10 +17,24 @@ function artworkPresenter(artwork) {
   return {
     id: artwork.Id_no,
     year: artwork.Years,
+    type: artwork.type,
     title: artwork.Title,
     description: artwork.Description,
     origin: artwork.Origin,
     epoch: artwork.Epoch,
+    artist_id: artwork.artist_id
+  };
+}
+
+function artworkTypePresenter(artwork) {
+  return {
+    id: artwork.id,
+    year: artwork.year,
+    artwork_type: artwork.artwork_type,
+    title: artwork.title,
+    description: artwork.description,
+    origin: artwork.origin,
+    epoch: artwork.epoch,
     artist_id: artwork.artist_id
   };
 }
@@ -38,6 +52,51 @@ function sculpturePresenter(artwork) {
     height: artwork['sculpture.height'],
     weight: artwork['sculpture.weight'],
     style: artwork['sculpture.style'],
+    artist_id: artwork.artist_id
+  };
+}
+function statuePresenter(artwork) {
+  return {
+    id: artwork.Id_no,
+    year: artwork.Years,
+    title: artwork.Title,
+    artwork_type: 'statue',
+    description: artwork.Description,
+    origin: artwork.Origin,
+    epoch: artwork.Epoch,
+    material: artwork['statue.material'],
+    height: artwork['statue.height'],
+    weight: artwork['statue.weight'],
+    style: artwork['statue.style'],
+    artist_id: artwork.artist_id
+  };
+}
+function paintingPresenter(artwork) {
+  return {
+    id: artwork.Id_no,
+    year: artwork.Years,
+    title: artwork.Title,
+    artwork_type: 'painting',
+    description: artwork.Description,
+    origin: artwork.Origin,
+    epoch: artwork.Epoch,
+    paint_type: artwork['painting.paint_type'],
+    drawn_on: artwork['painting.drawn_on'],
+    style: artwork['painting.style'],
+    artist_id: artwork.artist_id
+  };
+}
+function otherPresenter(artwork) {
+  return {
+    id: artwork.Id_no,
+    year: artwork.Years,
+    title: artwork.Title,
+    artwork_type: 'other',
+    description: artwork.Description,
+    origin: artwork.Origin,
+    epoch: artwork.Epoch,
+    type: artwork['other.type'],
+    style: artwork['other.style'],
     artist_id: artwork.artist_id
   };
 }
@@ -97,9 +156,13 @@ function userInterestedPresenter(user) {
 module.exports = {
   artistPresenter,
   artworkPresenter,
+  artworkTypePresenter,
   collectionPresenter,
   exhibitionPresenter,
   userPresenter,
   userInterestedPresenter,
-  sculpturePresenter
+  sculpturePresenter,
+  statuePresenter,
+  paintingPresenter,
+  otherPresenter
 };

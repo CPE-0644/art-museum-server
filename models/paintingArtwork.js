@@ -1,6 +1,6 @@
 module.exports = (sequelize, Sequelize) => {
   const PaintingArtwork = sequelize.define(
-    'other',
+    'painting',
     {
       art_object_type_id: {
         type: Sequelize.INTEGER,
