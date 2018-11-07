@@ -80,9 +80,14 @@ class ArtworkController {
 
     const artworks = [...paintings, ...sculptures, ...statues, ...others];
 
-    return _.map(artworks, artwork => {
-      return artworkTypePresenter(artwork);
-    });
+    return _.map(
+      _.sortBy(artworks, artwork => {
+        return artwork.title;
+      }),
+      artwork => {
+        return artworkTypePresenter(artwork);
+      }
+    );
   }
 
   async findSculptures() {
