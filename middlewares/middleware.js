@@ -8,7 +8,7 @@ function isAdmin(req, res, next) {
   console.log(req);
   if (!req.isAuthenticated()) next(new Error('Unauthenticated'));
   else {
-    if (req.user.isAdmin == 1 || req.user.isAdmin == true) next();
+    if (req.user.role == 'admin') next();
     else next(new Error('Unauthorized'));
   }
 }

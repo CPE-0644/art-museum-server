@@ -31,7 +31,7 @@ class UserController {
     } = params;
 
     const user = await this.user.create({
-      isAdmin: false,
+      role: 'user',
       Name: name,
       username: username,
       password: password,

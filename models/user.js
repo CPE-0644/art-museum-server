@@ -7,7 +7,7 @@ module.exports = (sequelize, Sequelize) => {
         primaryKey: true,
         autoIncrement: true
       },
-      isAdmin: Sequelize.BOOLEAN,
+      role: Sequelize.STRING(45),
       Name: Sequelize.STRING(45),
       username: Sequelize.STRING(45),
       password: Sequelize.STRING(45),

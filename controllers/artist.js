@@ -9,7 +9,7 @@ class ArtistController {
     this.artist = Artist;
     this.artistAttributes = [
       'name',
-      'isAdmin',
+      'role',
       'date_born',
       'date_died',
       'country_of_origin',
@@ -22,7 +22,7 @@ class ArtistController {
   async createArtist(params) {
     const {
       name,
-      isAdmin,
+      role,
       date_of_birth,
       date_of_died,
       country,
@@ -33,8 +33,7 @@ class ArtistController {
 
     const artist = await this.artist.create({
       name: name,
-      isAdmin,
-      isAdmin,
+      role: role,
       date_born: date_of_birth,
       date_died: date_of_died,
       country_of_origin: country,
@@ -49,7 +48,7 @@ class ArtistController {
   async updateArtist(newParams, id) {
     const {
       name,
-      isAdmin,
+      role,
       date_of_birth,
       date_of_died,
       country,
@@ -67,7 +66,7 @@ class ArtistController {
     artist.update(
       {
         name: name,
-        isAdmin: isAdmin,
+        role: role,
         date_born: date_of_birth,
         date_died: date_of_died,
         country_of_origin: country,

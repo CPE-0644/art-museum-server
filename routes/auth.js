@@ -19,10 +19,9 @@ class AuthRoute {
       res.send(
         JSON.stringify({
           username: req.user.username,
-          isAdmin: req.user.isAdmin,
           name: req.user.Name,
           id: req.user.museum_goer_id,
-          role: req.user.isAdmin == 1 ? 'admin' : 'user'
+          role: req.user.role
         })
       );
     });
