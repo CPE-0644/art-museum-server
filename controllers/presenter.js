@@ -157,15 +157,21 @@ function userInfoPresenter(user) {
 }
 
 function exhibitionUsersPresenter(exhibition) {
+  const userList = _.map(exhibition.museum_goers, museum_goer => {
+    return userPresenter(museum_goer);
+  });
+
+  const exhibitionSeatsLeft =
+    exhibition.number_limit_visitor - _.size(exhibition.museum_goers);
+
   return {
     id: exhibition.exhibition_id,
     name: exhibition.Name,
     start_date: exhibition.Start_date,
     end_date: exhibition.End_date,
     supported_visitor: exhibition.number_limit_visitor,
-    users_id: _.map(exhibition.museum_goers, museum_goer => {
-      return userPresenter(museum_goer);
-    })
+    seats_left: exhibitionSeatsLeft,
+    users: userList
   };
 }
 
