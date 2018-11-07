@@ -1,12 +1,12 @@
 const express = require('express');
 
-const collectionController = require('../controllers/collection');
+const CollectionController = require('../controllers/collection');
 
 const { isAdmin } = require('../middlewares/middleware');
 
 class CollectionRoute {
-  constructor(Collection) {
-    this.collectionController = new collectionController();
+  constructor() {
+    this.collectionController = new CollectionController();
     this.router = express.Router();
 
     this.initRoute();
@@ -30,6 +30,7 @@ class CollectionRoute {
         const collections = await this.collectionController.findAll();
         res.send(collections);
       } catch (err) {
+        console.log(err);
         res.send(err);
       }
     });

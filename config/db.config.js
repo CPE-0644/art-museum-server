@@ -22,6 +22,10 @@ const UserInterested = require('../models/userInterested')(
   sequelize,
   Sequelize
 );
+const CollectionContact = require('../models/CollectionContact')(
+  sequelize,
+  Sequelize
+);
 
 Artist.hasMany(Artwork, { foreignKey: 'artist_id' });
 Artwork.belongsTo(Artist, { foreignKey: 'artist_id' });
@@ -40,6 +44,9 @@ Artwork.belongsToMany(Exhibition, {
 User.hasMany(UserInterested, { foreignKey: 'museum_goer_id' });
 UserInterested.belongsTo(User, { foreignKey: 'museum_goer_id' });
 
+Collection.hasOne(CollectionContact, { foreignKey: 'contact_id' });
+CollectionContact.hasOne(Collection, { foreignKey: 'contact_id' });
+
 const db = {
   sequelize,
   Sequelize,
@@ -47,6 +54,7 @@ const db = {
   Artist,
   Exhibition,
   Collection,
+  CollectionContact,
   User,
   Display,
   UserInterested

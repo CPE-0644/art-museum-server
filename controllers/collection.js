@@ -1,10 +1,11 @@
 const _ = require('lodash');
 
-const { Collection } = require('../config/db.config');
+const { Collection, CollectionContact } = require('../config/db.config');
 
+const { collectionPresenter } = require('./presenter');
 class CollectionController {
-  constructor(collection) {
-    this.collection = collection;
+  constructor() {
+    this.collection = Collection;
     this.collectionAttributes = [
       'Name',
       'Type',
@@ -54,7 +55,7 @@ class CollectionController {
 
   async findAll() {
     const collections = await this.collection.findAll({
-      attributes: this.collectionAttributes
+      include: [{ model: CollectionContact }]
     });
 
     return _.map(collections, collection => {

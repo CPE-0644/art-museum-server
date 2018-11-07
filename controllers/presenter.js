@@ -32,7 +32,8 @@ function collectionPresenter(collection) {
     type: collection.Type,
     description: collection.Description,
     address: collection.Address,
-    contact_id: collection.contact_id
+    contact_name: collection.contact_person.Name,
+    contact_phone: collection.contact_person.Phone
   };
 }
 
