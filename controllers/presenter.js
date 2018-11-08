@@ -112,6 +112,19 @@ function collectionPresenter(collection) {
     contact_phone: collection.contact_person.Phone
   };
 }
+function collectionRelationPresenter(collection) {
+  return {
+    id: collection.Collection_id,
+    name: collection.Name,
+    type: collection.Type,
+    description: collection.Description,
+    address: collection.Address,
+    contact_name: collection.contact_person.Name,
+    contact_phone: collection.contact_person.Phone,
+    borrowedArtworks: collection.borroweds,
+    permanentArtworks: collection.permanent_collections
+  };
+}
 
 function exhibitionPresenter(exhibition) {
   return {
@@ -180,6 +193,7 @@ module.exports = {
   artworkPresenter,
   artworkTypePresenter,
   collectionPresenter,
+  collectionRelationPresenter,
   exhibitionPresenter,
   exhibitionUsersPresenter,
   userPresenter,

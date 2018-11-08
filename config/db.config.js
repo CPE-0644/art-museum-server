@@ -37,6 +37,14 @@ const PaintingArtwork = require('../models/paintingArtwork')(
   Sequelize
 );
 const OtherArtwork = require('../models/otherArtwork')(sequelize, Sequelize);
+const PermanentCollection = require('../models/permanentCollection')(
+  sequelize,
+  Sequelize
+);
+const BorrowedCollection = require('../models/borrowedCollection')(
+  sequelize,
+  Sequelize
+);
 
 Artist.hasMany(Artwork, { foreignKey: 'artist_id' });
 Artwork.belongsTo(Artist, { foreignKey: 'artist_id' });
@@ -104,13 +112,48 @@ Artwork.belongsTo(OtherArtwork, {
   targetKey: 'art_object_type_id'
 });
 
+// Artwork.belongsTo(PermanentCollection, {
+//   foreignKey: 'Id_no',
+//   targetKey: 'art_object_id'
+// });
+// PermanentCollection.hasOne(Artwork, {
+//   foreignKey: 'Id_no',
+//   targetKey: 'art_object_type_id'
+// });
+
+// Artwork.belongsTo(BorrowedCollection, {
+//   foreignKey: 'Id_no',
+//   targetKey: 'art_object_id'
+// });
+// BorrowedCollection.hasOne(Artwork, {
+//   foreignKey: 'Id_no',
+//   targetKey: 'art_object_type_id'
+// });
+
+Collection.hasMany(PermanentCollection, {
+  foreignKey: 'collection_id',
+  sourceKey: 'Collection_id'
+});
+PermanentCollection.belongsTo(Collection, {
+  foreignKey: 'collection_id',
+  targetKey: 'Collection_id'
+});
+
+Collection.hasMany(BorrowedCollection, {
+  foreignKey: 'collection_id',
+  sourceKey: 'Collection_id'
+});
+BorrowedCollection.belongsTo(Collection, {
+  foreignKey: 'collection_id',
+  targetKey: 'Collection_id'
+});
+
 const db = {
   sequelize,
   Sequelize,
   Artwork,
   Artist,
   Exhibition,
-  Collection,
   CollectionContact,
   User,
   Display,
@@ -119,7 +162,10 @@ const db = {
   SculptureArtwork,
   StatueArtwork,
   PaintingArtwork,
-  OtherArtwork
+  OtherArtwork,
+  Collection,
+  BorrowedCollection,
+  PermanentCollection
 };
 
 module.exports = db;
