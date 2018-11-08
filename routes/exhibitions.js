@@ -25,6 +25,21 @@ class ExhibitionRoute {
       }
     });
 
+    this.router.post('/:exhibitionId/users', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+      console.log(req.body);
+      try {
+        await this.exhibitionController.createExhibitionUser(
+          req.body,
+          exhibitionId
+        );
+        res.send('success');
+      } catch (err) {
+        console.log(err);
+        res.send('error');
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const exhibitions = await this.exhibitionController.findAll();

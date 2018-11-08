@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-const { Artwork, Exhibition, User } = require('../config/db.config');
+const { Artwork, Exhibition, User, Visit } = require('../config/db.config');
 
 const {
   exhibitionPresenter,
@@ -31,6 +31,15 @@ class ExhibitionController {
     });
 
     return [exhibitionPresenter(exhibition)];
+  }
+
+  async createExhibitionUser(params, exhibitionId) {
+    const { museum_goer_id } = params;
+
+    const visit = await Visit.create({
+      exhibition_id: exhibitionId,
+      museum_goer_id: museum_goer_id
+    });
   }
 
   async updateExhibition(newParams, id) {
