@@ -112,24 +112,6 @@ Artwork.belongsTo(OtherArtwork, {
   targetKey: 'art_object_type_id'
 });
 
-// Artwork.belongsTo(PermanentCollection, {
-//   foreignKey: 'Id_no',
-//   targetKey: 'art_object_id'
-// });
-// PermanentCollection.hasOne(Artwork, {
-//   foreignKey: 'Id_no',
-//   targetKey: 'art_object_type_id'
-// });
-
-// Artwork.belongsTo(BorrowedCollection, {
-//   foreignKey: 'Id_no',
-//   targetKey: 'art_object_id'
-// });
-// BorrowedCollection.hasOne(Artwork, {
-//   foreignKey: 'Id_no',
-//   targetKey: 'art_object_type_id'
-// });
-
 Collection.hasMany(PermanentCollection, {
   foreignKey: 'collection_id',
   sourceKey: 'Collection_id'

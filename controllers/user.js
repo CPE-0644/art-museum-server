@@ -41,8 +41,8 @@ class UserController {
       age: age
     });
 
-    _.forEach(interested, interested_type => {
-      UserInterested.create({
+    _.forEach(interested, async interested_type => {
+      await UserInterested.create({
         museum_goer_id: user.museum_goer_id,
         Interested_type: interested_type
       });

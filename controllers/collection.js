@@ -51,7 +51,7 @@ class CollectionController {
         Type: type,
         Description: description,
         Address: address,
-        Contact_id: contact_id
+        contact_id: contact_id
       },
       {
         fields: this.collectionAttributes
@@ -73,9 +73,9 @@ class CollectionController {
     });
   }
 
-  async findArtistById(id) {
+  async findCollectionById(id) {
     const collection = await this.collection.findAll({
-      attributes: this.collectionAttributes,
+      include: [CollectionContact],
       where: {
         collection_id: id
       }

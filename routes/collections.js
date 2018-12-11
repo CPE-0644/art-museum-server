@@ -35,8 +35,17 @@ class CollectionRoute {
       }
     });
 
-    this.router.get('/:collectionId', (req, res) => {
-      res.send(req.params.collectionId);
+    this.router.get('/:collectionId', async (req, res) => {
+      const collectionId = req.params.collectionId;
+      try {
+        const collection = await this.collectionController.findCollectionById(
+          collectionId
+        );
+        res.send(collection);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
     });
 
     this.router.put('/:collectionId', async (req, res) => {

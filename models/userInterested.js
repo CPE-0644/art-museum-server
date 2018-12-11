@@ -3,8 +3,7 @@ module.exports = (sequelize, Sequelize) => {
     'museum_goer_interested_type',
     {
       museum_goer_id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true
+        type: Sequelize.INTEGER
       },
       Interested_type: Sequelize.STRING(45)
     },
