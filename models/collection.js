@@ -1,18 +1,17 @@
 module.exports = (sequelize, Sequelize) => {
-  const Artwork = sequelize.define(
-    'art_object',
+  const Collection = sequelize.define(
+    'collection',
     {
-      Id_no: {
+      Collection_id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
-      Years: Sequelize.STRING(4),
-      Title: Sequelize.STRING(45),
+      Name: Sequelize.STRING(45),
+      Type: Sequelize.STRING(45),
       Description: Sequelize.TEXT,
-      Origin: Sequelize.STRING(45),
-      Epoch: Sequelize.STRING(45),
-      artist_id: Sequelize.INTEGER
+      Address: Sequelize.STRING(255),
+      contact_id: Sequelize.INTEGER
     },
     {
       timestamps: false,
@@ -20,5 +19,5 @@ module.exports = (sequelize, Sequelize) => {
     }
   );
 
-  return Artwork;
+  return Collection;
 };

@@ -1,21 +1,22 @@
-const _ = require('lodash');
+module.exports = (sequelize, Sequelize) => {
+  const Exhibition = sequelize.define(
+    'exhibition',
+    {
+      exhibition_id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+      },
+      Name: Sequelize.STRING(45),
+      Start_date: Sequelize.DATE,
+      End_date: Sequelize.DATE,
+      number_limit_visitor: Sequelize.INTEGER
+    },
+    {
+      timestamps: false,
+      freezeTableName: true
+    }
+  );
 
-const data = require('../assets/database/exhibitions.json').exhibitions;
-
-class Exhibition {
-  constructor(json) {
-    this.id = json['exhibition-id'];
-    this.name = json['name'];
-    this.start_date = json['start-date'];
-    this.end_date = json['end-date'];
-    this.display = json['display'];
-    this.supported = json['number-supported-users'];
-  }
-}
-
-let exhibitions = [];
-_.forEach(data, json => exhibitions.push(new Exhibition(json)));
-
-module.exports = {
-  exhibitions
+  return Exhibition;
 };

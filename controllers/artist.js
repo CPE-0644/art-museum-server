@@ -1,55 +1,132 @@
 const _ = require('lodash');
 
-const Artist = require('../models/Artist')();
+const { Artwork, Artist } = require('../config/db.config');
 
-const artistAttributes = [
-  'artist_id',
-  'name',
-  'date_born',
-  'date_died',
-  'country_of_origin',
-  'epoch',
-  'main_style',
-  'description'
-];
+const { artistPresenter, artworkPresenter } = require('./presenter');
 
-async function findAll() {
-  const artists = await Artist.findAll({
-    attributes: artistAttributes
-  });
+class ArtistController {
+  constructor() {
+    this.artist = Artist;
+    this.artistAttributes = [
+      'name',
+      'role',
+      'date_born',
+      'date_died',
+      'country_of_origin',
+      'epoch',
+      'main_style',
+      'description'
+    ];
+  }
 
-  return _.map(artists, artist => {
-    return artistPresenter(artist);
-  });
+  async createArtist(params) {
+    const {
+      name,
+      role,
+      date_of_birth,
+      date_of_died,
+      country,
+      epoch,
+      style,
+      description
+    } = params;
+
+    const artist = await this.artist.create({
+      name: name,
+      role: role,
+      date_born: date_of_birth,
+      date_died: date_of_died,
+      country_of_origin: country,
+      epoch: epoch,
+      main_style: style,
+      description: description
+    });
+
+    return [artistPresenter(artist)];
+  }
+
+  async updateArtist(newParams, id) {
+    const {
+      name,
+      role,
+      date_of_birth,
+      date_of_died,
+      country,
+      epoch,
+      style,
+      description
+    } = newParams;
+
+    const artist = await this.artist.findOne({
+      where: {
+        artist_id: id
+      }
+    });
+
+    artist.update(
+      {
+        name: name,
+        role: role,
+        date_born: date_of_birth,
+        date_died: date_of_died,
+        country_of_origin: country,
+        epoch: epoch,
+        main_style: style,
+        description: description
+      },
+      {
+        fields: this.artistAttributes
+      }
+    );
+
+    return [artistPresenter(artist)];
+  }
+
+  async findAll() {
+    const artists = await this.artist.findAll();
+
+    return _.map(artists, artist => {
+      return artistPresenter(artist);
+    });
+  }
+
+  async findArtistById(id) {
+    const artist = await this.artist.findAll({
+      where: {
+        artist_id: id
+      }
+    });
+
+    return _.map(artist, artist => {
+      return artistPresenter(artist);
+    });
+  }
+
+  async findArtworksByArtistId(id) {
+    const artist = await this.artist.findOne({
+      where: {
+        artist_id: id
+      },
+      include: [Artwork]
+    });
+    const artworks = artist['art_objects'];
+
+    return _.map(artworks, artwork => {
+      return artworkPresenter(artwork);
+    });
+  }
+
+  async deleteArtist(id) {
+    const artist = await this.artist.findOne({
+      where: {
+        artist_id: id
+      }
+    });
+
+    artist.destroy();
+
+    return null;
+  }
 }
 
-async function findArtistById(id) {
-  const artist = await Artist.findAll({
-    attributes: artistAttributes,
-    where: {
-      artist_id: id
-    }
-  });
-
-  return _.map(artist, artist => {
-    return artistPresenter(artist);
-  });
-}
-
-function artistPresenter(artist) {
-  return {
-    id: artist.artist_id,
-    name: artist.name,
-    date_of_birth: artist.date_born,
-    date_of_died: artist.date_died,
-    country: artist.country_of_origin,
-    epoch: artist.epoch,
-    style: artist.main_style,
-    description: artist.description
-  };
-}
-
-module.exports = {
-  findAll,
-  findArtistById
-};
+module.exports = ArtistController;
