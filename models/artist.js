@@ -16,6 +16,12 @@ module.exports = (sequelize, Sequelize) => {
       description: Sequelize.TEXT
     },
     {
+      indexes: [
+        {
+          name: 'artist_id_name_index',
+          fields: ['artist_id', 'name']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

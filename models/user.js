@@ -17,6 +17,16 @@ module.exports = (sequelize, Sequelize) => {
       age: Sequelize.INTEGER(11)
     },
     {
+      indexes: [
+        {
+          name: 'userId_name_username_index',
+          fields: ['museum_goer_id', 'name', 'username']
+        },
+        {
+          name: 'user_role_index',
+          files: ['museum_goer_id', 'role']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

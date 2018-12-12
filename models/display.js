@@ -6,6 +6,12 @@ module.exports = (sequelize, Sequelize) => {
       art_object_id: Sequelize.INTEGER
     },
     {
+      indexes: [
+        {
+          name: 'exhibitionId_artworkId_index',
+          fields: ['exhibition_id', 'art_object_id']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }
