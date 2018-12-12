@@ -23,6 +23,49 @@ class ArtworkRoute {
       }
     });
 
+    this.router.post('/sculpture', async (req, res) => {
+      try {
+        console.log(req.body);
+        const artwork = await this.artworkController.createSculpture(req.body);
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
+    this.router.post('/statue', async (req, res) => {
+      try {
+        const artwork = await this.artworkController.createStatue(req.body);
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
+    this.router.post('/painting', async (req, res) => {
+      try {
+        const artwork = await this.artworkController.createPainting(req.body);
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
+    this.router.post('/other', async (req, res) => {
+      try {
+        const artwork = await this.artworkController.createOtherArtwork(
+          req.body
+        );
+        res.send(artwork);
+      } catch (err) {
+        console.log(err);
+        res.send(err);
+      }
+    });
+
     this.router.get('/', async (req, res) => {
       try {
         const artworks = await this.artworkController.findAll();

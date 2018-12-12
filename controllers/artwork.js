@@ -47,6 +47,59 @@ class ArtworkController {
     return [artworkPresenter(artwork)];
   }
 
+  async createSculpture(params) {
+    const { artworkId, material, weight, height, style } = params;
+
+    const sculpture = await SculptureArtwork.create({
+      art_object_type_id: artworkId,
+      material,
+      height,
+      weight,
+      style
+    });
+
+    return sculpture;
+  }
+
+  async createStatue(params) {
+    const { artworkId, material, weight, height, style } = params;
+
+    const statue = await StatueArtwork.create({
+      art_object_type_id: artworkId,
+      material,
+      height,
+      weight,
+      style
+    });
+
+    return statue;
+  }
+
+  async createPainting(params) {
+    const { artworkId, paint_type, drawn_on, style } = params;
+
+    const paint = await PaintingArtwork.create({
+      art_object_type_id: artworkId,
+      paint_type,
+      drawn_on,
+      style
+    });
+
+    return paint;
+  }
+
+  async createOtherArtwork(params) {
+    const { artworkId, type, style } = params;
+
+    const otherArtwork = await OtherArtwork.create({
+      art_object_type_id: artworkId,
+      type,
+      style
+    });
+
+    return otherArtwork;
+  }
+
   async updateArtwork(newParams, id) {
     const { year, title, description, origin, epoch, artist_id } = newParams;
     const artwork = await this.artwork.findOne({
