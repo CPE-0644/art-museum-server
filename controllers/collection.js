@@ -1,6 +1,7 @@
 const _ = require('lodash');
 
 const {
+  sequelize,
   Collection,
   CollectionContact,
   PermanentCollection,
@@ -39,26 +40,38 @@ class CollectionController {
 
   async updateCollection(newParams, id) {
     const { name, type, description, address, contact_id } = newParams;
-    const collection = await this.collection.findOne({
-      where: {
-        Collection_id: id
-      }
+
+    return sequelize.transaction(t => {
+      return this.collection
+        .findOne(
+          {
+            where: {
+              Collection_id: id
+            }
+          },
+          {
+            transaction: t
+          }
+        )
+        .then(collection => {
+          return collection.update(
+            {
+              Name: name,
+              Type: type,
+              Description: description,
+              Address: address,
+              contact_id: contact_id
+            },
+            {
+              transaction: t,
+              fields: this.collectionAttributes
+            }
+          );
+        })
+        .then(collection => {
+          return [collectionPresenter(collection)];
+        });
     });
-
-    collection.update(
-      {
-        Name: name,
-        Type: type,
-        Description: description,
-        Address: address,
-        contact_id: contact_id
-      },
-      {
-        fields: this.collectionAttributes
-      }
-    );
-
-    return [collectionPresenter(collection)];
   }
 
   async findAll() {
@@ -87,15 +100,20 @@ class CollectionController {
   }
 
   async deleteCollection(id) {
-    const collection = await this.collection.findOne({
-      where: {
-        Collection_id: id
-      }
+    return sequelize.transaction(t => {
+      return this.collection
+        .findOne(
+          {
+            where: {
+              Collection_id: id
+            }
+          },
+          { transaction: t }
+        )
+        .then(collection => {
+          return collection.destroy({}, { transaction: t });
+        });
     });
-
-    collection.destroy();
-
-    return null;
   }
 }
 

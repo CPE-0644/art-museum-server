@@ -1,6 +1,6 @@
 const _ = require('lodash');
 
-const { Artwork, Artist } = require('../config/db.config');
+const { sequelize, Artwork, Artist } = require('../config/db.config');
 
 const { artistPresenter, artworkPresenter } = require('./presenter');
 
@@ -57,29 +57,38 @@ class ArtistController {
       description
     } = newParams;
 
-    const artist = await this.artist.findOne({
-      where: {
-        artist_id: id
-      }
+    return sequelize.transaction(t => {
+      return this.artist
+        .findOne(
+          {
+            where: {
+              artist_id: id
+            }
+          },
+          { transaction: t }
+        )
+        .then(artist => {
+          return artist.update(
+            {
+              name: name,
+              role: role,
+              date_born: date_of_birth,
+              date_died: date_of_died,
+              country_of_origin: country,
+              epoch: epoch,
+              main_style: style,
+              description: description
+            },
+            {
+              transaction: t,
+              fields: this.artistAttributes
+            }
+          );
+        })
+        .then(artist => {
+          return [artistPresenter(artist)];
+        });
     });
-
-    artist.update(
-      {
-        name: name,
-        role: role,
-        date_born: date_of_birth,
-        date_died: date_of_died,
-        country_of_origin: country,
-        epoch: epoch,
-        main_style: style,
-        description: description
-      },
-      {
-        fields: this.artistAttributes
-      }
-    );
-
-    return [artistPresenter(artist)];
   }
 
   async findAll() {

@@ -1,6 +1,11 @@
 const _ = require('lodash');
 
-const { User, UserInterested, Exhibition } = require('../config/db.config');
+const {
+  sequelize,
+  User,
+  UserInterested,
+  Exhibition
+} = require('../config/db.config');
 
 const { userPresenter, userInfoPresenter } = require('./presenter');
 
@@ -30,52 +35,73 @@ class UserController {
       interested
     } = params;
 
-    const user = await this.user.create({
-      role: 'user',
-      Name: name,
-      username: username,
-      password: password,
-      address: address,
-      email: email,
-      phone: phone,
-      age: age
+    return sequelize.transaction(t => {
+      return this.user
+        .create(
+          {
+            role: 'user',
+            Name: name,
+            username: username,
+            password: password,
+            address: address,
+            email: email,
+            phone: phone,
+            age: age
+          },
+          { transaction: t }
+        )
+        .then(user => {
+          _.forEach(interested, async interested_type => {
+            return await UserInterested.create(
+              {
+                museum_goer_id: user.museum_goer_id,
+                Interested_type: interested_type
+              },
+              { transaction: t }
+            );
+          });
+          return user;
+        })
+        .then(user => {
+          return [userPresenter(user)];
+        });
     });
-
-    _.forEach(interested, async interested_type => {
-      await UserInterested.create({
-        museum_goer_id: user.museum_goer_id,
-        Interested_type: interested_type
-      });
-    });
-
-    return [userPresenter(user)];
   }
 
   async updateUser(newParams, id) {
     const { name, username, password, address, email, phone, age } = newParams;
 
-    const user = await this.user.findOne({
-      where: {
-        museum_goer_id: id
-      }
+    return sequelize.transaction(t => {
+      return this.user
+        .findOne(
+          {
+            where: {
+              museum_goer_id: id
+            }
+          },
+          { transaction: t }
+        )
+        .then(user => {
+          return user.update(
+            {
+              Name: name,
+              username: username,
+              password: password,
+              address: address,
+              email: email,
+              phone: phone,
+              age: age
+            },
+            {
+              transaction: t,
+              fields: this.userAttributes
+            }
+          );
+        })
+        .then(user => {
+          return [userPresenter(user)];
+        });
     });
-
-    user.update(
-      {
-        Name: name,
-        username: username,
-        password: password,
-        address: address,
-        email: email,
-        phone: phone,
-        age: age
-      },
-      {
-        fields: this.userAttributes
-      }
-    );
-
-    return [userPresenter(user)];
   }
 
   async findAll() {
@@ -95,7 +121,7 @@ class UserController {
       },
       include: [UserInterested, Exhibition]
     });
-    console.log(user);
+
     return [userInfoPresenter(user)];
   }
 }
