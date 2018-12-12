@@ -1,6 +1,12 @@
 const _ = require('lodash');
 
-const { Artwork, Exhibition, User, Visit } = require('../config/db.config');
+const {
+  Artwork,
+  Exhibition,
+  User,
+  Visit,
+  Display
+} = require('../config/db.config');
 
 const {
   exhibitionPresenter,
@@ -65,6 +71,24 @@ class ExhibitionController {
     return [exhibitionPresenter(exhibition)];
   }
 
+  async updateExhibitionArtworks(newParams, id) {
+    const artworksId = newParams;
+    console.log(artworksId);
+    let display = await Display.destroy({
+      where: {
+        exhibition_id: id
+      }
+    });
+
+    display = await _.forEach(artworksId, artworkId => {
+      Display.create({
+        exhibition_id: id,
+        art_object_id: artworkId
+      });
+    });
+
+    return artworksId;
+  }
   async findAll() {
     const exhibitions = await this.exhibition.findAll();
     return _.map(exhibitions, exhibition => {

@@ -93,6 +93,17 @@ class ExhibitionRoute {
       res.send(artworks);
     });
 
+    this.router.post('/:exhibitionId/artworks', async (req, res) => {
+      const exhibitionId = req.params.exhibitionId;
+
+      const exhibition = await this.exhibitionController.updateExhibitionArtworks(
+        req.body,
+        exhibitionId
+      );
+
+      res.send(exhibition);
+    });
+
     this.router.get('/:exhibitionId/users', async (req, res) => {
       const exhibitionId = req.params.exhibitionId;
 
