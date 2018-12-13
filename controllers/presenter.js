@@ -160,9 +160,7 @@ function userInfoPresenter(user) {
     email: user.email,
     phone: user.phone,
     age: user.age,
-    interested: _.map(user.museum_goer_interested_types, interest => {
-      return interest.Interested_type;
-    }),
+    interested: user.interested,
     going_exhibitions: _.map(user.exhibitions, exhibition => {
       return exhibitionPresenter(exhibition);
     })

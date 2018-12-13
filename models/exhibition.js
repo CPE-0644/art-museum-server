@@ -13,6 +13,12 @@ module.exports = (sequelize, Sequelize) => {
       number_limit_visitor: Sequelize.INTEGER
     },
     {
+      indexes: [
+        {
+          name: 'exhibition_id_name_index',
+          fields: ['exhibition_id', 'name']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

@@ -14,6 +14,12 @@ module.exports = (sequelize, Sequelize) => {
       contact_id: Sequelize.INTEGER
     },
     {
+      indexes: [
+        {
+          name: 'collection_id_name_index',
+          fields: ['collection_id, name']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

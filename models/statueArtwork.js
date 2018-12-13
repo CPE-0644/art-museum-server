@@ -12,6 +12,12 @@ module.exports = (sequelize, Sequelize) => {
       style: Sequelize.STRING(45)
     },
     {
+      indexes: [
+        {
+          name: 'statue_id_style_index',
+          fields: ['art_object_type_id', 'style']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

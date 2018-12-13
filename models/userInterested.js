@@ -3,11 +3,18 @@ module.exports = (sequelize, Sequelize) => {
     'museum_goer_interested_type',
     {
       museum_goer_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        primaryKey: true
       },
       Interested_type: Sequelize.STRING(45)
     },
     {
+      indexes: [
+        {
+          name: 'user_id_interested_index',
+          fields: ['museum_goer_id', 'Interested_type']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }
