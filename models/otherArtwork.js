@@ -10,6 +10,12 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING(45)
     },
     {
+      indexes: [
+        {
+          name: 'other_artwork_id_type_index',
+          fields: ['art_object_type_id', 'type']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

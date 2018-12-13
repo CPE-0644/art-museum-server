@@ -15,6 +15,12 @@ module.exports = (sequelize, Sequelize) => {
       artist_id: Sequelize.INTEGER
     },
     {
+      indexes: [
+        {
+          name: 'artwork_id_title_index',
+          fields: ['Id_no', 'Title']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }

@@ -10,6 +10,12 @@ module.exports = (sequelize, Sequelize) => {
       Phone: Sequelize.STRING(45)
     },
     {
+      indexes: [
+        {
+          name: 'contact_id_name_index',
+          fields: ['contact_id', 'name']
+        }
+      ],
       timestamps: false,
       freezeTableName: true
     }
