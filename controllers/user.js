@@ -89,14 +89,22 @@ class UserController {
   }
 
   async findUserById(id) {
-    const user = await this.user.findOne({
+    const user = await this.user.findAll({
+      raw: true,
       where: {
         museum_goer_id: id
       },
       include: [UserInterested, Exhibition]
     });
-    console.log(user);
-    return [userInfoPresenter(user)];
+    let interested = [];
+    _.forEach(user, async data => {
+      await interested.push(
+        data['museum_goer_interested_types.Interested_type']
+      );
+    });
+    console.log(interested);
+    user[0].interested = interested;
+    return [userInfoPresenter(user[0])];
   }
 }
 
