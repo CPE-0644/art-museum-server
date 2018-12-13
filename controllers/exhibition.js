@@ -80,27 +80,20 @@ class ExhibitionController {
 
   async updateExhibitionArtworks(newParams, id) {
     const artworksId = newParams;
-    return sequelize.transaction(t => {
-      return Display.destroy(
-        {
-          where: {
-            exhibition_id: id
-          }
-        },
-        { transaction: t }
-      ).then(display => {
-        return _.forEach(artworksId, async artworkId => {
-          return await display.create(
-            {
-              exhibition_id: id,
-              art_object_id: artworkId
-            },
-            { transaction: t }
-          );
+    return Display.destroy({
+      where: {
+        exhibition_id: id
+      }
+    }).then(() => {
+      return _.forEach(artworksId, artworkId => {
+        return Display.create({
+          exhibition_id: id,
+          art_object_id: artworkId
         });
       });
     });
   }
+
   async findAll() {
     const exhibitions = await this.exhibition.findAll();
     return _.map(exhibitions, exhibition => {

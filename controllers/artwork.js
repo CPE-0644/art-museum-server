@@ -105,33 +105,34 @@ class ArtworkController {
     const { year, title, description, origin, epoch, artist_id } = newParams;
 
     return sequelize.transaction(t => {
-      return this.artwork.findOne(
-        {
-          where: {
-            Id_no: id
-          }
-        },
-        { transaction: t }
-          .then(artwork => {
-            return artwork.update(
-              {
-                Years: year,
-                Title: title,
-                Description: description,
-                Origin: origin,
-                Epoch: epoch,
-                artist_id: artist_id
-              },
-              {
-                transaction: t,
-                fields: this.artworkAttributes
-              }
-            );
-          })
-          .then(artwork => {
-            return [artworkPresenter(artwork)];
-          })
-      );
+      return this.artwork
+        .findOne(
+          {
+            where: {
+              Id_no: id
+            }
+          },
+          { transaction: t }
+        )
+        .then(artwork => {
+          return artwork.update(
+            {
+              Years: year,
+              Title: title,
+              Description: description,
+              Origin: origin,
+              Epoch: epoch,
+              artist_id: artist_id
+            },
+            {
+              transaction: t,
+              fields: this.artworkAttributes
+            }
+          );
+        })
+        .then(artwork => {
+          return [artworkPresenter(artwork)];
+        });
     });
   }
 
